@@ -3,8 +3,10 @@
     "name": "ABERCOMBIE FIRECE",
     "image": "ABERCOMBIE FIRECE.jpg",
     "category": "men",
-    "pyramidImage": "abercombie pir.png",
-    
+    "pyramidImage": "",
+    "top": "",
+    "heart": "",
+    "base": ""
   },
   {
     "name": "ANFAS ISHQ",
@@ -1102,7 +1104,9 @@
     "image": "DUBAI BEACH.jpg",
     "category": "oriental",
     "pyramidImage": "",
-   
+    "top": "",
+    "heart": "",
+    "base": ""
   },
   {
     "name": "GOLDEN SAND",
