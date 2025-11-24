@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Mein Parfüm-Katalog</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>AMM PERFUMS </h1>
+    <p>Tippe auf ein Parfüm, um Details zu sehen.</p>
+  </header>
+
+  <nav class="filters">
+    <button class="filter-btn active" data-filter="all">Alle</button>
+    <button class="filter-btn" data-filter="men">Herren</button>
+    <button class="filter-btn" data-filter="women">Damen</button>
+    <button class="filter-btn" data-filter="oriental">Orientalisch</button>
+  </nav>
+
+  <main id="grid" class="grid"></main>
+
+  <!-- Detail modal -->
+  <div id="modal" class="modal hidden" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <button id="close">✕</button>
+      <div class="detail">
+        <div class="left">
+          <img id="detail-img" src="" alt="">
+        </div>
+        <div class="right">
+          <h2 id="detail-name"></h2>
+          <p id="detail-brand" class="brand"></p>
+          <div id="notes" class="notes"></div>
+          <div class="toggles">
+            <label><input type="checkbox" id="have"> Habe ich</label>
+            <label><input type="checkbox" id="had"> Hatte ich</label>
+            <label><input type="checkbox" id="want"> Will ich</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GANZ WICHTIG: diese Zeile muss genau so sein -->
+  <script src="app.js?v=2"></script>
+</body>
+</html>
