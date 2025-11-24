@@ -1,96 +1,174 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const grid = document.getElementById("grid");
-  const modal = document.getElementById("modal");
-  const closeBtn = document.getElementById("close");
-  const detailName = document.getElementById("detail-name");
-  const detailBrand = document.getElementById("detail-brand");
-  const detailImg = document.getElementById("detail-img");
-  const notesEl = document.getElementById("notes");
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-  let allPerfumes = [];
+body {
+  margin: 0;
+  background: #f4f4f4;
+  color: #222;
+}
 
-  // Duftpyramide als Bild anzeigen (optional)
-  function renderPyramid(p) {
-    if (!p.pyramidImage) {
-      notesEl.innerHTML = "<p>Für dieses Parfüm ist noch keine Duftpyramide hinterlegt.</p>";
-      return;
-    }
+header {
+  padding: 18px;
+  text-align: center;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
 
-    notesEl.innerHTML = `
-      <img
-        src="images/${p.pyramidImage}"
-        alt="Duftpyramide von ${p.name}"
-        class="pyramid-img"
-      >
-    `;
+.filters {
+  display: flex;
+  gap: 8px;
+  padding: 10px 18px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  border: 1px solid #ccc;
+  background: #fff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.filter-btn.active {
+  background: #222;
+  color: #fff;
+  border-color: #222;
+}
+
+/* Grid: mehrere Flaschen pro Reihe */
+.grid {
+  display: grid;
+  gap: 18px;
+  padding: 18px;
+  max-width: 1200px;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+}
+
+@media (min-width: 1100px) {
+  .grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1099px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Karte: Bild oben, Name unten */
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.07);
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 6px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.card h3 {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 12px;
+  max-width: 900px;
+  width: 94%;
+  padding: 18px;
+  position: relative;
+}
+
+.detail {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+}
+
+.left img {
+  width: 260px;
+  height: 340px;
+  object-fit: contain;
+}
+
+.right {
+  flex: 1;
+}
+
+.brand {
+  color: #666;
+  margin-top: 0;
+}
+
+/* Duftpyramiden-Bereich */
+.notes {
+  margin-top: 12px;
+  text-align: center;
+}
+
+.notes .pyramid-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+#close {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  border: none;
+  background: #eee;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .detail {
+    flex-direction: column;
   }
 
-  function renderPerfumes(list) {
-    grid.innerHTML = "";
-
-    list.forEach(p => {
-      const card = document.createElement("div");
-      card.className = "card";
-
-      const img = document.createElement("img");
-      img.src = "images/" + p.image;
-      img.alt = "";
-
-      const title = document.createElement("h3");
-      title.textContent = p.name;
-
-      card.appendChild(img);
-      card.appendChild(title);
-
-      card.addEventListener("click", () => {
-        detailName.textContent = p.name;
-        detailBrand.textContent = p.brand || "";
-        detailImg.src = "images/" + p.image;
-        renderPyramid(p);
-        modal.classList.remove("hidden");
-      });
-
-      grid.appendChild(card);
-    });
+  .left img {
+    width: 100%;
+    height: auto;
   }
-
-  // Daten laden
-  fetch("perfumes.json")
-    .then(res => res.json())
-    .then(data => {
-      allPerfumes = data;
-      renderPerfumes(allPerfumes);
-    })
-    .catch(err => {
-      console.error("Fehler beim Laden der perfumes.json:", err);
-    });
-
-  // Filter (Alle / Herren / Damen / Orientalisch)
-  const filterButtons = document.querySelectorAll(".filter-btn");
-  filterButtons.forEach(btn => {
-    btn.addEventListener("click", () => {
-      filterButtons.forEach(b => b.classList.remove("active"));
-      btn.classList.add("active");
-
-      const filter = btn.dataset.filter;
-      if (filter === "all") {
-        renderPerfumes(allPerfumes);
-      } else {
-        const filtered = allPerfumes.filter(p => p.category === filter);
-        renderPerfumes(filtered);
-      }
-    });
-  });
-
-  // Modal schließen (X)
-  closeBtn.addEventListener("click", () => {
-    modal.classList.add("hidden");
-  });
-
-  // Modal schließen beim Klick auf Hintergrund
-  modal.addEventListener("click", (e) => {
-    if (e.target === modal) {
-      modal.classList.add("hidden");
-    }
-  });
-});
+}
