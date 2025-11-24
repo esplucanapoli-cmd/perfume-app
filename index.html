@@ -3,22 +3,32 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>AMM PERFUMS A Modo Mio</title>
+  <title>AMM PERFUMS</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
     <h1>AMM PERFUMS</h1>
     <p>Alle Parfüms auf dieser Liste haben nichts mit dem Original zu tun sonder sind von Ihnen Inspiriert</p>
-    <p>Tippe auf ein Parfüm, um Details zu sehen.</p>
   </header>
 
-  <nav class="filters">
-    <button class="filter-btn active" data-filter="all">Alle</button>
-    <button class="filter-btn" data-filter="men">Herren</button>
-    <button class="filter-btn" data-filter="women">Damen</button>
-    <button class="filter-btn" data-filter="oriental">Orientalisch</button>
-  </nav>
+  <section class="toolbar">
+    <nav class="filters">
+      <button class="filter-btn active" data-filter="all">Alle</button>
+      <button class="filter-btn" data-filter="men">Herren</button>
+      <button class="filter-btn" data-filter="women">Damen</button>
+      <button class="filter-btn" data-filter="oriental">Orientalisch</button>
+    </nav>
+
+    <div class="search-box">
+      <input
+        type="search"
+        id="search"
+        placeholder="Nach Parfüm suchen…"
+        autocomplete="off"
+      >
+    </div>
+  </section>
 
   <main id="grid" class="grid"></main>
 
@@ -33,6 +43,7 @@
         <div class="right">
           <h2 id="detail-name"></h2>
           <p id="detail-brand" class="brand"></p>
+
           <div id="notes" class="notes"></div>
         </div>
       </div>

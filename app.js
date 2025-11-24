@@ -6,29 +6,80 @@ document.addEventListener("DOMContentLoaded", () => {
   const detailBrand = document.getElementById("detail-brand");
   const detailImg = document.getElementById("detail-img");
   const notesEl = document.getElementById("notes");
+  const searchInput = document.getElementById("search");
+  const filterButtons = document.querySelectorAll(".filter-btn");
 
   let allPerfumes = [];
+  let currentFilter = "all";
+  let searchTerm = "";
 
-  // Duftpyramide als Bild anzeigen (optional)
+  // Duftpyramide (Bild + optional Text) rendern
   function renderPyramid(p) {
-    if (!p.pyramidImage) {
-      notesEl.innerHTML = "<p>Für dieses Parfüm ist noch keine Duftpyramide hinterlegt.</p>";
+    // Wenn du ein Bild im JSON hast: "pyramidImage": "ABERCOMBIE FIRECE PYR.jpg"
+    if (p.pyramidImage) {
+      let html = `
+        <img
+          src="images/${p.pyramidImage}"
+          alt="Duftpyramide von ${p.name}"
+          class="pyramid-img"
+        >
+      `;
+
+      // Optional: gleichzeitig Text-Noten anzeigen, wenn vorhanden
+      if (p.top || p.heart || p.base) {
+        html += `
+          <div class="note-grid">
+            <div class="note-col">
+              <h3>Kopfnote</h3>
+              <p>${p.top || "-"}</p>
+            </div>
+            <div class="note-col">
+              <h3>Herznote</h3>
+              <p>${p.heart || "-"}</p>
+            </div>
+            <div class="note-col">
+              <h3>Basisnote</h3>
+              <p>${p.base || "-"}</p>
+            </div>
+          </div>
+        `;
+      }
+
+      notesEl.innerHTML = html;
       return;
     }
 
-    notesEl.innerHTML = `
-      <img
-        src="images/${p.pyramidImage}"
-        alt="Duftpyramide von ${p.name}"
-        class="pyramid-img"
-      >
-    `;
+    // Kein Bild, aber evtl. Textnoten
+    if (p.top || p.heart || p.base) {
+      notesEl.innerHTML = `
+        <div class="note-grid">
+          <div class="note-col">
+            <h3>Kopfnote</h3>
+            <p>${p.top || "-"}</p>
+          </div>
+          <div class="note-col">
+            <h3>Herznote</h3>
+            <p>${p.heart || "-"}</p>
+          </div>
+          <div class="note-col">
+            <h3>Basisnote</h3>
+            <p>${p.base || "-"}</p>
+          </div>
+        </div>
+      `;
+      return;
+    }
+
+    // Nichts hinterlegt
+    notesEl.innerHTML =
+      '<p class="notes-empty">Für dieses Parfüm ist noch keine Duftpyramide hinterlegt.</p>';
   }
 
+  // Karten rendern
   function renderPerfumes(list) {
     grid.innerHTML = "";
 
-    list.forEach(p => {
+    list.forEach((p) => {
       const card = document.createElement("div");
       card.className = "card";
 
@@ -54,40 +105,54 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // Filter + Suche kombinieren
+  function applyFilters() {
+    const term = searchTerm.trim().toLowerCase();
+
+    const filtered = allPerfumes.filter((p) => {
+      const matchCategory =
+        currentFilter === "all" || p.category === currentFilter;
+      const matchSearch =
+        !term || p.name.toLowerCase().includes(term);
+      return matchCategory && matchSearch;
+    });
+
+    renderPerfumes(filtered);
+  }
+
   // Daten laden
   fetch("perfumes.json")
-    .then(res => res.json())
-    .then(data => {
+    .then((res) => res.json())
+    .then((data) => {
       allPerfumes = data;
-      renderPerfumes(allPerfumes);
+      applyFilters();
     })
-    .catch(err => {
+    .catch((err) => {
       console.error("Fehler beim Laden der perfumes.json:", err);
     });
 
-  // Filter (Alle / Herren / Damen / Orientalisch)
-  const filterButtons = document.querySelectorAll(".filter-btn");
-  filterButtons.forEach(btn => {
+  // Kategorie-Buttons
+  filterButtons.forEach((btn) => {
     btn.addEventListener("click", () => {
-      filterButtons.forEach(b => b.classList.remove("active"));
+      filterButtons.forEach((b) => b.classList.remove("active"));
       btn.classList.add("active");
 
-      const filter = btn.dataset.filter;
-      if (filter === "all") {
-        renderPerfumes(allPerfumes);
-      } else {
-        const filtered = allPerfumes.filter(p => p.category === filter);
-        renderPerfumes(filtered);
-      }
+      currentFilter = btn.dataset.filter || "all";
+      applyFilters();
     });
   });
 
-  // Modal schließen (X)
+  // Suche
+  searchInput.addEventListener("input", (e) => {
+    searchTerm = e.target.value;
+    applyFilters();
+  });
+
+  // Modal schließen
   closeBtn.addEventListener("click", () => {
     modal.classList.add("hidden");
   });
 
-  // Modal schließen beim Klick auf Hintergrund
   modal.addEventListener("click", (e) => {
     if (e.target === modal) {
       modal.classList.add("hidden");

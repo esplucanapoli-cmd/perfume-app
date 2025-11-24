@@ -3,12 +3,14 @@
     "name": "ABERCOMBIE FIRECE",
     "image": "ABERCOMBIE FIRECE.jpg",
     "category": "men",
-    "pyramidImage": "ABERCOMBIE FIRECE PYR.jpg"
+    "pyramidImage": "ABERCOMBIE FIRECE PYR.jpg",
+    "top": "Zitrusfrüchte, Kardamom",
+    "heart": "Lavendel, Rosmarin",
+    "base": "Moschus, Hölzer"
   },
   {
     "name": "ANFAS ISHQ",
     "image": "anfas_ishq.jpg",
-    "category": "men",
-    "pyramidImage": "anfas_ishq_pyr.jpg"
+    "category": "men"
   }
 ]
