@@ -5,23 +5,21 @@ document.addEventListener("DOMContentLoaded", () => {
   const detailName = document.getElementById("detail-name");
   const detailBrand = document.getElementById("detail-brand");
   const detailImg = document.getElementById("detail-img");
-  const notesEl = document.getElementById("notes"); // benutzen wir für die Duftpyramide
+  const notesEl = document.getElementById("notes");
 
   let allPerfumes = [];
 
-  // Duftpyramide als BILD anzeigen
+  // Duftpyramide als Bild anzeigen (optional)
   function renderPyramid(p) {
-    // Wenn du in perfumes.json ein Feld "pyramidImage" hast:
-    // z.B. "pyramidImage": "ABERCOMBIE FIRECE PYR.jpg"
     if (!p.pyramidImage) {
       notesEl.innerHTML = "<p>Für dieses Parfüm ist noch keine Duftpyramide hinterlegt.</p>";
       return;
     }
 
     notesEl.innerHTML = `
-      <img 
-        src="images/${p.pyramidImage}" 
-        alt="Duftpyramide von ${p.name}" 
+      <img
+        src="images/${p.pyramidImage}"
+        alt="Duftpyramide von ${p.name}"
         class="pyramid-img"
       >
     `;
@@ -36,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const img = document.createElement("img");
       img.src = "images/" + p.image;
-      img.alt = ""; // kein doppelter Name
+      img.alt = "";
 
       const title = document.createElement("h3");
       title.textContent = p.name;
@@ -44,10 +42,9 @@ document.addEventListener("DOMContentLoaded", () => {
       card.appendChild(img);
       card.appendChild(title);
 
-      // Klick auf die Flasche -> Detail-Fenster
       card.addEventListener("click", () => {
         detailName.textContent = p.name;
-        detailBrand.textContent = p.brand || ""; // optional, wenn du mal Marken einbauen willst
+        detailBrand.textContent = p.brand || "";
         detailImg.src = "images/" + p.image;
         renderPyramid(p);
         modal.classList.remove("hidden");
@@ -57,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Daten aus perfumes.json laden
+  // Daten laden
   fetch("perfumes.json")
     .then(res => res.json())
     .then(data => {
@@ -68,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
       console.error("Fehler beim Laden der perfumes.json:", err);
     });
 
-  // Filter-Buttons (Alle / Herren / Damen / Orientalisch)
+  // Filter (Alle / Herren / Damen / Orientalisch)
   const filterButtons = document.querySelectorAll(".filter-btn");
   filterButtons.forEach(btn => {
     btn.addEventListener("click", () => {
@@ -85,12 +82,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Modal schließen (X-Button)
+  // Modal schließen (X)
   closeBtn.addEventListener("click", () => {
     modal.classList.add("hidden");
   });
 
-  // Modal schließen beim Klick auf den dunklen Hintergrund
+  // Modal schließen beim Klick auf Hintergrund
   modal.addEventListener("click", (e) => {
     if (e.target === modal) {
       modal.classList.add("hidden");
