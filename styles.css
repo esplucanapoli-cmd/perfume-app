@@ -22,80 +22,15 @@ document.addEventListener("DOMContentLoaded", () => {
       </div>
       <div class="note-col">
         <h3>Herznote</h3>
-        <p>${p.heart || "-"}</p>
-      </div>
-      <div class="note-col">
-        <h3>Basisnote</h3>
-        <p>${p.base || "-"}</p>
-      </div>
-    `;
-  }
+        <p>${p.heart || "-"}</p>/* Duftpyramide im Detail-Fenster */
+.notes {
+  margin-top: 12px;
+  text-align: center;
+}
 
-  function renderPerfumes(list) {
-    grid.innerHTML = "";
-
-    list.forEach(p => {
-      const card = document.createElement("div");
-      card.className = "card";
-
-      const img = document.createElement("img");
-      img.src = "images/" + p.image;
-      img.alt = "";
-
-      const title = document.createElement("h3");
-      title.textContent = p.name;
-
-      card.appendChild(img);
-      card.appendChild(title);
-
-      card.addEventListener("click", () => {
-        detailName.textContent = p.name;
-        detailBrand.textContent = p.brand || ""; // optional
-        detailImg.src = "images/" + p.image;
-        renderNotes(p);
-        modal.classList.remove("hidden");
-      });
-
-      grid.appendChild(card);
-    });
-  }
-
-  // Daten laden
-  fetch("perfumes.json")
-    .then(res => res.json())
-    .then(data => {
-      allPerfumes = data;
-      renderPerfumes(allPerfumes);
-    })
-    .catch(err => {
-      console.error("Fehler beim Laden der perfumes.json:", err);
-    });
-
-  // Filter
-  const filterButtons = document.querySelectorAll(".filter-btn");
-  filterButtons.forEach(btn => {
-    btn.addEventListener("click", () => {
-      filterButtons.forEach(b => b.classList.remove("active"));
-      btn.classList.add("active");
-
-      const filter = btn.dataset.filter;
-      if (filter === "all") {
-        renderPerfumes(allPerfumes);
-      } else {
-        const filtered = allPerfumes.filter(p => p.category === filter);
-        renderPerfumes(filtered);
-      }
-    });
-  });
-
-  // Modal schließen
-  closeBtn.addEventListener("click", () => {
-    modal.classList.add("hidden");
-  });
-
-  modal.addEventListener("click", (e) => {
-    if (e.target === modal) {
-      modal.classList.add("hidden");
-    }
-  });
-});
+.notes .pyramid-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
