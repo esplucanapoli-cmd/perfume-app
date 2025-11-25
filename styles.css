@@ -200,6 +200,19 @@ header p {
   border-radius: 16px;
   background: #f9fafb;
 }
+/* TEST: Im Modal nur die Duftpyramide anzeigen (Flasche ausblenden) */
+.left {
+  display: none;
+}
+
+.detail {
+  justify-content: center;
+}
+
+.right {
+  flex: 1;
+  text-align: center;
+}
 
 .right {
   flex: 1;
