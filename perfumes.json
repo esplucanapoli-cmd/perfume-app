@@ -1,18 +1,18 @@
 [
   {
     "name": "ABERCOMBIE FIRECE",
-    "image": "abercombie firece.jpg",
+    "image": "abercombie_firece.jpg",
     "category": "men",
-    "pyramidImage": "abercombie pir.png",
+    "pyramidImage": "abercombie.png",
     "top": "",
     "heart": "",
     "base": ""
   },
   {
     "name": "ANFAS ISHQ",
-    "image": "anfas ishq.jpg",
+    "image": "anfas_ishq.jpg",
     "category": "men",
-    "pyramidImage": "anfas ishq.jpg",
+    "pyramidImage": "anfasishq.jpg",
     "top": "",
     "heart": "",
     "base": ""
