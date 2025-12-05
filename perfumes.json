@@ -1,66 +1,46 @@
 [
   {
     "name": "ABERCOMBIE FIRECE",
-    "image": "abercombie firece.jpg",
+    "image": "abercombiefirece.jpg",
     "category": "men",
-    "pyramidImage": "abercombie.png",
-    "top": "",
-    "heart": "",
-    "base": ""
-  },
+    "pyramidImage": "Abercombie.png",
+  
   {
     "name": "ANFAS ISHQ",
     "image": "anfas ishq.jpg",
     "category": "men",
     "pyramidImage": "anfasishq.jpg",
-    "top": "",
-    "heart": "",
-    "base": ""
-  },
+  
   {
     "name": "AVENTUS CREED",
     "image": "AVENTUS CREED.jpg",
     "category": "men",
     "pyramidImage": "",
-    "top": "",
-    "heart": "",
-    "base": ""
-  },
+    
   {
     "name": "AVENTUS COLOGNE",
     "image": "AVENTUS COLOGNE.jpg",
     "category": "men",
     "pyramidImage": "",
-    "top": "",
-    "heart": "",
-    "base": ""
-  },
+   
   {
     "name": "KILIAN ANGEL SHARE",
     "image": "KILIAN ANGEL SHARE.jpg",
     "category": "men",
     "pyramidImage": "",
-    "top": "",
-    "heart": "",
-    "base": ""
-  },
+    
   {
     "name": "BDK VELVET TONKA",
     "image": "BDK VELVET TONKA.jpg",
     "category": "men",
     "pyramidImage": "",
-    "top": "",
-    "heart": "",
-    "base": ""
-  },
+   
   {
     "name": "BACCARAT ROUGE",
     "image": "BACCARAT ROUGE.jpg",
     "category": "men",
     "pyramidImage": "",
-    "top": "",
-    "heart": "",
-    "base": ""
+    
   },
   {
     "name": "CHANEL BLEU",
