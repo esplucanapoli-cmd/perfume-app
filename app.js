@@ -2,10 +2,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const grid = document.getElementById("grid");
   const modal = document.getElementById("modal");
   const closeBtn = document.getElementById("close");
+
   const detailName = document.getElementById("detail-name");
   const detailBrand = document.getElementById("detail-brand");
   const detailImg = document.getElementById("detail-img");
   const notesEl = document.getElementById("notes");
+
   const searchInput = document.getElementById("search");
   const filterButtons = document.querySelectorAll(".filter-btn");
 
@@ -13,69 +15,51 @@ document.addEventListener("DOMContentLoaded", () => {
   let currentFilter = "all";
   let searchTerm = "";
 
-  // Duftpyramide (Bild + optional Text) rendern
+  /* ======================================================
+     DUFTPYRAMIDE RENDERN (Bild + Noten)
+  ====================================================== */
   function renderPyramid(p) {
-    // Wenn du ein Bild im JSON hast: "pyramidImage": "ABERCOMBIE FIRECE PYR.jpg"
+    // Bild vorhanden?
     if (p.pyramidImage) {
       let html = `
-        <img
-          src="images/${p.pyramidImage}"
-          alt="Duftpyramide von ${p.name}"
-          class="pyramid-img"
-        >
+        <img src="images/${p.pyramidImage}" 
+             alt="Duftpyramide von ${p.name}"
+             class="pyramid-img">
       `;
 
-      // Optional: gleichzeitig Text-Noten anzeigen, wenn vorhanden
+      // Falls Noten existieren
       if (p.top || p.heart || p.base) {
         html += `
           <div class="note-grid">
-            <div class="note-col">
-              <h3>Kopfnote</h3>
-              <p>${p.top || "-"}</p>
-            </div>
-            <div class="note-col">
-              <h3>Herznote</h3>
-              <p>${p.heart || "-"}</p>
-            </div>
-            <div class="note-col">
-              <h3>Basisnote</h3>
-              <p>${p.base || "-"}</p>
-            </div>
-          </div>
-        `;
+            <div class="note-col"><h3>Kopfnote</h3><p>${p.top || "-"}</p></div>
+            <div class="note-col"><h3>Herznote</h3><p>${p.heart || "-"}</p></div>
+            <div class="note-col"><h3>Basisnote</h3><p>${p.base || "-"}</p></div>
+          </div>`;
       }
 
       notesEl.innerHTML = html;
       return;
     }
 
-    // Kein Bild, aber evtl. Textnoten
+    // Falls kein Bild, aber Noten
     if (p.top || p.heart || p.base) {
       notesEl.innerHTML = `
         <div class="note-grid">
-          <div class="note-col">
-            <h3>Kopfnote</h3>
-            <p>${p.top || "-"}</p>
-          </div>
-          <div class="note-col">
-            <h3>Herznote</h3>
-            <p>${p.heart || "-"}</p>
-          </div>
-          <div class="note-col">
-            <h3>Basisnote</h3>
-            <p>${p.base || "-"}</p>
-          </div>
-        </div>
-      `;
+          <div class="note-col"><h3>Kopfnote</h3><p>${p.top || "-"}</p></div>
+          <div class="note-col"><h3>Herznote</h3><p>${p.heart || "-"}</p></div>
+          <div class="note-col"><h3>Basisnote</h3><p>${p.base || "-"}</p></div>
+        </div>`;
       return;
     }
 
-    // Nichts hinterlegt
+    // Nichts vorhanden
     notesEl.innerHTML =
       '<p class="notes-empty">Für dieses Parfüm ist noch keine Duftpyramide hinterlegt.</p>';
   }
 
-  // Karten rendern
+  /* ======================================================
+     KARTEN RENDERN
+  ====================================================== */
   function renderPerfumes(list) {
     grid.innerHTML = "";
 
@@ -85,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const img = document.createElement("img");
       img.src = "images/" + p.image;
-      img.alt = "";
+      img.alt = p.name;
 
       const title = document.createElement("h3");
       title.textContent = p.name;
@@ -105,33 +89,52 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Filter + Suche kombinieren
+  /* ======================================================
+     FILTER + SUCHE KOMBINIERT
+     – mit neuer Unisex-Logik
+  ====================================================== */
   function applyFilters() {
     const term = searchTerm.trim().toLowerCase();
 
     const filtered = allPerfumes.filter((p) => {
-      const matchCategory =
-        currentFilter === "all" || p.category === currentFilter;
-      const matchSearch =
-        !term || p.name.toLowerCase().includes(term);
+      const isMen = p.category === "men";
+      const isWomen = p.category === "women";
+      const isUnisex = p.category === "unisex";
+
+      let matchCategory = false;
+
+      if (currentFilter === "all") {
+        matchCategory = true; // alles anzeigen
+      } else if (currentFilter === "men") {
+        matchCategory = isMen || isUnisex;
+      } else if (currentFilter === "women") {
+        matchCategory = isWomen || isUnisex;
+      }
+
+      const matchSearch = !term || p.name.toLowerCase().includes(term);
+
       return matchCategory && matchSearch;
     });
 
     renderPerfumes(filtered);
   }
 
-  // Daten laden
+  /* ======================================================
+     JSON LADEN
+  ====================================================== */
   fetch("perfumes.json")
     .then((res) => res.json())
     .then((data) => {
       allPerfumes = data;
       applyFilters();
     })
-    .catch((err) => {
-      console.error("Fehler beim Laden der perfumes.json:", err);
-    });
+    .catch((err) =>
+      console.error("Fehler beim Laden der perfumes.json:", err)
+    );
 
-  // Kategorie-Buttons
+  /* ======================================================
+     KATEGORIE-BUTTONS
+  ====================================================== */
   filterButtons.forEach((btn) => {
     btn.addEventListener("click", () => {
       filterButtons.forEach((b) => b.classList.remove("active"));
@@ -142,20 +145,20 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Suche
+  /* ======================================================
+     SUCHE
+  ====================================================== */
   searchInput.addEventListener("input", (e) => {
     searchTerm = e.target.value;
     applyFilters();
   });
 
-  // Modal schließen
-  closeBtn.addEventListener("click", () => {
-    modal.classList.add("hidden");
-  });
+  /* ======================================================
+     MODAL SCHLIEßEN
+  ====================================================== */
+  closeBtn.addEventListener("click", () => modal.classList.add("hidden"));
 
   modal.addEventListener("click", (e) => {
-    if (e.target === modal) {
-      modal.classList.add("hidden");
-    }
+    if (e.target === modal) modal.classList.add("hidden");
   });
 });
