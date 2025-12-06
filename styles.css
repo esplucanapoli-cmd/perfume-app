@@ -18,8 +18,8 @@ header {
 /* Untertitel */
 .subtitle {
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    margin-top: -10px;
+    margin-bottom: 20px;
     font-size: 14px;
 }
 
@@ -27,19 +27,11 @@ header {
 .filter-container {
     width: 100%;
     display: flex;
-    justify-content: space-between; /* Links & rechts verteilen */
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
-    padding: 0 40px; /* Gleicher Abstand wie vorher links */
+    padding: 0 40px;
 }
-
-/* Linke & rechte Button-Gruppen */
-.left-buttons,
-.right-buttons {
-    display: flex;
-    gap: 10px;
-}
-
 
 .filter-btn {
     padding: 7px 18px;
@@ -100,4 +92,11 @@ header {
 .perfume-name {
     font-weight: bold;
     font-size: 14px;
+}
+
+
+.left-buttons,
+.right-buttons {
+    display: flex;
+    gap: 10px;
 }
