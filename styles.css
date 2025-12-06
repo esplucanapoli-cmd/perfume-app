@@ -64,8 +64,6 @@ header {
     margin-bottom: 30px;
 }
 
-
-
 .center-buttons {
     display: flex;
     justify-content: center;  /* Buttons in der Mitte */
@@ -125,17 +123,4 @@ header {
     display: flex;
     justify-content: center;
     gap: 10px;
-}
-/* Suchfeld vergrößern (spezifisch, überschreibt alles) */
-.search-box input#searchInput {
-    width: 300px !important;
-    padding: 12px 14px !important;
-    font-size: 16px !important;
-}
-/* Herren / Unisex / Damen deutlich länger machen */
-.search-box .center-buttons .filter-btn {
-    padding: 12px 26px !important;   /* etwas höher + breiter */
-    font-size: 15px !important;
-    min-width: 160px !important;      /* wichtige Einstellung: sorgt für sichtbare Länge */
-    text-align: center;
 }
