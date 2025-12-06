@@ -1,13 +1,10 @@
 [
- [
   {
     "name": "Abercrombie & Fitch Fierce",
     "image": "abercombiefirece.jpg",
     "category": "men",
-    "detailImage": "fierce_test_detail.jpg"
+    "detailImage": "abercombiefirece_detail.jpg"
   },
-  
-
   {
     "name": "Arabian Oud Madawi",
     "image": "arabian oud madawi.jpg",
@@ -219,18 +216,6 @@
     "detailImage": "Initio afrodisac_detail.jpg"
   },
   {
-    "name": "Initio Parfums Privés Absolute Aphrodisiac",
-    "image": "Initio afrodisac.jpg",
-    "category": "men",
-    "detailImage": "Initio afrodisac_detail.jpg"
-  },
-  {
-    "name": "Initio Parfums Privés Absolute Aphrodisiac",
-    "image": "Initio afrodisac.jpg",
-    "category": "women",
-    "detailImage": "Initio afrodisac_detail.jpg"
-  },
-  {
     "name": "Initio Parfums Privés Oud for Greatness",
     "image": "Inito Oud For Greatness.jpg",
     "category": "men",
@@ -295,30 +280,6 @@
     "image": "Kilian Angel share.jpg",
     "category": "women",
     "detailImage": "Kilian Angel share_detail.jpg"
-  },
-  {
-    "name": "KILIAN Paris Angel Share",
-    "image": "Kilian Angel share.jpg",
-    "category": "men",
-    "detailImage": "Kilian Angel share_detail.jpg"
-  },
-  {
-    "name": "KILIAN Paris Angel Share",
-    "image": "Kilian Angel share.jpg",
-    "category": "women",
-    "detailImage": "Kilian Angel share_detail.jpg"
-  },
-  {
-    "name": "KILIAN Paris Straight to Heaven",
-    "image": "Kilian STraight to Haven.jpg",
-    "category": "men",
-    "detailImage": "Kilian STraight to Haven_detail.jpg"
-  },
-  {
-    "name": "KILIAN Paris Straight to Heaven",
-    "image": "Kilian STraight to Haven.jpg",
-    "category": "women",
-    "detailImage": "Kilian STraight to Haven_detail.jpg"
   },
   {
     "name": "KILIAN Paris Straight to Heaven",
@@ -415,12 +376,6 @@
     "image": "mont blanc Legend.jpg",
     "category": "men",
     "detailImage": "mont blanc Legend_detail.jpg"
-  },
-  {
-    "name": "Montblanc Legend Night",
-    "image": "Mont Blanc Legend Night.jpg",
-    "category": "men",
-    "detailImage": "Mont Blanc Legend Night_detail.jpg"
   },
   {
     "name": "Montblanc Legend Night",
@@ -789,18 +744,6 @@
     "detailImage": "Widian London_detail.jpg"
   },
   {
-    "name": "Widian London",
-    "image": "Widian London.jpg",
-    "category": "men",
-    "detailImage": "Widian London_detail.jpg"
-  },
-  {
-    "name": "Widian London",
-    "image": "Widian London.jpg",
-    "category": "women",
-    "detailImage": "Widian London_detail.jpg"
-  },
-  {
     "name": "Xerjoff Accento",
     "image": "Xerjoff Accento.jpg",
     "category": "men",
@@ -823,18 +766,6 @@
     "image": "Xerjoff Alexandria 2.jpg",
     "category": "women",
     "detailImage": "Xerjoff Alexandria 2_detail.jpg"
-  },
-  {
-    "name": "Xerjoff Amber Star",
-    "image": "Xerjoff Amber Star.jpg",
-    "category": "men",
-    "detailImage": "Xerjoff Amber Star_detail.jpg"
-  },
-  {
-    "name": "Xerjoff Amber Star",
-    "image": "Xerjoff Amber Star.jpg",
-    "category": "women",
-    "detailImage": "Xerjoff Amber Star_detail.jpg"
   },
   {
     "name": "Xerjoff Amber Star",
@@ -897,30 +828,6 @@
     "detailImage": "Xerjoff La capitale_detail.jpg"
   },
   {
-    "name": "Xerjoff La Capitale",
-    "image": "Xerjoff La capitale.jpg",
-    "category": "men",
-    "detailImage": "Xerjoff La capitale_detail.jpg"
-  },
-  {
-    "name": "Xerjoff La Capitale",
-    "image": "Xerjoff La capitale.jpg",
-    "category": "women",
-    "detailImage": "Xerjoff La capitale_detail.jpg"
-  },
-  {
-    "name": "Xerjoff Lira",
-    "image": "Xerjoff Lira.jpg",
-    "category": "men",
-    "detailImage": "Xerjoff Lira_detail.jpg"
-  },
-  {
-    "name": "Xerjoff Lira",
-    "image": "Xerjoff Lira.jpg",
-    "category": "women",
-    "detailImage": "Xerjoff Lira_detail.jpg"
-  },
-  {
     "name": "Xerjoff Lira",
     "image": "Xerjoff Lira.jpg",
     "category": "men",
@@ -957,18 +864,6 @@
     "detailImage": "Xerjoff Overture_detail.jpg"
   },
   {
-    "name": "Xerjoff Overture",
-    "image": "Xerjoff Overture.jpg",
-    "category": "men",
-    "detailImage": "Xerjoff Overture_detail.jpg"
-  },
-  {
-    "name": "Xerjoff Overture",
-    "image": "Xerjoff Overture.jpg",
-    "category": "women",
-    "detailImage": "Xerjoff Overture_detail.jpg"
-  },
-  {
     "name": "Xerjoff Tony Iommi Monkey Special",
     "image": "xerjoff tony jommy.jpg",
     "category": "men",
@@ -991,18 +886,6 @@
     "image": "tornio 21.jpg",
     "category": "women",
     "detailImage": "tornio 21_detail.jpg"
-  },
-  {
-    "name": "Xerjoff Torino 21",
-    "image": "Xerjoff Torino 21.jpg",
-    "category": "men",
-    "detailImage": "Xerjoff Torino 21_detail.jpg"
-  },
-  {
-    "name": "Xerjoff Torino 21",
-    "image": "Xerjoff Torino 21.jpg",
-    "category": "women",
-    "detailImage": "Xerjoff Torino 21_detail.jpg"
   },
   {
     "name": "Xerjoff Uden",
