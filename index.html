@@ -17,6 +17,7 @@
   <!-- Filterbereich -->
   <section class="filter-area">
 
+      <!-- Buttons mittig + leicht rechts -->
       <div class="centered-filters">
           <button class="filter-btn" onclick="filterPerfumes('all')">Alle</button>
           <button class="filter-btn" onclick="filterPerfumes('men')">Herren</button>
@@ -24,6 +25,7 @@
           <button class="filter-btn" onclick="filterPerfumes('women')">Damen</button>
       </div>
 
+      <!-- Suche unter den Buttons, zentriert -->
       <div class="search-box">
           <input type="search" id="search" placeholder="Nach Parfüm suchen…" autocomplete="off">
       </div>
@@ -31,25 +33,6 @@
   </section>
 
   <main id="grid" class="perfume-grid"></main>
-
-  <div id="modal" class="modal hidden" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-      <button id="close" aria-label="Schließen">✕</button>
-
-      <div class="detail">
-        <div class="left">
-          <img id="detail-img" src="" alt="">
-        </div>
-
-        <div class="right">
-          <h2 id="detail-name"></h2>
-          <p id="detail-brand" class="brand"></p>
-          <div id="notes"></div>
-        </div>
-      </div>
-
-    </div>
-  </div>
 
   <script src="app.js"></script>
 </body>
