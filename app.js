@@ -1,20 +1,32 @@
 let allPerfumes = [];
 
-// DOM geladen
+// Warten, bis das DOM geladen ist
 document.addEventListener("DOMContentLoaded", () => {
     loadPerfumes();
 });
 
-// JSON laden
+// Daten laden
 function loadPerfumes() {
     fetch("perfumes.json")
-        .then(r => r.json())
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("HTTP-Status " + response.status);
+            }
+            return response.json();
+        })
         .then(data => {
             allPerfumes = data;
             displayPerfumes(allPerfumes);
         })
         .catch(err => {
             console.error("Fehler beim Laden von perfumes.json:", err);
+            const grid = document.getElementById("perfumeGrid");
+            grid.innerHTML = `
+                <div style="grid-column: 1 / -1; color: red; text-align: center;">
+                    Fehler beim Laden der Parfüm-Daten. Prüfe, ob die Datei <strong>perfumes.json</strong> im gleichen Ordner liegt
+                    und die Seite über einen Webserver (nicht direkt per Doppelklick) geöffnet wird.
+                </div>
+            `;
         });
 }
 
@@ -27,21 +39,8 @@ function displayPerfumes(list) {
         const card = document.createElement("div");
         card.classList.add("perfume-card");
 
-        // Thumbnail: Flaschenbild
-        let thumbSrc = p.image || "";
-        if (thumbSrc && !thumbSrc.toLowerCase().startsWith("images/")) {
-            thumbSrc = "images/" + thumbSrc;
-        }
-
-        
-        l// Detailbild: Duftpyramide ohne festes images/-Prefix
-let detailSrc = p.detailImage || p.image || "";
-
-
-        card.onclick = () => openModal(detailSrc, p.name);
-
         card.innerHTML = `
-            <img src="${thumbSrc}" alt="${p.name}">
+            <img src="${p.image}" alt="${p.name}">
             <div class="perfume-name">${p.name}</div>
         `;
 
@@ -49,23 +48,7 @@ let detailSrc = p.detailImage || p.image || "";
     });
 }
 
-// Modal öffnen
-function openModal(imgSrc, name) {
-    const modal = document.getElementById("imageModal");
-    const modalImg = document.getElementById("modalImg");
-    const caption = document.getElementById("modalCaption");
-
-    modal.style.display = "block";
-    modalImg.src = imgSrc;
-    caption.innerText = name;
-}
-
-// Modal schließen
-function closeModal() {
-    document.getElementById("imageModal").style.display = "none";
-}
-
-// Filter
+// Filter-Funktion
 function filterPerfumes(category, btn) {
     document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
     if (btn) btn.classList.add("active");
@@ -80,5 +63,6 @@ function filterPerfumes(category, btn) {
 // Suche
 function searchPerfumes() {
     const q = document.getElementById("searchInput").value.toLowerCase();
-    displayPerfumes(allPerfumes.filter(p => p.name.toLowerCase().includes(q)));
+    const filtered = allPerfumes.filter(p => p.name.toLowerCase().includes(q));
+    displayPerfumes(filtered);
 }
