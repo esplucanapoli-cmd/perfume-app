@@ -1,18 +1,24 @@
 let allPerfumes = [];
 
+// DOM geladen
 document.addEventListener("DOMContentLoaded", () => {
     loadPerfumes();
 });
 
+// JSON laden
 function loadPerfumes() {
     fetch("perfumes.json")
         .then(r => r.json())
         .then(data => {
             allPerfumes = data;
             displayPerfumes(allPerfumes);
+        })
+        .catch(err => {
+            console.error("Fehler beim Laden von perfumes.json:", err);
         });
 }
 
+// Anzeige der Parfums
 function displayPerfumes(list) {
     const grid = document.getElementById("perfumeGrid");
     grid.innerHTML = "";
@@ -32,6 +38,7 @@ function displayPerfumes(list) {
     });
 }
 
+// Modal öffnen
 function openModal(imgSrc, name) {
     const modal = document.getElementById("imageModal");
     const modalImg = document.getElementById("modalImg");
@@ -42,10 +49,12 @@ function openModal(imgSrc, name) {
     caption.innerText = name;
 }
 
+// Modal schließen
 function closeModal() {
     document.getElementById("imageModal").style.display = "none";
 }
 
+// Filter
 function filterPerfumes(category, btn) {
     document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
     if (btn) btn.classList.add("active");
@@ -57,6 +66,7 @@ function filterPerfumes(category, btn) {
     }
 }
 
+// Suche
 function searchPerfumes() {
     const q = document.getElementById("searchInput").value.toLowerCase();
     displayPerfumes(allPerfumes.filter(p => p.name.toLowerCase().includes(q)));
