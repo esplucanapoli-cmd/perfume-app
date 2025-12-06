@@ -13,11 +13,17 @@
 
 <!-- Buttons -->
 <div class="filter-container">
-    <button class="filter-btn active" onclick="filterPerfumes('all')">Alle</button>
-    <button class="filter-btn" onclick="filterPerfumes('men')">Herren</button>
-    <button class="filter-btn" onclick="filterPerfumes('unisex')">Unisex</button>
-    <button class="filter-btn" onclick="filterPerfumes('women')">Damen</button>
+    <div class="left-buttons">
+        <button class="filter-btn active" onclick="filterPerfumes('all', this)">Alle</button>
+    </div>
+
+    <div class="right-buttons">
+        <button class="filter-btn" onclick="filterPerfumes('men', this)">Herren</button>
+        <button class="filter-btn" onclick="filterPerfumes('unisex', this)">Unisex</button>
+        <button class="filter-btn" onclick="filterPerfumes('women', this)">Damen</button>
+    </div>
 </div>
+
 
 <!-- Suche -->
 <div class="search-box">
