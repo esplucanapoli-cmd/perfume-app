@@ -13,19 +13,15 @@
 
 <!-- Buttons -->
 <div class="filter-container">
-    <div class="left-buttons">
-        <button class="filter-btn active" onclick="filterPerfumes('all', this)">Alle</button>
-    </div>
+    <button class="filter-btn active" onclick="filterPerfumes('all', this)">Alle</button>
+</div>
 
-    <div class="right-buttons">
+<div class="search-box">
+    <div class="center-buttons">
         <button class="filter-btn" onclick="filterPerfumes('men', this)">Herren</button>
         <button class="filter-btn" onclick="filterPerfumes('unisex', this)">Unisex</button>
         <button class="filter-btn" onclick="filterPerfumes('women', this)">Damen</button>
     </div>
-</div>
-
-<!-- Suche -->
-<div class="search-box">
     <input type="text" id="searchInput" onkeyup="searchPerfumes()" placeholder="Nach Parfüm suchen...">
 </div>
 
