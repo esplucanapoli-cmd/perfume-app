@@ -33,11 +33,10 @@ function displayPerfumes(list) {
             thumbSrc = "images/" + thumbSrc;
         }
 
-        // Detailbild: Duftpyramide (fallback auf Flaschenbild)
-        let detailSrc = p.detailImage || p.image || "";
-        if (detailSrc && !detailSrc.toLowerCase().startsWith("images/")) {
-            detailSrc = "images/" + detailSrc;
-        }
+        
+        l// Detailbild: Duftpyramide ohne festes images/-Prefix
+let detailSrc = p.detailImage || p.image || "";
+
 
         card.onclick = () => openModal(detailSrc, p.name);
 
