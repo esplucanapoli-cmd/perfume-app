@@ -56,12 +56,20 @@ header {
     margin-bottom: 30px;
 }
 
-.search-box input {
-    width: 300px;
-    padding: 8px 14px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
+.search-box {
+    display: flex;
+    flex-direction: column;   /* WICHTIG: Buttons oben, Suchfeld darunter */
+    align-items: center;      /* Zentriert alles */
+    gap: 15px;                /* Abstand zwischen Buttons und Suchfeld */
+    margin-bottom: 30px;
 }
+
+.center-buttons {
+    display: flex;
+    justify-content: center;  /* Buttons in der Mitte */
+    gap: 15px;
+}
+
 
 /* GRID → **5 Parfums pro Reihe** */
 .perfume-grid {
