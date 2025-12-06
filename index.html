@@ -14,8 +14,10 @@
     <p>Alle Parfüms auf dieser Liste haben nichts mit dem Original zu tun, sondern sind nur von ihnen inspiriert.</p>
   </header>
 
-  <!-- FILTERBEREICH: Buttons in der Mitte -->
+  <!-- Filterbereich -->
   <section class="filter-area">
+
+      <!-- Buttons leicht nach rechts verschoben -->
       <div class="centered-filters">
           <button class="filter-btn" onclick="filterPerfumes('all')">Alle</button>
           <button class="filter-btn" onclick="filterPerfumes('men')">Herren</button>
@@ -23,18 +25,17 @@
           <button class="filter-btn" onclick="filterPerfumes('women')">Damen</button>
       </div>
 
+      <!-- Suche rechts -->
       <div class="search-box">
-          <input
-            type="search"
-            id="search"
-            placeholder="Nach Parfüm suchen…"
-            autocomplete="off"
-          >
+          <input type="search" id="search" placeholder="Nach Parfüm suchen…" autocomplete="off">
       </div>
+
   </section>
 
+  <!-- Grid -->
   <main id="grid" class="perfume-grid"></main>
 
+  <!-- Modal -->
   <div id="modal" class="modal hidden" role="dialog" aria-hidden="true">
     <div class="modal-content">
       <button id="close" aria-label="Schließen">✕</button>
@@ -47,8 +48,7 @@
         <div class="right">
           <h2 id="detail-name"></h2>
           <p id="detail-brand" class="brand"></p>
-
-          <div id="notes" class="notes"></div>
+          <div id="notes"></div>
         </div>
       </div>
 
