@@ -132,3 +132,8 @@ header {
     padding: 12px 14px !important;
     font-size: 16px !important;
 }
+/* Filter-Buttons (Herren / Unisex / Damen) etwas größer machen */
+.filter-btn {
+    padding: 10px 22px !important;  /* höher + länger */
+    font-size: 15px !important;     /* minimal größere Schrift */
+}
