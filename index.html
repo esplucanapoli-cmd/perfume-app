@@ -14,14 +14,16 @@
 
   <section class="toolbar">
     <nav class="filters">
-   <div class="filter-buttons">
-    <button class="filter-btn active" data-filter="all">Alle</button>
-    <button class="filter-btn" data-filter="men">Herren</button>
-    <button class="filter-btn" data-filter="women">Damen</button>
+   <div class="button-container">
+    <button class="filter-btn" onclick="filterPerfumes('all')">Alle</button>
+    <button class="filter-btn" onclick="filterPerfumes('men')">Herren</button>
+    <button class="filter-btn" onclick="filterPerfumes('unisex')">Unisex</button>
+    <button class="filter-btn" onclick="filterPerfumes('women')">Damen</button>
 </div>
 
 
-    <div class="search-box">
+
+  <div class="search-box">
       <input
         type="search"
         id="search"
