@@ -1,11 +1,11 @@
 let allPerfumes = [];
+let currentCategory = "all";
 
-// Warten, bis das DOM geladen ist
+// Wenn DOM geladen ist, Daten laden
 document.addEventListener("DOMContentLoaded", () => {
     loadPerfumes();
 });
 
-// Daten laden
 function loadPerfumes() {
     fetch("perfumes.json")
         .then(response => {
@@ -15,8 +15,8 @@ function loadPerfumes() {
             return response.json();
         })
         .then(data => {
-            allPerfumes = data;
-            displayPerfumes(allPerfumes);
+            allPerfumes = data || [];
+            applyCategory(); // initial "all"
         })
         .catch(err => {
             console.error("Fehler beim Laden von perfumes.json:", err);
@@ -24,15 +24,51 @@ function loadPerfumes() {
             if (grid) {
                 grid.innerHTML = `
                     <div style="grid-column: 1 / -1; color: red; text-align: center;">
-                        Fehler beim Laden der Parfüm-Daten. Prüfe, ob die Datei <strong>perfumes.json</strong> im gleichen Ordner liegt
-                        und die Seite über einen Webserver (nicht direkt per Doppelklick) geöffnet wird.
+                        Fehler beim Laden der Parfüm-Daten. Stelle sicher, dass <strong>perfumes.json</strong>
+                        im gleichen Ordner wie <strong>index.html</strong> liegt und die Seite über einen Webserver läuft.
                     </div>
                 `;
             }
         });
 }
 
-// Anzeige der Parfums
+// Wendet den aktuellen Kategorienfilter an (ohne Suche)
+function applyCategory() {
+    let list;
+    if (currentCategory === "all") {
+        list = allPerfumes;
+    } else {
+        list = allPerfumes.filter(p => p.category === currentCategory);
+    }
+    displayPerfumes(list);
+}
+
+// Wird von den Buttons aufgerufen
+function filterPerfumes(category, btn) {
+    currentCategory = category;
+
+    // Active-Button-Style
+    document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
+    if (btn) {
+        btn.classList.add("active");
+    }
+
+    const searchInput = document.getElementById("searchInput");
+    const query = searchInput ? searchInput.value.trim().toLowerCase() : "";
+
+    if (query) {
+        // Wenn etwas in der Suche steht: Suche hat Vorrang und durchsucht IMMER alle Düfte
+        const filtered = allPerfumes.filter(p =>
+            (p.name || "").toLowerCase().includes(query)
+        );
+        displayPerfumes(filtered);
+    } else {
+        // Keine Suche aktiv → nach Kategorie filtern
+        applyCategory();
+    }
+}
+
+// Zeigt eine Liste von Parfums im Grid an
 function displayPerfumes(list) {
     const grid = document.getElementById("perfumeGrid");
     if (!grid) return;
@@ -49,7 +85,11 @@ function displayPerfumes(list) {
         card.classList.add("perfume-card");
 
         const img = document.createElement("img");
-        img.src = p.image ? p.image : "images/placeholder.jpg";
+        if (p.image) {
+            img.src = "images/" + p.image;
+        } else {
+            img.src = "images/placeholder.jpg"; // falls kein Bild hinterlegt ist
+        }
         img.alt = p.name || "";
 
         img.addEventListener("click", () => {
@@ -70,25 +110,20 @@ function displayPerfumes(list) {
     });
 }
 
-// Filter-Funktion
-function filterPerfumes(category, btn) {
-    document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
-    if (btn) btn.classList.add("active");
-
-    if (category === "all") {
-        displayPerfumes(allPerfumes);
-    } else {
-        const filtered = allPerfumes.filter(p => p.category === category);
-        displayPerfumes(filtered);
-    }
-}
-
-// Suche
+// Suche: durchsucht IMMER alle Düfte – unabhängig vom aktiven Filter
 function searchPerfumes() {
     const input = document.getElementById("searchInput");
-    if (!input) return;
+    const query = input ? input.value.trim().toLowerCase() : "";
 
-    const q = input.value.toLowerCase();
-    const filtered = allPerfumes.filter(p => (p.name || "").toLowerCase().includes(q));
+    if (!query) {
+        // Wenn die Suche leer ist → wieder aktuellen Filter anwenden
+        applyCategory();
+        return;
+    }
+
+    const filtered = allPerfumes.filter(p =>
+        (p.name || "").toLowerCase().includes(query)
+    );
+
     displayPerfumes(filtered);
 }
