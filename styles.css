@@ -124,3 +124,95 @@ header {
     justify-content: center;
     gap: 10px;
 }
+/* ---------------------------------------------------- */
+/* MOBILE OPTIMIERUNG                                   */
+/* ---------------------------------------------------- */
+
+@media (max-width: 768px) {
+
+    /* Header – kleiner, damit er nicht überläuft */
+    header {
+        font-size: 38px !important;
+        padding: 18px 10px;
+    }
+
+    /* Untertitel – weniger Abstand */
+    .subtitle {
+        font-size: 12px;
+        margin-top: 10px;
+        margin-bottom: 25px;
+        padding: 0 15px;
+    }
+
+    /* "Alle"-Button links – zentriert auf Mobile */
+    .filter-container {
+        justify-content: center;
+        padding-left: 0;
+        margin-bottom: 15px;
+    }
+
+    /* Drei Buttons (Herren/Unisex/Damen) – umbrechen + größer */
+    .center-buttons {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .center-buttons .filter-btn {
+        min-width: 150px !important;      /* angenehm große Buttons */
+        padding: 12px 20px !important;
+        font-size: 15px !important;
+        text-align: center;
+    }
+
+    /* Suchfeld – 100% Breite, besser bedienbar */
+    #searchInput {
+        width: 90% !important;
+        max-width: 400px;
+        padding: 12px 14px !important;
+        font-size: 16px !important;
+    }
+
+    /* GRID – statt 5 Spalten jetzt 2 Spalten */
+    .perfume-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+        padding: 10px 15px;
+    }
+
+    /* Karten – etwas größer auf Mobile */
+    .perfume-card {
+        padding: 10px;
+    }
+
+    /* Bilder – angepasst an kleinere Displays */
+    .perfume-card img {
+        height: 180px;
+    }
+
+    /* Schrift der Namen – leicht größer für Lesbarkeit */
+    .perfume-name {
+        font-size: 15px;
+    }
+}
+
+/* ---------------------------------------------------- */
+/* Ultraflache Smartphones (z. B. iPhone SE)            */
+/* ---------------------------------------------------- */
+@media (max-width: 420px) {
+
+    .center-buttons .filter-btn {
+        min-width: 130px !important;
+    }
+
+    #searchInput {
+        width: 95% !important;
+    }
+
+    .perfume-grid {
+        gap: 12px;
+    }
+
+    .perfume-card img {
+        height: 160px;
+    }
+}
