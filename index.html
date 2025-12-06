@@ -6,24 +6,28 @@
   <title>AMM PERFUMS</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+
+  <!-- HEADER -->
   <header>
     <h1>AMM PERFUMS</h1>
-    <p>Alle Parfüms auf dieser Liste haben nichts mit dem Original zu tun sonder sind von Ihnen Inspiriert</p>
+    <p>Alle Parfüms auf dieser Liste haben nichts mit dem Original zu tun, sondern sind nur von ihnen inspiriert.</p>
   </header>
 
+  <!-- FILTER & SUCHE -->
   <section class="toolbar">
-    <nav class="filters">
-   <div class="button-container">
-    <button class="filter-btn" onclick="filterPerfumes('all')">Alle</button>
-    <button class="filter-btn" onclick="filterPerfumes('men')">Herren</button>
-    <button class="filter-btn" onclick="filterPerfumes('unisex')">Unisex</button>
-    <button class="filter-btn" onclick="filterPerfumes('women')">Damen</button>
-</div>
 
+    <!-- ZENTRIERTE FILTERBUTTONS -->
+    <div class="filters centered-filters">
+      <button class="filter-btn" onclick="filterPerfumes('all')">Alle</button>
+      <button class="filter-btn" onclick="filterPerfumes('men')">Herren</button>
+      <button class="filter-btn" onclick="filterPerfumes('unisex')">Unisex</button>
+      <button class="filter-btn" onclick="filterPerfumes('women')">Damen</button>
+    </div>
 
-
-  <div class="search-box">
+    <!-- SUCHBOX -->
+    <div class="search-box">
       <input
         type="search"
         id="search"
@@ -31,25 +35,34 @@
         autocomplete="off"
       >
     </div>
+
   </section>
 
-  <main id="grid" class="grid"></main>
+  <!-- PRODUKTGRID -->
+  <main id="grid" class="perfume-grid"></main>
 
-  <!-- Detail modal -->
+  <!-- MODALES DETAILFENSTER -->
   <div id="modal" class="modal hidden" role="dialog" aria-hidden="true">
     <div class="modal-content">
-      <button id="close">✕</button>
+
+      <button id="close" aria-label="Schließen">✕</button>
+
       <div class="detail">
+
         <div class="left">
           <img id="detail-img" src="" alt="">
         </div>
+
         <div class="right">
           <h2 id="detail-name"></h2>
           <p id="detail-brand" class="brand"></p>
 
           <div id="notes" class="notes"></div>
+
         </div>
+
       </div>
+
     </div>
   </div>
 
