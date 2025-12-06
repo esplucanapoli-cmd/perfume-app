@@ -11,7 +11,6 @@
 <header>AMM PERFUMS</header>
 <p class="subtitle">Alle Parfüms auf dieser Liste haben nichts mit dem Original zu tun, sondern sind nur von ihnen inspiriert.</p>
 
-<!-- Buttons -->
 <div class="filter-container">
     <button class="filter-btn active" onclick="filterPerfumes('all', this)">Alle</button>
 </div>
@@ -25,8 +24,13 @@
     <input type="text" id="searchInput" onkeyup="searchPerfumes()" placeholder="Nach Parfüm suchen...">
 </div>
 
-<!-- GRID -->
 <div id="perfumeGrid" class="perfume-grid"></div>
+
+<div id="imageModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img id="modalImg" class="modal-content">
+    <div id="modalCaption"></div>
+</div>
 
 <script src="app.js"></script>
 </body>
