@@ -1,39 +1,32 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>AMM PERFUMS</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMM PERFUMS</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-  <header>
-    <h1>AMM PERFUMS</h1>
-    <p>Alle Parfüms auf dieser Liste haben nichts mit dem Original zu tun, sondern sind nur von ihnen inspiriert.</p>
-  </header>
+<header>AMM PERFUMS</header>
+<p class="subtitle">Alle Parfüms auf dieser Liste haben nichts mit dem Original zu tun, sondern sind nur von ihnen inspiriert.</p>
 
-  <!-- Filterbereich -->
-  <section class="filter-area">
+<!-- Buttons -->
+<div class="filter-container">
+    <button class="filter-btn active" onclick="filterPerfumes('all')">Alle</button>
+    <button class="filter-btn" onclick="filterPerfumes('men')">Herren</button>
+    <button class="filter-btn" onclick="filterPerfumes('unisex')">Unisex</button>
+    <button class="filter-btn" onclick="filterPerfumes('women')">Damen</button>
+</div>
 
-      <!-- Buttons mittig + leicht rechts -->
-      <div class="centered-filters">
-          <button class="filter-btn" onclick="filterPerfumes('all')">Alle</button>
-          <button class="filter-btn" onclick="filterPerfumes('men')">Herren</button>
-          <button class="filter-btn" onclick="filterPerfumes('unisex')">Unisex</button>
-          <button class="filter-btn" onclick="filterPerfumes('women')">Damen</button>
-      </div>
+<!-- Suche -->
+<div class="search-box">
+    <input type="text" id="searchInput" onkeyup="searchPerfumes()" placeholder="Nach Parfüm suchen...">
+</div>
 
-      <!-- Suche unter den Buttons, zentriert -->
-      <div class="search-box">
-          <input type="search" id="search" placeholder="Nach Parfüm suchen…" autocomplete="off">
-      </div>
+<!-- GRID -->
+<div id="perfumeGrid" class="perfume-grid"></div>
 
-  </section>
-
-  <main id="grid" class="perfume-grid"></main>
-
-  <script src="app.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
