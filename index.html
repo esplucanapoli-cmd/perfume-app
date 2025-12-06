@@ -9,46 +9,37 @@
 
 <body>
 
-  <!-- HEADER -->
   <header>
     <h1>AMM PERFUMS</h1>
     <p>Alle Parfüms auf dieser Liste haben nichts mit dem Original zu tun, sondern sind nur von ihnen inspiriert.</p>
   </header>
 
-  <!-- FILTER & SUCHE -->
-  <section class="toolbar">
+  <!-- FILTERBEREICH: Buttons in der Mitte -->
+  <section class="filter-area">
+      <div class="centered-filters">
+          <button class="filter-btn" onclick="filterPerfumes('all')">Alle</button>
+          <button class="filter-btn" onclick="filterPerfumes('men')">Herren</button>
+          <button class="filter-btn" onclick="filterPerfumes('unisex')">Unisex</button>
+          <button class="filter-btn" onclick="filterPerfumes('women')">Damen</button>
+      </div>
 
-    <!-- ZENTRIERTE FILTERBUTTONS -->
-    <div class="filters centered-filters">
-      <button class="filter-btn" onclick="filterPerfumes('all')">Alle</button>
-      <button class="filter-btn" onclick="filterPerfumes('men')">Herren</button>
-      <button class="filter-btn" onclick="filterPerfumes('unisex')">Unisex</button>
-      <button class="filter-btn" onclick="filterPerfumes('women')">Damen</button>
-    </div>
-
-    <!-- SUCHBOX -->
-    <div class="search-box">
-      <input
-        type="search"
-        id="search"
-        placeholder="Nach Parfüm suchen…"
-        autocomplete="off"
-      >
-    </div>
-
+      <div class="search-box">
+          <input
+            type="search"
+            id="search"
+            placeholder="Nach Parfüm suchen…"
+            autocomplete="off"
+          >
+      </div>
   </section>
 
-  <!-- PRODUKTGRID -->
   <main id="grid" class="perfume-grid"></main>
 
-  <!-- MODALES DETAILFENSTER -->
   <div id="modal" class="modal hidden" role="dialog" aria-hidden="true">
     <div class="modal-content">
-
       <button id="close" aria-label="Schließen">✕</button>
 
       <div class="detail">
-
         <div class="left">
           <img id="detail-img" src="" alt="">
         </div>
@@ -58,9 +49,7 @@
           <p id="detail-brand" class="brand"></p>
 
           <div id="notes" class="notes"></div>
-
         </div>
-
       </div>
 
     </div>
