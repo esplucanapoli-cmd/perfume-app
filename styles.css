@@ -64,6 +64,13 @@ header {
     margin-bottom: 30px;
 }
 
+/* Suchfeld vergrößern */
+#searchInput {
+    width: 260px;        /* länger */
+    padding: 10px 12px;  /* höher + angenehmer zu tippen */
+    font-size: 15px;     /* minimal größere Schrift */
+}
+
 .center-buttons {
     display: flex;
     justify-content: center;  /* Buttons in der Mitte */
