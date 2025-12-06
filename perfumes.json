@@ -2,851 +2,1021 @@
   {
     "name": "Abercrombie & Fitch Fierce",
     "image": "abercombiefirece.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "abercombiefirece_detail.jpg"
   },
   {
     "name": "Arabian Oud Madawi",
     "image": "arabian oud madawi.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "arabian oud madawi_detail.jpg"
   },
   {
     "name": "Arabian Oud Madawi",
     "image": "arabian oud madawi.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "arabian oud madawi_detail.jpg"
   },
   {
     "name": "Azzaro Pour Homme",
     "image": "Azzaro pour homme.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Azzaro pour homme_detail.jpg"
   },
   {
     "name": "Blue Sky",
     "image": "Blue Sky.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Blue Sky_detail.jpg"
   },
   {
     "name": "Blue Sky",
     "image": "Blue Sky.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Blue Sky_detail.jpg"
   },
   {
     "name": "Burberry Hero",
     "image": "Burrbery Hero.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Burrbery Hero_detail.jpg"
   },
   {
     "name": "Carolina Herrera 212 Men",
     "image": "Carolina Herera 212.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Carolina Herera 212_detail.jpg"
   },
   {
     "name": "Chanel Coco Mademoiselle",
     "image": "Chanel Coco Madmoiselle.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Chanel Coco Madmoiselle_detail.jpg"
   },
   {
     "name": "Chloé Eau de Parfum",
     "image": "Chloe Chloe.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Chloe Chloe_detail.jpg"
   },
   {
     "name": "Chloé Love Story",
     "image": "Chloe love story.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Chloe love story_detail.jpg"
   },
   {
     "name": "Chloé Nomade",
     "image": "chloe nomade.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "chloe nomade_detail.jpg"
   },
   {
     "name": "Christian Dior Ambre Nuit",
     "image": "Dior Amber Nuit.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Dior Amber Nuit_detail.jpg"
   },
   {
     "name": "Christian Dior Ambre Nuit",
     "image": "Dior Amber Nuit.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Dior Amber Nuit_detail.jpg"
   },
   {
     "name": "Christian Dior Hypnotic Poison",
     "image": "Hypnotic Poison.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Hypnotic Poison_detail.jpg"
   },
   {
     "name": "Creed Aventus",
     "image": "aventus_creed.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "aventus_creed_detail.jpg"
   },
   {
     "name": "Creed Aventus Cologne",
     "image": "Aventus Creed Cologne.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Aventus Creed Cologne_detail.jpg"
   },
   {
     "name": "Creed Aventus for Her",
     "image": "Aventus her.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Aventus her_detail.jpg"
   },
   {
     "name": "Dolce & Gabbana The One",
     "image": "Dolce Gabanna The ONe.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Dolce Gabanna The ONe_detail.jpg"
   },
   {
     "name": "Dubai Beach",
     "image": "Dubai Beach.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Dubai Beach_detail.jpg"
   },
   {
     "name": "Dubai Beach",
     "image": "Dubai Beach.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Dubai Beach_detail.jpg"
   },
   {
     "name": "Dubai Collection",
     "image": "Dubai Collection.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Dubai Collection_detail.jpg"
   },
   {
     "name": "Dubai Collection",
     "image": "Dubai Collection.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Dubai Collection_detail.jpg"
   },
   {
     "name": "Giardini di Toscana Bianco Latte",
     "image": "Giardini di Toscana Bianco Latte.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Giardini di Toscana Bianco Latte_detail.jpg"
   },
   {
     "name": "Giardini di Toscana Bianco Latte",
     "image": "Giardini di Toscana Bianco Latte.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Giardini di Toscana Bianco Latte_detail.jpg"
   },
   {
     "name": "Giorgio Armani Si",
     "image": "Armani SI.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Armani SI_detail.jpg"
   },
   {
     "name": "Gisada Ambassador",
     "image": "Gisada Ambrassador.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Gisada Ambrassador_detail.jpg"
   },
   {
     "name": "Gisada Ambassador",
     "image": "Gisada Ambrassador.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Gisada Ambrassador_detail.jpg"
   },
   {
     "name": "Givenchy L’Interdit Rouge",
     "image": "Givenchy linterdit rouge.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Givenchy linterdit rouge_detail.jpg"
   },
   {
     "name": "Golden Sand",
     "image": "Golden Sand.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Golden Sand_detail.jpg"
   },
   {
     "name": "Golden Sand",
     "image": "Golden Sand.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Golden Sand_detail.jpg"
   },
   {
     "name": "Gucci Pour Homme II",
     "image": "Gucci Pour Homme 2.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Gucci Pour Homme 2_detail.jpg"
   },
   {
     "name": "Hugo Boss Bottled",
     "image": "Hugo Boss Bottled.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Hugo Boss Bottled_detail.jpg"
   },
   {
     "name": "Hugo Boss Hugo",
     "image": "Hugo Boss.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Hugo Boss_detail.jpg"
   },
   {
     "name": "Initio Parfums Privés Absolute Aphrodisiac",
     "image": "Initio afrodisac.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Initio afrodisac_detail.jpg"
   },
   {
     "name": "Initio Parfums Privés Absolute Aphrodisiac",
     "image": "Initio afrodisac.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Initio afrodisac_detail.jpg"
   },
   {
     "name": "Initio Parfums Privés Absolute Aphrodisiac",
     "image": "Initio afrodisac.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Initio afrodisac_detail.jpg"
   },
   {
     "name": "Initio Parfums Privés Absolute Aphrodisiac",
     "image": "Initio afrodisac.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Initio afrodisac_detail.jpg"
   },
   {
     "name": "Initio Parfums Privés Oud for Greatness",
     "image": "Inito Oud For Greatness.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Inito Oud For Greatness_detail.jpg"
   },
   {
     "name": "Initio Parfums Privés Oud for Greatness",
     "image": "Inito Oud For Greatness.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Inito Oud For Greatness_detail.jpg"
   },
   {
     "name": "Jacques Bogart Silver Scent",
     "image": "silver scent jamse.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "silver scent jamse_detail.jpg"
   },
   {
     "name": "Jean Paul Gaultier 2",
     "image": "JPG 2.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "JPG 2_detail.jpg"
   },
   {
     "name": "Jean Paul Gaultier Le Male",
     "image": "JPG Le Male.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "JPG Le Male_detail.jpg"
   },
   {
     "name": "Jil Sander Man",
     "image": "jil sander man.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "jil sander man_detail.jpg"
   },
   {
     "name": "Joop! Nightlife",
     "image": "Joop Nightlife.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Joop Nightlife_detail.jpg"
   },
   {
     "name": "Joop! Thrill",
     "image": "Joop Thrill.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Joop Thrill_detail.jpg"
   },
   {
     "name": "Kate Moss Kate",
     "image": "Kate Moss Kate.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Kate Moss Kate_detail.jpg"
   },
   {
     "name": "KILIAN Paris Angel Share",
     "image": "Kilian Angel share.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Kilian Angel share_detail.jpg"
   },
   {
     "name": "KILIAN Paris Angel Share",
     "image": "Kilian Angel share.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Kilian Angel share_detail.jpg"
   },
   {
     "name": "KILIAN Paris Angel Share",
     "image": "Kilian Angel share.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Kilian Angel share_detail.jpg"
   },
   {
     "name": "KILIAN Paris Angel Share",
     "image": "Kilian Angel share.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Kilian Angel share_detail.jpg"
   },
   {
     "name": "KILIAN Paris Straight to Heaven",
     "image": "Kilian STraight to Haven.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Kilian STraight to Haven_detail.jpg"
   },
   {
     "name": "KILIAN Paris Straight to Heaven",
     "image": "Kilian STraight to Haven.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Kilian STraight to Haven_detail.jpg"
   },
   {
     "name": "KILIAN Paris Straight to Heaven",
     "image": "Kilian STraight to Haven.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Kilian STraight to Haven_detail.jpg"
   },
   {
     "name": "KILIAN Paris Straight to Heaven",
     "image": "Kilian STraight to Haven.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Kilian STraight to Haven_detail.jpg"
   },
   {
     "name": "Lancôme La Vie Est Belle",
     "image": "Lancome LA vie este Belle.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Lancome LA vie este Belle_detail.jpg"
   },
   {
     "name": "Louis Vuitton Ombre Nomade",
     "image": "LV Ombre Nomade.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "LV Ombre Nomade_detail.jpg"
   },
   {
     "name": "Louis Vuitton Ombre Nomade",
     "image": "LV Ombre Nomade.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "LV Ombre Nomade_detail.jpg"
   },
   {
     "name": "Maison Francis Kurkdjian Baccarat Rouge 540",
     "image": "Baccarat Rouge.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Baccarat Rouge_detail.jpg"
   },
   {
     "name": "Maison Francis Kurkdjian Baccarat Rouge 540",
     "image": "Baccarat Rouge.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Baccarat Rouge_detail.jpg"
   },
   {
     "name": "Mancera French Riviera",
     "image": "Mancera French Riviera.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Mancera French Riviera_detail.jpg"
   },
   {
     "name": "Mancera French Riviera",
     "image": "Mancera French Riviera.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Mancera French Riviera_detail.jpg"
   },
   {
     "name": "Mancera Red Tobacco",
     "image": "Mancera Red Tobacco.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Mancera Red Tobacco_detail.jpg"
   },
   {
     "name": "Mancera Red Tobacco",
     "image": "Mancera Red Tobacco.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Mancera Red Tobacco_detail.jpg"
   },
   {
     "name": "Mekkha",
     "image": "Mekkha.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Mekkha_detail.jpg"
   },
   {
     "name": "Mekkha",
     "image": "Mekkha.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Mekkha_detail.jpg"
   },
   {
     "name": "Montale Arabian Tonka",
     "image": "Montale Arabian Tonka.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Montale Arabian Tonka_detail.jpg"
   },
   {
     "name": "Montale Arabian Tonka",
     "image": "Montale Arabian Tonka.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Montale Arabian Tonka_detail.jpg"
   },
   {
     "name": "Montblanc Legend",
     "image": "mont blanc Legend.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "mont blanc Legend_detail.jpg"
   },
   {
     "name": "Montblanc Legend Night",
     "image": "Mont Blanc Legend Night.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Mont Blanc Legend Night_detail.jpg"
   },
   {
     "name": "Montblanc Legend Night",
     "image": "Mont Blanc Legend Night.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Mont Blanc Legend Night_detail.jpg"
   },
   {
     "name": "Montblanc Starwalker",
     "image": "Monte Blanc Starwalker.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Monte Blanc Starwalker_detail.jpg"
   },
   {
     "name": "Mugler Angel",
     "image": "Mugler Angel.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Mugler Angel_detail.jpg"
   },
   {
     "name": "Musk Tahara",
     "image": "Musk Tahara.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Musk Tahara_detail.jpg"
   },
   {
     "name": "Musk Tahara",
     "image": "Musk Tahara.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Musk Tahara_detail.jpg"
   },
   {
     "name": "Nasomatto Black Afgano",
     "image": "Nasomatto Black Afghano.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Nasomatto Black Afghano_detail.jpg"
   },
   {
     "name": "Nasomatto Black Afgano",
     "image": "Nasomatto Black Afghano.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Nasomatto Black Afghano_detail.jpg"
   },
   {
     "name": "Nishane Hacivat",
     "image": "Nishane Hacivat.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Nishane Hacivat_detail.jpg"
   },
   {
     "name": "Nishane Hacivat",
     "image": "Nishane Hacivat.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Nishane Hacivat_detail.jpg"
   },
   {
     "name": "Paco Rabanne Fame",
     "image": "Paco Rabanne Fame.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Paco Rabanne Fame_detail.jpg"
   },
   {
     "name": "Parfums de Marly Delina",
     "image": "De MArly Delina.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "De MArly Delina_detail.jpg"
   },
   {
     "name": "Parfums de Marly Herod",
     "image": "De Marly Herod.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "De Marly Herod_detail.jpg"
   },
   {
     "name": "Parfums de Marly Pegasus",
     "image": "De MArly Pegasus.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "De MArly Pegasus_detail.jpg"
   },
   {
     "name": "Penhaligon’s Lord George",
     "image": "Penhaligons Lord.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Penhaligons Lord_detail.jpg"
   },
   {
     "name": "Penhaligon’s Lord George",
     "image": "Penhaligons Lord.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Penhaligons Lord_detail.jpg"
   },
   {
     "name": "Prada Amber",
     "image": "Prada AMber.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Prada AMber_detail.jpg"
   },
   {
     "name": "Prada Amber",
     "image": "Prada AMber.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Prada AMber_detail.jpg"
   },
   {
     "name": "Prada Amber Intense",
     "image": "Prada amber intens.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Prada amber intens_detail.jpg"
   },
   {
     "name": "Prada Amber Intense",
     "image": "Prada amber intens.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Prada amber intens_detail.jpg"
   },
   {
     "name": "Prada L’Homme",
     "image": "Prada l Homme.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Prada l Homme_detail.jpg"
   },
   {
     "name": "Prada L’Homme",
     "image": "Prada l Homme.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Prada l Homme_detail.jpg"
   },
   {
     "name": "Prada Paradoxe",
     "image": "Prada Paradox.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Prada Paradox_detail.jpg"
   },
   {
     "name": "Prada Paradoxe",
     "image": "Prada Paradox.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Prada Paradox_detail.jpg"
   },
   {
     "name": "Profumo di Roma Aqua e Zucchero",
     "image": "Profumo di Roma Aqua e Zucchero.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Profumo di Roma Aqua e Zucchero_detail.jpg"
   },
   {
     "name": "Profumo di Roma Aqua e Zucchero",
     "image": "Profumo di Roma Aqua e Zucchero.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Profumo di Roma Aqua e Zucchero_detail.jpg"
   },
   {
     "name": "Red African",
     "image": "Red African.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Red African_detail.jpg"
   },
   {
     "name": "Red African",
     "image": "Red African.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Red African_detail.jpg"
   },
   {
     "name": "Rosendo Mateu No. 5",
     "image": "Rosendo Mateu 5.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Rosendo Mateu 5_detail.jpg"
   },
   {
     "name": "Rosendo Mateu No. 5",
     "image": "Rosendo Mateu 5.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Rosendo Mateu 5_detail.jpg"
   },
   {
     "name": "Sean John I Am King",
     "image": "Sean John Im A KIng.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Sean John Im A KIng_detail.jpg"
   },
   {
     "name": "Silver Dust",
     "image": "Silver Dust.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Silver Dust_detail.jpg"
   },
   {
     "name": "Silver Dust",
     "image": "Silver Dust.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Silver Dust_detail.jpg"
   },
   {
     "name": "Sospiro Deep Ocean Amber",
     "image": "Sospiro Deep Ocean Amber.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Sospiro Deep Ocean Amber_detail.jpg"
   },
   {
     "name": "Sospiro Deep Ocean Amber",
     "image": "Sospiro Deep Ocean Amber.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Sospiro Deep Ocean Amber_detail.jpg"
   },
   {
     "name": "Stéphane Humbert Lucas Mortal Skin",
     "image": "Stefanie Humbert Mortal Skin.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Stefanie Humbert Mortal Skin_detail.jpg"
   },
   {
     "name": "Stéphane Humbert Lucas Mortal Skin",
     "image": "Stefanie Humbert Mortal Skin.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Stefanie Humbert Mortal Skin_detail.jpg"
   },
   {
     "name": "Tahara Sweet Pink",
     "image": "Tahara Sweet pink.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Tahara Sweet pink_detail.jpg"
   },
   {
     "name": "Tahara Sweet Pink",
     "image": "Tahara Sweet pink.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Tahara Sweet pink_detail.jpg"
   },
   {
     "name": "Thierry Mugler Alien",
     "image": "Therry Mugler Alien.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Therry Mugler Alien_detail.jpg"
   },
   {
     "name": "Tiziana Terenzi Andromeda",
     "image": "Tiziana Terenzi Andromed.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Tiziana Terenzi Andromed_detail.jpg"
   },
   {
     "name": "Tiziana Terenzi Andromeda",
     "image": "Tiziana Terenzi Andromed.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Tiziana Terenzi Andromed_detail.jpg"
   },
   {
     "name": "Tiziana Terenzi Kirke",
     "image": "Tiziana Terenzi Kirke.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Tiziana Terenzi Kirke_detail.jpg"
   },
   {
     "name": "Tiziana Terenzi Kirke",
     "image": "Tiziana Terenzi Kirke.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Tiziana Terenzi Kirke_detail.jpg"
   },
   {
     "name": "Tiziana Terenzi Spirito Fiorentino",
     "image": "Tiziana Terenzi Spirito Fiorentino.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Tiziana Terenzi Spirito Fiorentino_detail.jpg"
   },
   {
     "name": "Tiziana Terenzi Spirito Fiorentino",
     "image": "Tiziana Terenzi Spirito Fiorentino.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Tiziana Terenzi Spirito Fiorentino_detail.jpg"
   },
   {
     "name": "Tom Ford Cherry Smoke",
     "image": "Tom Ford Cherry Smoke.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Tom Ford Cherry Smoke_detail.jpg"
   },
   {
     "name": "Tom Ford Cherry Smoke",
     "image": "Tom Ford Cherry Smoke.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Tom Ford Cherry Smoke_detail.jpg"
   },
   {
     "name": "Tom Ford Extreme Noir",
     "image": "Tom Ford Extream Noir.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Tom Ford Extream Noir_detail.jpg"
   },
   {
     "name": "Tom Ford Lost Cherry",
     "image": "Tom Ford Lost Cherry.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Tom Ford Lost Cherry_detail.jpg"
   },
   {
     "name": "Tom Ford Lost Cherry",
     "image": "Tom Ford Lost Cherry.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Tom Ford Lost Cherry_detail.jpg"
   },
   {
     "name": "Tom Ford Oud Wood",
     "image": "Tom Ford Oud Wood.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Tom Ford Oud Wood_detail.jpg"
   },
   {
     "name": "Tom Ford Oud Wood",
     "image": "Tom Ford Oud Wood.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Tom Ford Oud Wood_detail.jpg"
   },
   {
     "name": "Tom Ford Tobacco Vanille",
     "image": "tom ford tobaco van .jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "tom ford tobaco van _detail.jpg"
   },
   {
     "name": "Tom Ford Tobacco Vanille",
     "image": "tom ford tobaco van .jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "tom ford tobaco van _detail.jpg"
   },
   {
     "name": "Tom Ford Ébène Fumé",
     "image": "Tom Ford Ebene Fumo.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Tom Ford Ebene Fumo_detail.jpg"
   },
   {
     "name": "Tom Ford Ébène Fumé",
     "image": "Tom Ford Ebene Fumo.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Tom Ford Ebene Fumo_detail.jpg"
   },
   {
     "name": "Valentino Uomo",
     "image": "valentino.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "valentino_detail.jpg"
   },
   {
     "name": "Versace Man Eau Fraîche",
     "image": "Versace Fraiche Man.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Versace Fraiche Man_detail.jpg"
   },
   {
     "name": "Versace Pour Homme",
     "image": "versace.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "versace_detail.jpg"
   },
   {
     "name": "Widian London",
     "image": "Widian London.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Widian London_detail.jpg"
   },
   {
     "name": "Widian London",
     "image": "Widian London.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Widian London_detail.jpg"
   },
   {
     "name": "Widian London",
     "image": "Widian London.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Widian London_detail.jpg"
   },
   {
     "name": "Widian London",
     "image": "Widian London.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Widian London_detail.jpg"
   },
   {
     "name": "Xerjoff Accento",
     "image": "Xerjoff Accento.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Xerjoff Accento_detail.jpg"
   },
   {
     "name": "Xerjoff Accento",
     "image": "Xerjoff Accento.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Xerjoff Accento_detail.jpg"
   },
   {
     "name": "Xerjoff Alexandria II",
     "image": "Xerjoff Alexandria 2.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Xerjoff Alexandria 2_detail.jpg"
   },
   {
     "name": "Xerjoff Alexandria II",
     "image": "Xerjoff Alexandria 2.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Xerjoff Alexandria 2_detail.jpg"
   },
   {
     "name": "Xerjoff Amber Star",
     "image": "Xerjoff Amber Star.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Xerjoff Amber Star_detail.jpg"
   },
   {
     "name": "Xerjoff Amber Star",
     "image": "Xerjoff Amber Star.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Xerjoff Amber Star_detail.jpg"
   },
   {
     "name": "Xerjoff Amber Star",
     "image": "Xerjoff Amber Star.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Xerjoff Amber Star_detail.jpg"
   },
   {
     "name": "Xerjoff Amber Star",
     "image": "Xerjoff Amber Star.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Xerjoff Amber Star_detail.jpg"
   },
   {
     "name": "Xerjoff Apollonia",
     "image": "Xerjoff Apollonia.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Xerjoff Apollonia_detail.jpg"
   },
   {
     "name": "Xerjoff Apollonia",
     "image": "Xerjoff Apollonia.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Xerjoff Apollonia_detail.jpg"
   },
   {
     "name": "Xerjoff Coro",
     "image": "xerjoff coro.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "xerjoff coro_detail.jpg"
   },
   {
     "name": "Xerjoff Coro",
     "image": "xerjoff coro.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "xerjoff coro_detail.jpg"
   },
   {
     "name": "Xerjoff Erba Pura",
     "image": "Xerjoff Erba Pura.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Xerjoff Erba Pura_detail.jpg"
   },
   {
     "name": "Xerjoff Erba Pura",
     "image": "Xerjoff Erba Pura.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Xerjoff Erba Pura_detail.jpg"
   },
   {
     "name": "Xerjoff La Capitale",
     "image": "Xerjoff La capitale.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Xerjoff La capitale_detail.jpg"
   },
   {
     "name": "Xerjoff La Capitale",
     "image": "Xerjoff La capitale.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Xerjoff La capitale_detail.jpg"
   },
   {
     "name": "Xerjoff La Capitale",
     "image": "Xerjoff La capitale.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Xerjoff La capitale_detail.jpg"
   },
   {
     "name": "Xerjoff La Capitale",
     "image": "Xerjoff La capitale.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Xerjoff La capitale_detail.jpg"
   },
   {
     "name": "Xerjoff Lira",
     "image": "Xerjoff Lira.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Xerjoff Lira_detail.jpg"
   },
   {
     "name": "Xerjoff Lira",
     "image": "Xerjoff Lira.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Xerjoff Lira_detail.jpg"
   },
   {
     "name": "Xerjoff Lira",
     "image": "Xerjoff Lira.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Xerjoff Lira_detail.jpg"
   },
   {
     "name": "Xerjoff Lira",
     "image": "Xerjoff Lira.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Xerjoff Lira_detail.jpg"
   },
   {
     "name": "Xerjoff Naxos",
     "image": "Xerjoff Naxos.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Xerjoff Naxos_detail.jpg"
   },
   {
     "name": "Xerjoff Naxos",
     "image": "Xerjoff Naxos.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Xerjoff Naxos_detail.jpg"
   },
   {
     "name": "Xerjoff Overture",
     "image": "Xerjoff Overture.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Xerjoff Overture_detail.jpg"
   },
   {
     "name": "Xerjoff Overture",
     "image": "Xerjoff Overture.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Xerjoff Overture_detail.jpg"
   },
   {
     "name": "Xerjoff Overture",
     "image": "Xerjoff Overture.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Xerjoff Overture_detail.jpg"
   },
   {
     "name": "Xerjoff Overture",
     "image": "Xerjoff Overture.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Xerjoff Overture_detail.jpg"
   },
   {
     "name": "Xerjoff Tony Iommi Monkey Special",
     "image": "xerjoff tony jommy.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "xerjoff tony jommy_detail.jpg"
   },
   {
     "name": "Xerjoff Tony Iommi Monkey Special",
     "image": "xerjoff tony jommy.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "xerjoff tony jommy_detail.jpg"
   },
   {
     "name": "Xerjoff Torino 21",
     "image": "tornio 21.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "tornio 21_detail.jpg"
   },
   {
     "name": "Xerjoff Torino 21",
     "image": "tornio 21.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "tornio 21_detail.jpg"
   },
   {
     "name": "Xerjoff Torino 21",
     "image": "Xerjoff Torino 21.jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "Xerjoff Torino 21_detail.jpg"
   },
   {
     "name": "Xerjoff Torino 21",
     "image": "Xerjoff Torino 21.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Xerjoff Torino 21_detail.jpg"
   },
   {
     "name": "Xerjoff Uden",
     "image": "xerjoff uden .jpg",
-    "category": "men"
+    "category": "men",
+    "detailImage": "xerjoff uden _detail.jpg"
   },
   {
     "name": "Xerjoff Uden",
     "image": "xerjoff uden .jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "xerjoff uden _detail.jpg"
   },
   {
     "name": "Zadig & Voltaire This Is Her!",
     "image": "Zadig Voltag This Is Her.jpg",
-    "category": "women"
+    "category": "women",
+    "detailImage": "Zadig Voltag This Is Her_detail.jpg"
   }
 ]

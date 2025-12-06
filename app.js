@@ -27,15 +27,22 @@ function displayPerfumes(list) {
         const card = document.createElement("div");
         card.classList.add("perfume-card");
 
-        let imgSrc = p.image || "";
-        if (imgSrc && !imgSrc.toLowerCase().startsWith("images/")) {
-            imgSrc = "images/" + imgSrc;
+        // Thumbnail: Flaschenbild
+        let thumbSrc = p.image || "";
+        if (thumbSrc && !thumbSrc.toLowerCase().startsWith("images/")) {
+            thumbSrc = "images/" + thumbSrc;
         }
 
-        card.onclick = () => openModal(imgSrc, p.name);
+        // Detailbild: Duftpyramide (fallback auf Flaschenbild)
+        let detailSrc = p.detailImage || p.image || "";
+        if (detailSrc && !detailSrc.toLowerCase().startsWith("images/")) {
+            detailSrc = "images/" + detailSrc;
+        }
+
+        card.onclick = () => openModal(detailSrc, p.name);
 
         card.innerHTML = `
-            <img src="${imgSrc}" alt="${p.name}">
+            <img src="${thumbSrc}" alt="${p.name}">
             <div class="perfume-name">${p.name}</div>
         `;
 
