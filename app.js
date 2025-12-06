@@ -49,13 +49,19 @@ function displayPerfumes(list) {
 }
 
 // Filter-Funktion
-function filterPerfumes(category, btn) {
-    document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
-    if (btn) btn.classList.add("active");
 
-    if (category === "all") {
-        displayPerfumes(allPerfumes);
-    } else {
+function filterPerfumes(category, element) {
+    document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+    if(element) element.classList.add('active');
+
+    if (category === 'all') {
+        renderPerfumes(perfumes);
+        return;
+    }
+    const filtered = perfumes.filter(p => p.category === category);
+    renderPerfumes(filtered);
+}
+ else {
         displayPerfumes(allPerfumes.filter(p => p.category === category));
     }
 }
