@@ -1,10 +1,11 @@
 [
-  {
-    "name": "Abercrombie & Fitch Fierce",
-    "image": "abercombiefirece.jpg",
-    "category": "men",
-    "detailImage": "Fierce-Abercrombie-amp-Fitch.png"
-  },
+{
+  "name": "Abercrombie & Fitch Fierce",
+  "image": "abercombie-firece.jpg",
+  "category": "men",
+  "detailImage": "detailImage/Fierce-Abercrombie-amp-Fitch.jpg"
+},
+
   {
     "name": "Arabian Oud Madawi",
     "image": "arabian oud madawi.jpg",
