@@ -27,10 +27,15 @@ function displayPerfumes(list) {
         const card = document.createElement("div");
         card.classList.add("perfume-card");
 
-        card.onclick = () => openModal(p.image, p.name);
+        let imgSrc = p.image || "";
+        if (imgSrc && !imgSrc.toLowerCase().startsWith("images/")) {
+            imgSrc = "images/" + imgSrc;
+        }
+
+        card.onclick = () => openModal(imgSrc, p.name);
 
         card.innerHTML = `
-            <img src="${p.image}" alt="${p.name}">
+            <img src="${imgSrc}" alt="${p.name}">
             <div class="perfume-name">${p.name}</div>
         `;
 
