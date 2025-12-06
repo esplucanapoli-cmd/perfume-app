@@ -132,9 +132,10 @@ header {
     padding: 12px 14px !important;
     font-size: 16px !important;
 }
-/* Buttons Herren / Unisex / Damen etwas größer machen */
+/* Herren / Unisex / Damen deutlich länger machen */
 .search-box .center-buttons .filter-btn {
-    padding: 10px 24px !important;  /* höher + länger */
-    font-size: 15px !important;     /* minimale Schrift-Vergrößerung */
-    min-width: 110px !important;    /* sorgt dafür, dass sie sichtbar länger werden */
+    padding: 12px 26px !important;   /* etwas höher + breiter */
+    font-size: 15px !important;
+    min-width: 160px !important;      /* wichtige Einstellung: sorgt für sichtbare Länge */
+    text-align: center;
 }
