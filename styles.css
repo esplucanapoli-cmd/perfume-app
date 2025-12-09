@@ -229,3 +229,21 @@ body {
     font-weight: bold;
     cursor: pointer;
 }
+/* SICHERER FIX FÜR HEADER */
+.header-bar {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    background-color: #111 !important;
+    color: white !important;
+    padding: 25px 10px !important;
+    min-height: 70px !important;
+    position: relative !important;
+    z-index: 10 !important;
+}
+
+.header-title {
+    font-size: 28px !important;
+    font-weight: bold !important;
+    letter-spacing: 2px !important;
+}
