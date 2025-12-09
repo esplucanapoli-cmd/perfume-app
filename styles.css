@@ -6,13 +6,26 @@ body {
     background-color: #f5f5f5;
 }
 
-header {
+/* HEADER MIT LOGO */
+.header-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
     background-color: #1a1a1a;
     color: white;
-    text-align: center;
     padding: 25px 10px;
+}
+
+.logo {
+    height: 42px;     /* Logo-Größe */
+    width: auto;
+}
+
+.header-title {
     font-size: 32px;
     font-weight: bold;
+    letter-spacing: 2px;
 }
 
 /* Untertitel */
@@ -32,7 +45,6 @@ header {
     padding-left: 40px;
 }
 
-
 .filter-btn {
     padding: 7px 18px;
     border-radius: 6px;
@@ -50,15 +62,7 @@ header {
 /* SUCHFELD */
 .search-box {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 30px;
-}
-
-.search-box {
-    display: flex;
-    flex-direction: column;   /* WICHTIG: Buttons oben, Suchfeld darunter */
+    flex-direction: column;   /* Buttons oben, Suchfeld darunter */
     align-items: center;      /* Zentriert alles */
     gap: 15px;                /* Abstand zwischen Buttons und Suchfeld */
     margin-bottom: 30px;
@@ -70,8 +74,7 @@ header {
     gap: 15px;
 }
 
-
-/* GRID → **5 Parfums pro Reihe** */
+/* GRID → 5 Parfums pro Reihe */
 .perfume-grid {
     width: 100%;
     display: grid;
@@ -104,26 +107,6 @@ header {
     font-size: 14px;
 }
 
-
-.center-buttons {
-    display: flex;
-    gap: 10px;
-}
-/* Buttons über der Suche zentrieren */
-.search-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;   /* ZENTRIERT Herren / Unisex / Damen */
-    gap: 10px;
-    margin-bottom: 30px;
-}
-
-/* Container für die 3 rechten Buttons */
-.center-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
 /* ---------------------------------------------------- */
 /* MOBILE OPTIMIERUNG                                   */
 /* ---------------------------------------------------- */
@@ -131,8 +114,8 @@ header {
 @media (max-width: 768px) {
 
     /* Header – kleiner, damit er nicht überläuft */
-    header {
-        font-size: 38px !important;
+    .header-bar {
+        font-size: 38px;
         padding: 18px 10px;
     }
 
@@ -158,7 +141,7 @@ header {
     }
 
     .center-buttons .filter-btn {
-        min-width: 150px !important;      /* angenehm große Buttons */
+        min-width: 150px !important;
         padding: 12px 20px !important;
         font-size: 15px !important;
         text-align: center;
@@ -174,7 +157,7 @@ header {
 
     /* GRID – statt 5 Spalten jetzt 2 Spalten */
     .perfume-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr) !important;
         gap: 18px;
         padding: 10px 15px;
     }
@@ -195,9 +178,7 @@ header {
     }
 }
 
-/* ---------------------------------------------------- */
-/* Ultraflache Smartphones (z. B. iPhone SE)            */
-/* ---------------------------------------------------- */
+/* Ultraflache Smartphones (z. B. iPhone SE) */
 @media (max-width: 420px) {
 
     .center-buttons .filter-btn {
@@ -216,47 +197,8 @@ header {
         height: 160px;
     }
 }
-@media (max-width: 768px) {
-    body { background-color:  rgba(184, 182, 182, 0.993) !important; }
-}
-/* ----------------------------- */
-/* POPUP / MODAL FÜR PYRAMIDEN   */
-/* ----------------------------- */
 
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 9999;
-    padding-top: 60px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.85);
-}
-
-.modal-content {
-    margin: auto;
-    display: block;
-    max-width: 90%;
-    max-height: 85%;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(255,255,255,0.2);
-}
-
-.close {
-    position: absolute;
-    top: 20px;
-    right: 35px;
-    color: white;
-    font-size: 40px;
-    font-weight: bold;
-    cursor: pointer;
-}
-/* ----------------------------- */
-/* POPUP / MODAL FÜR PYRAMIDEN   */
-/* ----------------------------- */
-
+/* Popup / Modal für Pyramiden */
 .modal {
     display: none;               /* wird durch JS auf block gesetzt */
     position: fixed;
@@ -286,28 +228,4 @@ header {
     font-size: 40px;
     font-weight: bold;
     cursor: pointer;
-}
-/* ----------------------------- */
-/* HEADER MIT LOGO               */
-/* ----------------------------- */
-
-.header-bar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    background-color: #1a1a1a;
-    color: white;
-    padding: 25px 10px;
-}
-
-.logo {
-    height: 42px;     /* Logo-Größe */
-    width: auto;
-}
-
-.header-title {
-    font-size: 32px;
-    font-weight: bold;
-    letter-spacing: 2px;
 }
