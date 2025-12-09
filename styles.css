@@ -287,3 +287,27 @@ header {
     font-weight: bold;
     cursor: pointer;
 }
+/* ----------------------------- */
+/* HEADER MIT LOGO               */
+/* ----------------------------- */
+
+.header-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background-color: #1a1a1a;
+    color: white;
+    padding: 25px 10px;
+}
+
+.logo {
+    height: 42px;     /* Logo-Größe */
+    width: auto;
+}
+
+.header-title {
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
