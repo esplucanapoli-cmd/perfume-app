@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     loadPerfumes();
 });
 
+// ✅ Lädt die JSON-Datei
 function loadPerfumes() {
     fetch("perfumes.json")
         .then(response => {
@@ -15,7 +16,7 @@ function loadPerfumes() {
             return response.json();
         })
         .then(data => {
-            allPerfumes = data || [];
+            allPerfumes = Array.isArray(data) ? data : [];
             applyCategory(); // initial "all"
         })
         .catch(err => {
@@ -32,12 +33,21 @@ function loadPerfumes() {
         });
 }
 
-// Wendet den aktuellen Kategorienfilter an (ohne Suche)
+// ✅ Wendet nur den aktiven Kategorienfilter an
 function applyCategory() {
     let list;
+
     if (currentCategory === "all") {
         list = allPerfumes;
-    function filterPerfumes(category, btn) {
+    } else {
+        list = allPerfumes.filter(p => p.category === currentCategory);
+    }
+
+    displayPerfumes(list);
+}
+
+// ✅ Wird von den Filter-Buttons aufgerufen
+function filterPerfumes(category, btn) {
     document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
     if (btn) btn.classList.add('active');
 
@@ -45,26 +55,7 @@ function applyCategory() {
     applyCategory();
 }
 
-    displayPerfumes(list);
-}
-
-// Wird von den Buttons aufgerufen
-function filterPerfumes(category, btn) {
-    // Aktiven Button umschalten
-    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-    if (btn) btn.classList.add('active');
-
-    let filtered = allperfumes;
-
-    // WICHTIG: Nur filtern, wenn es NICHT "all" ist
-    if (category !== "all") {
-        filtered = perfumes.filter(p => p.category === category);
-    }
-
-    displayPerfumes(filtered);
-}
-
-// Zeigt eine Liste von Parfums im Grid an
+// ✅ Zeigt eine Liste von Parfums im Grid an
 function displayPerfumes(list) {
     const grid = document.getElementById("perfumeGrid");
     if (!grid) return;
@@ -81,17 +72,12 @@ function displayPerfumes(list) {
         card.classList.add("perfume-card");
 
         const img = document.createElement("img");
-        if (p.image) {
-            img.src = "images/" + p.image;
-        } else {
-            img.src = "images/placeholder.jpg"; // falls kein Bild hinterlegt ist
-        }
+        img.src = p.image ? "images/" + p.image : "images/placeholder.jpg";
         img.alt = p.name || "";
 
         img.addEventListener("click", () => {
             if (p.pyramid) {
                 openPyramid(p.pyramid);
-
             } else {
                 alert("Für dieses Parfüm ist noch keine Duftpyramide hinterlegt.");
             }
@@ -107,13 +93,12 @@ function displayPerfumes(list) {
     });
 }
 
-// Suche: durchsucht IMMER alle Düfte – unabhängig vom aktiven Filter
+// ✅ Suche – immer auf ALLE Düfte
 function searchPerfumes() {
     const input = document.getElementById("searchInput");
     const query = input ? input.value.trim().toLowerCase() : "";
 
     if (!query) {
-        // Wenn die Suche leer ist → wieder aktuellen Filter anwenden
         applyCategory();
         return;
     }
@@ -123,7 +108,10 @@ function searchPerfumes() {
     );
 
     displayPerfumes(filtered);
-}function openPyramid(imagePath) {
+}
+
+// ✅ Öffnet das Duftpyramiden-Modal
+function openPyramid(imagePath) {
     const modal = document.getElementById("pyramidModal");
     const img = document.getElementById("pyramidImage");
 
@@ -131,6 +119,7 @@ function searchPerfumes() {
     modal.style.display = "block";
 }
 
+// ✅ Schließt das Modal
 function closePyramid() {
     document.getElementById("pyramidModal").style.display = "none";
 }
