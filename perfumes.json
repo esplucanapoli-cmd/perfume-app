@@ -1,6 +1,5 @@
 [
   {"name":"ABERCOMBIE FIERCE","image":"abercrombie-firece.jpg","pyramid":"detailimage/placeholder.jpg","category":"all"},
-  {"name":"ALIEN","image":"Alien.jpg","pyramid":"detailimage/placeholder.jpg","category":"all"},
   {"name":"ANFAS ISHQ","image":"anfas ishq.jpg","pyramid":"detailimage/placeholder.jpg","category":"all"},
   {"name":"ARABIAN OUD DUBAI COLLECTION","image":"arabian oud madawi.jpg","pyramid":"detailimage/placeholder.jpg","category":"all"},
   {"name":"ARMANI MY WAY","image":"Armani My Way.jpg","pyramid":"detailimage/placeholder.jpg","category":"all"},
@@ -17,8 +16,8 @@
   {"name":"BURBERRY HER ELIXIR","image":"Burberry Her Elixir.jpg","pyramid":"detailimage/placeholder.jpg","category":"all"},
   {"name":"BURBERRY HERO","image":"Burrbery Hero.jpg","pyramid":"detailimage/placeholder.jpg","category":"all"},
 
-  {"name":"CAROLINA H 212","image":"Carolina Herera 212.jpg","pyramid":"detailimage/placeholder.jpg","category":"all"},
-  {"name":"CAROLINA H GOOD GIRL","image":"Carolina Good Girl.jpg","pyramid":"detailimage/placeholder.jpg","category":"all"},
+  {"name":"CAROLINA HERERA 212","image":"Carolina Herera 212.jpg","pyramid":"detailimage/placeholder.jpg","category":"all"},
+  {"name":"CAROLINA HERERA GOOD GIRL","image":"Carolina Good Girl.jpg","pyramid":"detailimage/placeholder.jpg","category":"all"},
   {"name":"CHANEL BLEU","image":"Chanel Bleu.jpg","pyramid":"detailimage/placeholder.jpg","category":"all"},
   {"name":"CHANEL COCO MADMO","image":"Chanel Coco Madmoiselle.jpg","pyramid":"detailimage/placeholder.jpg","category":"all"},
   {"name":"CHLOE EAU DE PARFUME","image":"Chloe Chloe.jpg","pyramid":"detailimage/placeholder.jpg","category":"all"},
@@ -68,18 +67,17 @@
 
   {"name":"MUSK TAHARA","image":"Musk Tahara.jpg","pyramid":"detailimage/placeholder.jpg","category":"all"},
 
-  {"name":"NASOMATTO B AFGHANO","image":"Nasomatto Black Afghano.jpg","pyramid":"detailimage/placeholder.jpg","category":"all"},
+  {"name":"NASOMATTO BLACK AFGHANO","image":"Nasomatto Black Afghano.jpg","pyramid":"detailimage/placeholder.jpg","category":"all"},
   {"name":"NASOMATTO BARAONDA","image":"Nasomatto Baraonda.jpg","pyramid":"detailimage/placeholder.jpg","category":"all"},
   {"name":"NISHANE HACIVAT","image":"Nishane Hacivat.jpg","pyramid":"detailimage/placeholder.jpg","category":"all"},
 
-  {"name":"OMBRE N LE SABLE ROSE","image":"LV Ombre Nomade.jpg","pyramid":"detailimage/placeholder.jpg","category":"all"},
-  {"name":"OMBRE N STELLAR TIMES","image":"LV Ombre Nomade.jpg","pyramid":"detailimage/placeholder.jpg","category":"all"},
   {"name":"OMBRE NOMADE","image":"LV Ombre Nomade.jpg","pyramid":"detailimage/placeholder.jpg","category":"all"},
+  {"name":"OMBRE NOMADE LE SABLE ROSE","image":"LV Ombre Nomade.jpg","pyramid":"detailimage/placeholder.jpg","category":"all"},
+  {"name":"OMBRE NOMADE STELLAR TIMES","image":"LV Ombre Nomade.jpg","pyramid":"detailimage/placeholder.jpg","category":"all"},
 
-  {"name":"P DE MARLY HEROD","image":"De Marly Herod.jpg","pyramid":"detailimage/placeholder.jpg","category":"all"},
-  {"name":"P DE MARLY PEGASUS","image":"De Marly Pegasus.jpg","pyramid":"detailimage/placeholder.jpg","category":"all"},
-  {"name":"P DE MARY ALTAHIR","image":"De Marly Altahir.jpg","pyramid":"detailimage/placeholder.jpg","category":"all"},
   {"name":"PACO RABANNE FAME","image":"Paco Rabanne Fame.jpg","pyramid":"detailimage/placeholder.jpg","category":"all"},
+  {"name":"PARFUMES DE MARLY PEGASUS","image":"De Marly Pegasus.jpg","pyramid":"detailimage/placeholder.jpg","category":"all"},
+  {"name":"PARFUMES DE MARY ALTAHIR","image":"De Marly Altahir.jpg","pyramid":"detailimage/placeholder.jpg","category":"all"},
   {"name":"PENHALIGONS LORD","image":"Penhaligons Lord.jpg","pyramid":"detailimage/placeholder.jpg","category":"all"},
   {"name":"PRADA A INTENSE","image":"Prada amber intens.jpg","pyramid":"detailimage/placeholder.jpg","category":"all"},
   {"name":"PRADA AMBER","image":"Prada AMber.jpg","pyramid":"detailimage/placeholder.jpg","category":"all"},
@@ -93,16 +91,18 @@
   {"name":"SULTAN N9","image":"Sultan n9.jpg","pyramid":"detailimage/placeholder.jpg","category":"all"},
   {"name":"SWEET PINK","image":"Sweet Pink.jpg","pyramid":"detailimage/placeholder.jpg","category":"all"},
 
-  {"name":"TIZIANA T ANDROMEDA","image":"Tiziana Terenzi Andromed.jpg","pyramid":"detailimage/placeholder.jpg","category":"all"},
-  {"name":"TIZIANA T KIRKE","image":"Tiziana Terenzi Kirke.jpg","pyramid":"detailimage/placeholder.jpg","category":"all"},
-  {"name":"TOM F LOST CHERRY","image":"Tom Ford Lost Cherry.jpg","pyramid":"detailimage/placeholder.jpg","category":"all"},
-  {"name":"TOM F OUD WOOD","image":"Tom Ford Oud Wood.jpg","pyramid":"detailimage/placeholder.jpg","category":"all"},
-  {"name":"TOM F SMOKE CHERRY","image":"Tom Ford Cherry Smoke.jpg","pyramid":"detailimage/placeholder.jpg","category":"all"},
-  {"name":"TOM F TABACCO VANILL","image":"tom ford tobaco van .jpg","pyramid":"detailimage/placeholder.jpg","category":"all"},
+  {"name":"THERRY MUGLER ALIEN","image":"Alien.jpg","pyramid":"detailimage/placeholder.jpg","category":"all"},
+
+  {"name":"TIZIANA TERENZI ANDROMEDA","image":"Tiziana Terenzi Andromed.jpg","pyramid":"detailimage/placeholder.jpg","category":"all"},
+  {"name":"TIZIANA TERENZI KIRKE","image":"Tiziana Terenzi Kirke.jpg","pyramid":"detailimage/placeholder.jpg","category":"all"},
   {"name":"TOM FORD E NOIR","image":"Tom Ford Extream Noir.jpg","pyramid":"detailimage/placeholder.jpg","category":"all"},
   {"name":"TOM FORD EBENE FUMO","image":"Tom Ford Ebene Fumo.jpg","pyramid":"detailimage/placeholder.jpg","category":"all"},
   {"name":"TOM FORD F FABULOS","image":"Tom Ford Fucking Fablous.jpg","pyramid":"detailimage/placeholder.jpg","category":"all"},
+  {"name":"TOM FORD LOST CHERRY","image":"Tom Ford Lost Cherry.jpg","pyramid":"detailimage/placeholder.jpg","category":"all"},
+  {"name":"TOM FORD OUD WOOD","image":"Tom Ford Oud Wood.jpg","pyramid":"detailimage/placeholder.jpg","category":"all"},
+  {"name":"TOM FORD SMOKE CHERRY","image":"Tom Ford Cherry Smoke.jpg","pyramid":"detailimage/placeholder.jpg","category":"all"},
   {"name":"TOM FORD SOLEI BLANC","image":"tom f solei .jpg","pyramid":"detailimage/placeholder.jpg","category":"all"},
+  {"name":"TOM FORD TABACCO VANILL","image":"tom ford tobaco van .jpg","pyramid":"detailimage/placeholder.jpg","category":"all"},
   {"name":"TT SPIRITO FIORENTINO","image":"TT Spirito Fiorentino.jpg","pyramid":"detailimage/placeholder.jpg","category":"all"},
 
   {"name":"VALENTINO DONNA ROMA","image":"Valentino Donna Roma.jpg","pyramid":"detailimage/placeholder.jpg","category":"all"},
