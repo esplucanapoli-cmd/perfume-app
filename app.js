@@ -37,9 +37,14 @@ function applyCategory() {
     let list;
     if (currentCategory === "all") {
         list = allPerfumes;
-    } else {
-        list = allPerfumes.filter(p => p.category === currentCategory);
-    }
+    function filterPerfumes(category, btn) {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    if (btn) btn.classList.add('active');
+
+    currentCategory = category;
+    applyCategory();
+}
+
     displayPerfumes(list);
 }
 
