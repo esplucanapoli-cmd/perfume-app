@@ -1,3 +1,4 @@
+
 let allPerfumes = [];
 let currentCategory = "all";
 
@@ -72,7 +73,8 @@ function displayPerfumes(list) {
         card.classList.add("perfume-card");
 
         const img = document.createElement("img");
-        img.src = p.image ? "images/" + p.image : "images/placeholder.jpg";
+        // ✅ GITHUB-PAGES-KORREKTER PFAD
+        img.src = p.image ? "./images/" + p.image : "./images/placeholder.jpg";
         img.alt = p.name || "";
 
         img.addEventListener("click", () => {
@@ -115,7 +117,7 @@ function openPyramid(imagePath) {
     const modal = document.getElementById("pyramidModal");
     const img = document.getElementById("pyramidImage");
 
-    img.src = imagePath;
+    img.src = imagePath; // detailimage/... ist korrekt relativ
     modal.style.display = "block";
 }
 
