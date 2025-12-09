@@ -49,7 +49,7 @@ function filterPerfumes(category, btn) {
     document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
     if (btn) btn.classList.add('active');
 
-    let filtered = perfumes;
+    let filtered = allperfumes;
 
     // WICHTIG: Nur filtern, wenn es NICHT "all" ist
     if (category !== "all") {
