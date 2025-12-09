@@ -45,27 +45,18 @@ function applyCategory() {
 
 // Wird von den Buttons aufgerufen
 function filterPerfumes(category, btn) {
-    currentCategory = category;
+    // Aktiven Button umschalten
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    if (btn) btn.classList.add('active');
 
-    // Active-Button-Style
-    document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
-    if (btn) {
-        btn.classList.add("active");
+    let filtered = perfumes;
+
+    // WICHTIG: Nur filtern, wenn es NICHT "all" ist
+    if (category !== "all") {
+        filtered = perfumes.filter(p => p.category === category);
     }
 
-    const searchInput = document.getElementById("searchInput");
-    const query = searchInput ? searchInput.value.trim().toLowerCase() : "";
-
-    if (query) {
-        // Wenn etwas in der Suche steht: Suche hat Vorrang und durchsucht IMMER alle Düfte
-        const filtered = allPerfumes.filter(p =>
-            (p.name || "").toLowerCase().includes(query)
-        );
-        displayPerfumes(filtered);
-    } else {
-        // Keine Suche aktiv → nach Kategorie filtern
-        applyCategory();
-    }
+    displayPerfumes(filtered);
 }
 
 // Zeigt eine Liste von Parfums im Grid an
