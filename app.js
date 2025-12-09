@@ -94,7 +94,8 @@ function displayPerfumes(list) {
 
         img.addEventListener("click", () => {
             if (p.pyramid) {
-                window.open(p.pyramid, "_blank");
+                openPyramid(p.pyramid);
+
             } else {
                 alert("Für dieses Parfüm ist noch keine Duftpyramide hinterlegt.");
             }
@@ -126,4 +127,14 @@ function searchPerfumes() {
     );
 
     displayPerfumes(filtered);
+}function openPyramid(imagePath) {
+    const modal = document.getElementById("pyramidModal");
+    const img = document.getElementById("pyramidImage");
+
+    img.src = imagePath;
+    modal.style.display = "block";
+}
+
+function closePyramid() {
+    document.getElementById("pyramidModal").style.display = "none";
 }
