@@ -67,7 +67,7 @@
   },
   {
     "name": "BLEU DE CHANEL",
-    "image": "Chanel-Bleu.jpg",
+    "image": "chanel-bleu.jpg",
     "pyramid": "Bleu-de-Chanel.jpg",
     "category": "all"
   },
