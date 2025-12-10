@@ -67,8 +67,8 @@
   },
   {
     "name": "BLEU DE CHANEL",
-    "image": "Chanel Coco Madmoiselle.jpg",
-    "pyramid": "detailimage/placeholder.jpg",
+    "image": "Chanel-Bleu.jpg",
+    "pyramid": "Bleu-de-Chanel.jpg",
     "category": "all"
   },
   {
@@ -78,21 +78,15 @@
     "category": "all"
   },
   {
-    "name": "BURBERRY HER ELIXIR",
-    "image": "FEHLT",
-    "pyramid": "detailimage/placeholder.jpg",
-    "category": "all"
-  },
-  {
     "name": "BURBERRY HERO",
-    "image": "Burberry Hero.jpg",
-    "pyramid": "detailimage/placeholder.jpg",
+    "image": "Burberry-Hero.jpg",
+    "pyramid": "Hero-Eau-de-Parfum-Burberry.jpg",
     "category": "all"
   },
   {
     "name": "CAROLINA HERRERA 212",
-    "image": "Carolina Herrera 212.jpg",
-    "pyramid": "detailimage/placeholder.jpg",
+    "image": "Carolina Herera-212.jpg",
+    "pyramid": "212-Men-Carolina-Herrera.jpg",
     "category": "all"
   },
   {
