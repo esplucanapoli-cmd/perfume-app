@@ -145,13 +145,13 @@
   },
   {
     "name": "DIOR JADORE",
-    "image": "dior-jadore",
+    "image": "dior-jadore.jpg",
     "pyramid": "dior-jadore.jpg",
     "category": "all"
   },
   {
     "name": "DIOR MISS CHERRIE",
-    "image": "dior-miss-cherie",
+    "image": "dior-miss-cherie.jpg",
     "pyramid": "Miss-Dior-Cherie.jpg",
     "category": "all"
   },
@@ -163,8 +163,8 @@
   },
   {
     "name": "DIOR SAUVAGE ELIXIR",
-    "image": "FEHLT",
-    "pyramid": "detailimage/placeholder.jpg",
+    "image": "Sauvage-elexir.jpg",
+    "pyramid": "Sauvage-Elixir.jpg",
     "category": "all"
   },
   {
