@@ -157,7 +157,7 @@
   },
   {
     "name": "DIOR SAUVAGE",
-    "image": "dior-sauvage",
+    "image": "dior-sauvage.jpg",
     "pyramid": "Sauvage-Dior.jpg",
     "category": "all"
   },
@@ -181,8 +181,8 @@
   },
   {
     "name": "GIVENCHY L’INTERDIT ROUGE",
-    "image": "Givenchy interdit rouge.jpg",
-    "pyramid": "detailimage/placeholder.jpg",
+    "image": "Givenchy-linterdit.jpg",
+    "pyramid": "Givenchy-linterdit.jpg",
     "category": "all"
   },
   {
