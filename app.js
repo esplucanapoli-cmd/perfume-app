@@ -92,14 +92,14 @@ function displayPerfumes(list) {
         }
         img.alt = p.name || "";
 
-        img.addEventListener("click", () => {
-            if (p.pyramid) {
-                openPyramid(p.pyramid);
+       imgElement.addEventListener('click', () => {
+    const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById('modalImg');
 
-            } else {
-                alert("Für dieses Parfüm ist noch keine Duftpyramide hinterlegt.");
-            }
-        });
+    modalImg.src = perfume.pyramid; // oder perfume.detailimage
+    modal.style.display = "block";
+});
+
 
         const nameDiv = document.createElement("div");
         nameDiv.classList.add("perfume-name");
@@ -138,3 +138,13 @@ function searchPerfumes() {
 function closePyramid() {
     document.getElementById("pyramidModal").style.display = "none";
 }
+document.getElementById('modalClose').onclick = function() {
+    document.getElementById('imageModal').style.display = "none";
+};
+
+window.onclick = function(event) {
+    const modal = document.getElementById('imageModal');
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+};
