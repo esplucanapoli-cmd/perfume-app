@@ -81,7 +81,14 @@ function displayPerfumes(list) {
         img.alt = p.name;
 
         // --- DETAIL POPUP ---
-        img.addEventListener("click", () => openDetailImage(p));
+        function openDetailImage(p) {
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImg");
+
+    modalImg.src = "images/" + p.image;
+    modal.style.display = "block";
+}
+
 
         // Name
         const name = document.createElement("p");
