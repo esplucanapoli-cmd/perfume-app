@@ -210,4 +210,21 @@ body {
     }
 }
 
-@media (max-width
+@media (max-width: 420px) {
+
+    .center-buttons .filter-btn {
+        min-width: 130px !important;
+    }
+
+    #searchInput {
+        width: 95% !important;
+    }
+
+    .perfume-grid {
+        gap: 12px;
+    }
+
+    .perfume-card img {
+        height: 160px;
+    }
+}
