@@ -145,20 +145,20 @@
   },
   {
     "name": "DIOR JADORE",
-    "image": "FEHLT",
-    "pyramid": "detailimage/placeholder.jpg",
+    "image": "dior-jadore",
+    "pyramid": "dior-jadore.jpg",
     "category": "all"
   },
   {
     "name": "DIOR MISS CHERRIE",
-    "image": "FEHLT",
-    "pyramid": "detailimage/placeholder.jpg",
+    "image": "dior-miss-cherie",
+    "pyramid": "Miss-Dior-Cherie.jpg",
     "category": "all"
   },
   {
     "name": "DIOR SAUVAGE",
-    "image": "FEHLT",
-    "pyramid": "detailimage/placeholder.jpg",
+    "image": "dior-sauvage",
+    "pyramid": "Sauvage-Dior.jpg",
     "category": "all"
   },
   {
