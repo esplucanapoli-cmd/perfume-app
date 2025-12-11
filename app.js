@@ -75,33 +75,32 @@ function displayPerfumes(list) {
         const card = document.createElement("div");
         card.classList.add("perfume-card");
 
-        // Bild
+        // ------------------------------
+        // BILD
+        // ------------------------------
         const img = document.createElement("img");
         img.src = "images/" + p.image;
         img.alt = p.name;
 
-        // --- DETAIL POPUP ---
-        function openDetailImage(p) {
-    const modal = document.getElementById("imageModal");
-    const modalImg = document.getElementById("modalImg");
+        // DETAIL POPUP KLICKER
+        img.addEventListener("click", () => openDetailImage(p));
 
-    modalImg.src = "images/" + p.image;
-    modal.style.display = "block";
-}
-
-
-        // Name
+        // ------------------------------
+        // NAME
+        // ------------------------------
         const name = document.createElement("p");
         name.classList.add("perfume-name");
         name.textContent = p.name;
 
-        // --- PYRAMIDE BUTTON ---
+        // ------------------------------
+        // PYRAMIDE BUTTON
+        // ------------------------------
         const pyramidBtn = document.createElement("button");
         pyramidBtn.classList.add("pyramid-btn");
         pyramidBtn.textContent = "🞁 Pyramide";
         pyramidBtn.addEventListener("click", () => openPyramid(p));
 
-        // CARD zusammenbauen
+        // Karte bauen
         card.appendChild(img);
         card.appendChild(name);
         card.appendChild(pyramidBtn);
@@ -111,13 +110,14 @@ function displayPerfumes(list) {
 }
 
 // -----------------------------------------------------------------------------
-// DETAIL POPUP (modalImg)
+// DETAIL POPUP
 // -----------------------------------------------------------------------------
 function openDetailImage(p) {
     const modal = document.getElementById("imageModal");
     const modalImg = document.getElementById("modalImg");
 
-    modalImg.src = "detailimage/" + (p.pyramid || "placeholder.jpg");
+    // Detailbild = IMMER das Hauptbild
+    modalImg.src = "images/" + p.image;
     modal.style.display = "block";
 }
 
@@ -126,13 +126,13 @@ document.getElementById("modalClose").addEventListener("click", () => {
 });
 
 // -----------------------------------------------------------------------------
-// PYRAMID POPUP (pyramidImage)
+// PYRAMID POPUP
 // -----------------------------------------------------------------------------
 function openPyramid(p) {
     const modal = document.getElementById("pyramidModal");
     const modalImg = document.getElementById("pyramidImage");
 
-    modalImg.src = "detailimage/" + (p.pyramid || "placeholder.jpg");
+    modalImg.src = p.pyramid; // JSON enthält schon "detailimage/xxx.jpg"
     modal.style.display = "block";
 }
 
