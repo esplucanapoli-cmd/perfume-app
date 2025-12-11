@@ -57,18 +57,17 @@ function filterPerfumes(category, btn) {
     const query = searchInput ? searchInput.value.trim().toLowerCase() : "";
 
     if (query) {
-        // Wenn etwas in der Suche steht: Suche hat Vorrang und durchsucht IMMER alle Düfte
+        // Suche durchsucht immer alle Düfte
         const filtered = allPerfumes.filter(p =>
             (p.name || "").toLowerCase().includes(query)
         );
         displayPerfumes(filtered);
     } else {
-        // Keine Suche aktiv → nach Kategorie filtern
         applyCategory();
     }
 }
 
-// Zeigt eine Liste von Parfums im Grid an
+// Zeigt Parfums im Grid an
 function displayPerfumes(list) {
     const grid = document.getElementById("perfumeGrid");
     if (!grid) return;
@@ -85,82 +84,9 @@ function displayPerfumes(list) {
         card.classList.add("perfume-card");
 
         const img = document.createElement("img");
-        if (p.image) {
-            img.src = "images/" + p.image;
-        } else {
-            img.src = "images/placeholder.jpg"; // falls kein Bild hinterlegt ist
-        }
+        img.src = "images/" + p.image;
         img.alt = p.name || "";
 
-       imgElement.addEventListener('click', () => {
-    const modal = document.getElementById('imageModal');
-    const modalImg = document.getElementById('modalImg');
-
-    modalImg.src = perfume.pyramid; // oder perfume.detailimage
-    modal.style.display = "block";
-});
-
-
-        const nameDiv = document.createElement("div");
-        nameDiv.classList.add("perfume-name");
-        nameDiv.textContent = p.name || "";
-
-        card.appendChild(img);
-        card.appendChild(nameDiv);
-        grid.appendChild(card);
-    });
-}
-
-// Suche: durchsucht IMMER alle Düfte – unabhängig vom aktiven Filter
-function searchPerfumes() {
-    const input = document.getElementById("searchInput");
-    const query = input ? input.value.trim().toLowerCase() : "";
-
-    if (!query) {
-        // Wenn die Suche leer ist → wieder aktuellen Filter anwenden
-        applyCategory();
-        return;
-    }
-
-    const filtered = allPerfumes.filter(p =>
-        (p.name || "").toLowerCase().includes(query)
-    );
-
-    displayPerfumes(filtered);
-}function openPyramid(imagePath) {
-    const modal = document.getElementById("pyramidModal");
-    const img = document.getElementById("pyramidImage");
-
-    img.src = imagePath;
-    modal.style.display = "block";
-}
-
-function closePyramid() {
-    document.getElementById("pyramidModal").style.display = "none";
-}
-document.getElementById('modalClose').onclick = function() {
-    document.getElementById('imageModal').style.display = "none";
-};
-
-window.onclick = function(event) {
-    const modal = document.getElementById('imageModal');
-    if (event.target === modal) {
-        modal.style.display = "none";
-    }
-};
-document.getElementById('modalClose').onclick = function() {
-    document.getElementById('imageModal').style.display = "none";
-};
-
-window.onclick = function(event) {
-    const imageModal = document.getElementById('imageModal');
-    const pyramidModal = document.getElementById('pyramidModal');
-
-    if (event.target === imageModal) {
-        imageModal.style.display = "none";
-    }
-
-    if (event.target === pyramidModal) {
-        pyramidModal.style.display = "none";
-    }
-};
+        // Detailbild-Popup öffnen
+        img.addEventListener("click", () => {
+            const modal = docume
