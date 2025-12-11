@@ -307,8 +307,8 @@
   },
   {
     "name": "MUGLER A*MEN ZEST",
-    "image": "FEHLT",
-    "pyramid": "detailimage/placeholder.jpg",
+    "image": "mugler-a-men-zest.jpg",
+    "pyramid": "A-Men-Ultra-Zest-Mugler.jpg",
     "category": "all"
   },
   {
@@ -325,14 +325,14 @@
   },
   {
     "name": "NASOMATTO BARAONDA",
-    "image": "Nasomatto Baroanda.jpg",
-    "pyramid": "detailimage/placeholder.jpg",
+    "image": "Nasomatto Baraonda.jpg",
+    "pyramid": "Baraonda-Nasomatto.jpg",
     "category": "all"
   },
   {
     "name": "NASOMATTO BLACK AFGANO",
-    "image": "Nasomatto Black Afgano.jpg",
-    "pyramid": "detailimage/placeholder.jpg",
+    "image": "Nasomatto Black Afghano.jpg",
+    "pyramid": "Black-Afgano-Nasomatto.jpg",
     "category": "all"
   },
   {
