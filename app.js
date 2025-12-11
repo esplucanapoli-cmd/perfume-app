@@ -148,3 +148,19 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 };
+document.getElementById('modalClose').onclick = function() {
+    document.getElementById('imageModal').style.display = "none";
+};
+
+window.onclick = function(event) {
+    const imageModal = document.getElementById('imageModal');
+    const pyramidModal = document.getElementById('pyramidModal');
+
+    if (event.target === imageModal) {
+        imageModal.style.display = "none";
+    }
+
+    if (event.target === pyramidModal) {
+        pyramidModal.style.display = "none";
+    }
+};
