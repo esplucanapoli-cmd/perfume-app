@@ -1,156 +1,71 @@
 let allPerfumes = [];
 let currentCategory = "all";
 
-// -----------------------------------------------------------------------------
-// INIT
-// -----------------------------------------------------------------------------
 document.addEventListener("DOMContentLoaded", () => {
-    loadPerfumes();
-});
-
-// -----------------------------------------------------------------------------
-// JSON LADEN
-// -----------------------------------------------------------------------------
-function loadPerfumes() {
     fetch("perfumes.json")
         .then(res => res.json())
         .then(data => {
             allPerfumes = data;
-            applyCategory();
+            render(allPerfumes);
         })
-        .catch(err => console.error("Fehler beim Laden der JSON:", err));
-}
+        .catch(err => console.error("JSON Ladefehler:", err));
+});
 
-// -----------------------------------------------------------------------------
-// KATEGORIE
-// -----------------------------------------------------------------------------
-function applyCategory() {
-    if (currentCategory === "all") {
-        displayPerfumes(allPerfumes);
-    } else {
-        displayPerfumes(allPerfumes.filter(p => p.category === currentCategory));
-    }
-}
-
-function filterPerfumes(category, btn) {
-    currentCategory = category;
-
-    document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
-    if (btn) btn.classList.add("active");
-
-    const query = document.getElementById("searchInput").value.toLowerCase().trim();
-
-    if (query.length > 0) {
-        displayPerfumes(
-            allPerfumes.filter(p => p.name.toLowerCase().includes(query))
-        );
-    } else {
-        applyCategory();
-    }
-}
-
-// -----------------------------------------------------------------------------
-// SUCHE
-// -----------------------------------------------------------------------------
-function searchPerfumes() {
-    const query = document.getElementById("searchInput").value.toLowerCase().trim();
-    displayPerfumes(
-        allPerfumes.filter(p => p.name.toLowerCase().includes(query))
-    );
-}
-
-// -----------------------------------------------------------------------------
-// CARD–GENERATOR
-// -----------------------------------------------------------------------------
-function displayPerfumes(list) {
+function render(list) {
     const grid = document.getElementById("perfumeGrid");
     grid.innerHTML = "";
 
-    if (!list || list.length === 0) {
-        grid.innerHTML = "<div style='grid-column:1/-1;text-align:center;'>Keine Düfte gefunden.</div>";
-        return;
-    }
-
     list.forEach(p => {
         const card = document.createElement("div");
-        card.classList.add("perfume-card");
+        card.className = "perfume-card";
 
-        // ------------------------------
-        // BILD
-        // ------------------------------
         const img = document.createElement("img");
         img.src = "images/" + p.image;
         img.alt = p.name;
 
-        // DETAIL POPUP KLICKER
-        img.addEventListener("click", () => openDetailImage(p));
-
-        // ------------------------------
-        // NAME
-        // ------------------------------
-        const name = document.createElement("p");
-        name.classList.add("perfume-name");
+        const name = document.createElement("div");
+        name.className = "perfume-name";
         name.textContent = p.name;
 
-        // ------------------------------
-        // PYRAMIDE BUTTON
-        // ------------------------------
-        const pyramidBtn = document.createElement("button");
-        pyramidBtn.classList.add("pyramid-btn");
-        pyramidBtn.textContent = "🞁 Pyramide";
-        pyramidBtn.addEventListener("click", () => openPyramid(p.pyramid));
-
-
-        // Karte bauen
         card.appendChild(img);
         card.appendChild(name);
-        card.appendChild(pyramidBtn);
+
+        // 👉 Klick auf Karte öffnet Popup
+        card.addEventListener("click", () => openDetailImage(p.image));
 
         grid.appendChild(card);
     });
 }
 
-// -----------------------------------------------------------------------------
-// DETAIL POPUP
-// -----------------------------------------------------------------------------
-function openDetailImage(p) {
+function openDetailImage(imageName) {
     const modal = document.getElementById("imageModal");
     const modalImg = document.getElementById("modalImg");
 
-    // Detailbild = IMMER das Hauptbild
-    modalImg.src = "images/" + p.image;
+    modalImg.src = "images/" + imageName;
     modal.style.display = "block";
 }
 
-document.getElementById("modalClose").addEventListener("click", () => {
+function closeDetail() {
     document.getElementById("imageModal").style.display = "none";
-});
+}
 
-// -----------------------------------------------------------------------------
-// PYRAMID POPUP
-// -----------------------------------------------------------------------------
-function openPyramid(imagePath) {
-    const modal = document.getElementById("pyramidModal");
-    const img = document.getElementById("pyramidImage");
+function searchPerfumes() {
+    const q = document.getElementById("searchInput").value.toLowerCase();
+    render(
+        allPerfumes.filter(p =>
+            p.name.toLowerCase().includes(q)
+        )
+    );
+}
 
-    if (!imagePath || imagePath === "FEHLT") {
-        img.src = "detailimage/placeholder.jpg";
-    } else if (imagePath.startsWith("detailimage/")) {
-        img.src = imagePath;
+function filterPerfumes(cat, btn) {
+    document.querySelectorAll(".filter-btn")
+        .forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+
+    if (cat === "all") {
+        render(allPerfumes);
     } else {
-        img.src = "detailimage/" + imagePath;
+        render(allPerfumes.filter(p => p.category === cat));
     }
-
-    modal.style.display = "block";
 }
-
-
-function closePyramid() {
-    document.getElementById("pyramidModal").style.display = "none";
-}
-
-window.addEventListener("click", (e) => {
-    if (e.target.id === "pyramidModal") closePyramid();
-    if (e.target.id === "imageModal")
-        document.getElementById("imageModal").style.display = "none";
-});
