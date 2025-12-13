@@ -128,13 +128,21 @@ document.getElementById("modalClose").addEventListener("click", () => {
 // -----------------------------------------------------------------------------
 // PYRAMID POPUP
 // -----------------------------------------------------------------------------
-function openPyramid(p) {
+function openPyramid(imagePath) {
     const modal = document.getElementById("pyramidModal");
-    const modalImg = document.getElementById("pyramidImage");
+    const img = document.getElementById("pyramidImage");
 
-    modalImg.src = p.pyramid; // JSON enthält schon "detailimage/xxx.jpg"
+    if (!imagePath || imagePath === "FEHLT") {
+        img.src = "detailimage/placeholder.jpg";
+    } else if (imagePath.startsWith("detailimage/")) {
+        img.src = imagePath;
+    } else {
+        img.src = "detailimage/" + imagePath;
+    }
+
     modal.style.display = "block";
 }
+
 
 function closePyramid() {
     document.getElementById("pyramidModal").style.display = "none";
