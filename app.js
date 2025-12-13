@@ -117,8 +117,10 @@ function openDetailImage(p) {
         modalImg.src = "detailimage/" + p.pyramid;
     }
 
-    modal.style.display = "block";
+    modalImg.style.display = "block";
+  modal.style.display = "block";
 }
+
 
 
 document.getElementById("modalClose").addEventListener("click", () => {
