@@ -123,9 +123,12 @@ function openDetailImage(p) {
 
 
 
-document.getElementById("modalClose").addEventListener("click", () => {
-    document.getElementById("imageModal").style.display = "none";
+document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("modalClose").addEventListener("click", () => {
+        document.getElementById("imageModal").style.display = "none";
+    });
 });
+
 
 // -----------------------------------------------------------------------------
 // PYRAMID POPUP
