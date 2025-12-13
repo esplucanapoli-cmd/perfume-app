@@ -118,15 +118,20 @@ function openDetailImage(p) {
     }
 
     modalImg.style.display = "block";
-  modal.style.display = "block";
+    modal.style.display = "block";
 }
 
 
 
 document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById("modalClose").addEventListener("click", () => {
-        document.getElementById("imageModal").style.display = "none";
-    });
+    const modal = document.getElementById("imageModal");
+    const closeBtn = document.getElementById("modalClose");
+
+    if (closeBtn && modal) {
+        closeBtn.addEventListener("click", () => {
+            modal.style.display = "none";
+        });
+    }
 });
 
 
