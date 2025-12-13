@@ -7,7 +7,8 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(data => {
             allPerfumes = data;
             render(allPerfumes);
-        });
+        })
+        .catch(err => console.error("JSON Ladefehler:", err));
 });
 
 function render(list) {
@@ -29,16 +30,18 @@ function render(list) {
         card.appendChild(img);
         card.appendChild(name);
 
-        card.addEventListener("click", () => openDetail(p));
+        // 👉 Klick auf Karte öffnet Popup
+        card.addEventListener("click", () => openDetailImage(p.image));
 
         grid.appendChild(card);
     });
 }
 
-function openDetail(p) {
+function openDetailImage(imageName) {
     const modal = document.getElementById("imageModal");
-    const img = document.getElementById("modalImg");
-    img.src = "images/" + p.image;
+    const modalImg = document.getElementById("modalImg");
+
+    modalImg.src = "images/" + imageName;
     modal.style.display = "block";
 }
 
@@ -48,11 +51,16 @@ function closeDetail() {
 
 function searchPerfumes() {
     const q = document.getElementById("searchInput").value.toLowerCase();
-    render(allPerfumes.filter(p => p.name.toLowerCase().includes(q)));
+    render(
+        allPerfumes.filter(p =>
+            p.name.toLowerCase().includes(q)
+        )
+    );
 }
 
 function filterPerfumes(cat, btn) {
-    document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
+    document.querySelectorAll(".filter-btn")
+        .forEach(b => b.classList.remove("active"));
     btn.classList.add("active");
 
     if (cat === "all") {
