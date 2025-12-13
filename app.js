@@ -1,17 +1,15 @@
 let allPerfumes = [];
-let currentCategory = "all";
 
 document.addEventListener("DOMContentLoaded", () => {
     fetch("perfumes.json")
         .then(res => res.json())
         .then(data => {
             allPerfumes = data;
-            render(allPerfumes);
-        })
-        .catch(err => console.error("JSON Ladefehler:", err));
+            renderPerfumes(allPerfumes);
+        });
 });
 
-function render(list) {
+function renderPerfumes(list) {
     const grid = document.getElementById("perfumeGrid");
     grid.innerHTML = "";
 
@@ -27,45 +25,29 @@ function render(list) {
         name.className = "perfume-name";
         name.textContent = p.name;
 
+        // ✅ KLICK AUF KARTE → DETAILIMAGE
+        card.addEventListener("click", () => {
+            openDetailImage(p.image);
+        });
+
         card.appendChild(img);
         card.appendChild(name);
-
-        // 👉 Klick auf Karte öffnet Popup
-        card.addEventListener("click", () => openDetailImage(p.image));
-
         grid.appendChild(card);
     });
 }
 
-function openDetailImage(imageName) {
+/* ============================= */
+/* DETAIL IMAGE MODAL            */
+/* ============================= */
+
+function openDetailImage(image) {
     const modal = document.getElementById("imageModal");
     const modalImg = document.getElementById("modalImg");
 
-    modalImg.src = "images/" + imageName;
+    modalImg.src = "images/" + image;
     modal.style.display = "block";
 }
 
 function closeDetail() {
     document.getElementById("imageModal").style.display = "none";
-}
-
-function searchPerfumes() {
-    const q = document.getElementById("searchInput").value.toLowerCase();
-    render(
-        allPerfumes.filter(p =>
-            p.name.toLowerCase().includes(q)
-        )
-    );
-}
-
-function filterPerfumes(cat, btn) {
-    document.querySelectorAll(".filter-btn")
-        .forEach(b => b.classList.remove("active"));
-    btn.classList.add("active");
-
-    if (cat === "all") {
-        render(allPerfumes);
-    } else {
-        render(allPerfumes.filter(p => p.category === cat));
-    }
 }
