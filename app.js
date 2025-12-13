@@ -163,3 +163,7 @@ window.addEventListener("click", (e) => {
     if (e.target.id === "imageModal")
         document.getElementById("imageModal").style.display = "none";
 });
+function closeDetail() {
+    const modal = document.getElementById("imageModal");
+    modal.style.display = "none";
+}
