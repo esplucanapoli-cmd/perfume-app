@@ -2,44 +2,36 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
+    <title>Perfume App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AMM PERFUMS</title>
-    <link rel="stylesheet" href="styles.css?v=5">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header class="header-bar">
-     <span class="header-title">AMM PERFUMS</span>
+    <span class="header-title">AMM PERFUMS</span>
 </header>
 
-<p class="subtitle">
-    Alle Parfüms auf dieser Liste haben nichts mit dem Original zu tun, sondern sind nur von ihnen inspiriert.
-</p>
-
-<!-- Buttons -->
-<div class="filter-container">
-    <button class="filter-btn active" onclick="filterPerfumes('all', this)">Alle</button>
-</div>
+<p class="subtitle">Alle Parfüms auf dieser Liste sind inspiriert vom Original.</p>
 
 <div class="search-box">
     <div class="center-buttons">
+        <button class="filter-btn active" onclick="filterPerfumes('all', this)">Alle</button>
         <button class="filter-btn" onclick="filterPerfumes('men', this)">Herren</button>
-        <button class="filter-btn" onclick="filterPerfumes('unisex', this)">Unisex</button>
         <button class="filter-btn" onclick="filterPerfumes('women', this)">Damen</button>
+        <button class="filter-btn" onclick="filterPerfumes('unisex', this)">Unisex</button>
     </div>
-    <input type="text" id="searchInput" onkeyup="searchPerfumes()" placeholder="Nach Parfüm suchen...">
+    <input id="searchInput" type="text" placeholder="Suchen…" onkeyup="searchPerfumes()">
 </div>
 
-<!-- GRID -->
 <div id="perfumeGrid" class="perfume-grid"></div>
 
-<!-- Popup für Duftpyramide -->
-<div id="pyramidModal" class="modal">
-    <span class="close" onclick="closePyramid()">&times;</span>
-    <img class="modal-content" id="pyramidImage">
+<!-- Detail Modal -->
+<div id="imageModal" class="modal">
+    <span class="modal-close" onclick="closeDetail()">&times;</span>
+    <img id="modalImg" class="modal-content">
 </div>
 
 <script src="app.js"></script>
 </body>
 </html>
-
