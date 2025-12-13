@@ -92,21 +92,13 @@ function displayPerfumes(list) {
         name.classList.add("perfume-name");
         name.textContent = p.name;
 
-        // ------------------------------
-        // PYRAMIDE BUTTON
-        // ------------------------------
-        const pyramidBtn = document.createElement("button");
-        pyramidBtn.classList.add("pyramid-btn");
-        pyramidBtn.textContent = "🞁 Pyramide";
-        pyramidBtn.addEventListener("click", () => openPyramid(p.pyramid));
+        
+      // Karte bauen
+card.appendChild(img);
+card.appendChild(name);
 
+grid.appendChild(card);
 
-        // Karte bauen
-        card.appendChild(img);
-        card.appendChild(name);
-        card.appendChild(pyramidBtn);
-
-        grid.appendChild(card);
     });
 }
 
@@ -125,8 +117,10 @@ function openDetailImage(p) {
         modalImg.src = "detailimage/" + p.pyramid;
     }
 
-    modal.style.display = "block";
+    modalImg.style.display = "block";
+  modal.style.display = "block";
 }
+
 
 
 document.getElementById("modalClose").addEventListener("click", () => {
