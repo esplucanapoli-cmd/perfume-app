@@ -98,7 +98,8 @@ function displayPerfumes(list) {
         const pyramidBtn = document.createElement("button");
         pyramidBtn.classList.add("pyramid-btn");
         pyramidBtn.textContent = "🞁 Pyramide";
-        pyramidBtn.addEventListener("click", () => openPyramid(p));
+        pyramidBtn.addEventListener("click", () => openPyramid(p.pyramid));
+
 
         // Karte bauen
         card.appendChild(img);
