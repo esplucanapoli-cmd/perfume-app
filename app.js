@@ -6,6 +6,12 @@ let currentCategory = "all";
 // -----------------------------------------------------------------------------
 document.addEventListener("DOMContentLoaded", () => {
     loadPerfumes();
+
+    // Modal-Hintergrund schließen
+    window.addEventListener("click", (e) => {
+        if (e.target.id === "imageModal") closeDetail();
+        if (e.target.id === "pyramidModal") closePyramid();
+    });
 });
 
 // -----------------------------------------------------------------------------
@@ -67,7 +73,8 @@ function displayPerfumes(list) {
     grid.innerHTML = "";
 
     if (!list || list.length === 0) {
-        grid.innerHTML = "<div style='grid-column:1/-1;text-align:center;'>Keine Düfte gefunden.</div>";
+        grid.innerHTML =
+            "<div style='grid-column:1/-1;text-align:center;'>Keine Düfte gefunden.</div>";
         return;
     }
 
@@ -75,65 +82,40 @@ function displayPerfumes(list) {
         const card = document.createElement("div");
         card.classList.add("perfume-card");
 
-        // ------------------------------
-        // BILD
-        // ------------------------------
+        // Bild
         const img = document.createElement("img");
         img.src = "images/" + p.image;
         img.alt = p.name;
-
-        // DETAIL POPUP KLICKER
         img.addEventListener("click", () => openDetailImage(p));
 
-        // ------------------------------
-        // NAME
-        // ------------------------------
+        // Name
         const name = document.createElement("p");
         name.classList.add("perfume-name");
         name.textContent = p.name;
 
-        
-      // Karte bauen
-card.appendChild(img);
-card.appendChild(name);
-
-grid.appendChild(card);
-
+        card.appendChild(img);
+        card.appendChild(name);
+        grid.appendChild(card);
     });
 }
 
 // -----------------------------------------------------------------------------
-// DETAIL POPUP
+// DETAIL POPUP (BILD)
 // -----------------------------------------------------------------------------
 function openDetailImage(p) {
     const modal = document.getElementById("imageModal");
     const modalImg = document.getElementById("modalImg");
 
-    if (!p.pyramid || p.pyramid === "FEHLT") {
-        modalImg.src = "detailimage/placeholder.jpg";
-    } else if (p.pyramid.startsWith("detailimage/")) {
-        modalImg.src = p.pyramid;
-    } else {
-        modalImg.src = "detailimage/" + p.pyramid;
-    }
+    modalImg.src = p.pyramid
+        ? "detailimage/" + p.pyramid
+        : "detailimage/placeholder.jpg";
 
-    modalImg.style.display = "block";
-    modal.style.display = "block";
+    modal.style.display = "flex";
 }
 
-
-
-document.addEventListener("DOMContentLoaded", () => {
-    const modal = document.getElementById("imageModal");
-    const closeBtn = document.getElementById("modalClose");
-
-    if (closeBtn && modal) {
-        closeBtn.addEventListener("click", () => {
-            modal.style.display = "none";
-        });
-    }
-});
-
+function closeDetail() {
+    document.getElementById("imageModal").style.display = "none";
+}
 
 // -----------------------------------------------------------------------------
 // PYRAMID POPUP
@@ -142,28 +124,13 @@ function openPyramid(imagePath) {
     const modal = document.getElementById("pyramidModal");
     const img = document.getElementById("pyramidImage");
 
-    if (!imagePath || imagePath === "FEHLT") {
-        img.src = "detailimage/placeholder.jpg";
-    } else if (imagePath.startsWith("detailimage/")) {
-        img.src = imagePath;
-    } else {
-        img.src = "detailimage/" + imagePath;
-    }
+    img.src = imagePath
+        ? "detailimage/" + imagePath
+        : "detailimage/placeholder.jpg";
 
-    modal.style.display = "block";
+    modal.style.display = "flex";
 }
-
 
 function closePyramid() {
     document.getElementById("pyramidModal").style.display = "none";
-}
-
-window.addEventListener("click", (e) => {
-    if (e.target.id === "pyramidModal") closePyramid();
-    if (e.target.id === "imageModal")
-        document.getElementById("imageModal").style.display = "none";
-});
-function closeDetail() {
-    const modal = document.getElementById("imageModal");
-    modal.style.display = "none";
 }
