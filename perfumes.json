@@ -1,173 +1,155 @@
 [
-  { "name": "ALIEN", "image": "alien.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "ANFAS ISHQ ", "image": "anfas-ishq.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "ARMANI MY WAY", "image": "armani-my-way.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "ARMANI SI", "image": "armani-si.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "AVENTUS COLOGNE", "image": "aventus-cologne.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "AVENTUS CREED", "image": "aventus-creed.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "AVENTUS HER", "image": "aventus-her.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "AZZARO POUR HOMME", "image": "azzaro-pour-homme.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "ALIEN", "image": "Thierry Mugler Alien.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "ANFAS ISHQ ARABIAN OUD", "image": "anfas ishq.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "ARMANI MY WAY", "image": "armani-myway.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "ARMANI SI", "image": "Armani Si.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "AVENTUS COLOGNE", "image": "Aventus Creed Cologne.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "AVENTUS CREED", "image": "aventus creed.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "AVENTUS HER", "image": "Aventus her.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "AZZARO POUR HOMME", "image": "Azzaro pour homme.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
-  { "name": "BACCARAT ROUGE", "image": "baccarat-rouge.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "BACCARAT ROUGE", "image": "baccarat-rouge.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "BDK VELVET TONKA", "image": "bdk-velvet-tonka.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "BIANCO LATTE", "image": "bianco-latte.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "BACCARAT ROUGE", "image": "Baccarat Rouge.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "BDK VELVET TONKA", "image": "Bdk Velvet Tonka.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "BIANCO LATTE", "image": "Giardini di Toscana Bianco Latte.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
-  { "name": "BLUE SKY", "image": "blue-sky.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "BURBERRY HERO", "image": "burberry-hero.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "BURBERRY HER ELIXIR", "image": "burberry-her-elixir.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "BLUE SKY", "image": "Blue Sky.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "BURBERRY HERO", "image": "Burberry Hero.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
-  { "name": "CAROLINA HERRERA 212", "image": "carolina-herrera-212.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "CAROLINA HERRERA 212", "image": "Carolina-Herrera-212.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
   { "name": "CAROLINA HERRERA GOOD GIRL", "image": "carolina-herrera-good-girl.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
   { "name": "CHANEL BLEU", "image": "chanel-bleu.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "CHANEL COCO MADMO", "image": "chanel-coco-madmo.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "CHANEL COCO MADMO", "image": "Chanel Coco Madmoiselle.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
-  { "name": "CHLOE EAU DE PARFUME", "image": "chloe-eau-de-parfume.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "CHLOE EAU DE PARFUME", "image": "Chloe Chloe.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
   { "name": "CHLOE LOVE STORY", "image": "chloe-love-story.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "CHLOE NOMADE", "image": "chloe-nomade.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "CHLOE NOMADE", "image": "chloe nomade.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
-  { "name": "DE MARLY DELYNA", "image": "de-marly-delyna.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "DE MARLY DELYNA", "image": "De Marly Delina.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
-  { "name": "DIOR AMBER NUIT", "image": "dior-amber-nuit.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "DIOR HYPNOTIC POISEN", "image": "dior-hypnotic-poisen.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "DIOR AMBER NUIT", "image": "Dior Amber Nuit.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "DIOR HYPNOTIC POISEN", "image": "Hypnotic Poison.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
   { "name": "DIOR JADORE", "image": "dior-jadore.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "DIOR MISS CHERRIE", "image": "dior-miss-cherrie.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "DIOR MISS CHERRIE", "image": "dior-miss-cherie.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
   { "name": "DIOR SAUVAGE", "image": "dior-sauvage.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "DIOR SAUVAGE ELEXIR", "image": "dior-sauvage-elexir.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "DIOR SAUVAGE ELEXIR", "image": "Sauvage-elixir.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
-  { "name": "DOLCE GB THE ONE", "image": "dolce-gb-the-one.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "DOLCE GB THE ONE", "image": "Dolce Gabanna The One.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
-  { "name": "DUBAI BEACH", "image": "dubai-beach.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "DUBAI COLLECTION", "image": "dubai-collection.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "DUBAI BEACH", "image": "Dubai Beach.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "DUBAI COLLECTION", "image": "Dubai Collection.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
-  { "name": "GISSADA AMBRASADOR", "image": "gissada-ambrasador.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "GIVENCHY LINTERDIT ROUGE", "image": "givenchy-linterdit-rouge.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "GISSADA AMBRASADOR", "image": "Gisada Ambrassador.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "GIVENCHY LINTERDIT ROUGE", "image": "Givenchy-Interdit.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
-  { "name": "GOLDEN SAND", "image": "golden-sand.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "GOLDEN SAND", "image": "Golden Sand.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
-  { "name": "GUCCI PUOR HOMME", "image": "gucci-puor-homme.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "GUCCI PUOR HOMME", "image": "Gucci Pour Homme 2.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
-  { "name": "HUGO BOSS BOTTELD", "image": "hugo-boss-botteld.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "HUGO BOSS HUGO", "image": "hugo-boss-hugo.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "HUGO BOSS BOTTELD", "image": "Hugo Boss Bottled.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "HUGO BOSS HUGO", "image": "Hugo Boss.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
-  { "name": "INITIO AFRODISAC", "image": "initio-afrodisac.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "INITIO OF GREATNESS", "image": "initio-of-greatness.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "INITIO AFRODISAC", "image": "Initio-afrodisiac.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "INITIO OF GREATNESS", "image": "Initio Oud For Greatness.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
-  { "name": "JAMES BOGARD SILVER SCENT", "image": "james-bogard-silver-scent.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "JAMES BOGARD SILVER SCENT", "image": "silver scent jamse.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
-  { "name": "JIL SUNDER SUN MAN", "image": "jil-sunder-sun-man.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "JIL SUNDER SUN MAN", "image": "jil sander man.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
-  { "name": "JOOP NIGHTLIFE", "image": "joop-nightlife.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "JOOP THRILL", "image": "joop-thrill.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "JOOP NIGHTLIFE", "image": "Joop Nightlife.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "JOOP THRILL", "image": "Joop Thrill.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
-  { "name": "JPG 2", "image": "jpg-2.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "JPG LE MALE", "image": "jpg-le-male.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "JPG LE MALE PARFUME", "image": "jpg-le-male-parfume.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "JPG 2", "image": "JPG 2.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "JPG LE MALE", "image": "JPG Le Male.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
-  { "name": "KATE MOSS", "image": "kate-moss.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "KATE MOSS", "image": "Kate Moss Kate.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
-  { "name": "KILIAN ANGEL SHARE", "image": "kilian-angel-share.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "KILIAN ANGEL SHARE", "image": "kilian-angel-share.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "KILIAN ANGEL SHARE", "image": "Kilian Angel share.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
-  { "name": "KILIAN STRAIT T HAVEN", "image": "kilian-strait-t-haven.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "KILIAN STRAIT T HAVEN", "image": "kilian-strait-t-haven.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "KILIAN STRAIT T HAVEN", "image": "Kilian-Straight-to-Haven.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
-  { "name": "LANCOME LA VIE SETE B", "image": "lancome-la-vie-sete-b.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "LANCOME LA VIE SETE B", "image": "Lancome La vie este Belle.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
-  { "name": "MANCERA FRENCH RIV", "image": "mancera-french-riv.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "MANCERA FRENCH RIVIERA", "image": "mancera-french-riviera.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "MANCERA FRENCH RIVIERA", "image": "Mancera French Riviera.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "MANCERA RED TOBACCO", "image": "Mancera Red Tobacco.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
-  { "name": "MANCERA RED TOBACCO", "image": "mancera-red-tobacco.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "MEKKHA", "image": "Mekkha.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
-  { "name": "MEKKHA", "image": "mekkha.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "MONTE BLANC LEGEND", "image": "mont blanc Legend.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "MONT B LEGEND NIGHT", "image": "Mont Blanc Legend Night.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "MONT B STARWALKER", "image": "Monte Blanc Starwalker.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
-  { "name": "MONTE BLANC LEGEND", "image": "monte-blanc-legend.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "MONT B LEGEND NIGHT", "image": "mont-b-legend-night.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "MONT B STARWALKER", "image": "mont-b-starwalker.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "MUGLER A MAN ZEST", "image": "mugler-a-men-zest.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "MUGLER ANGEL", "image": "Mugler Angel.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
-  { "name": "MUGLER A MAN ZEST", "image": "mugler-a-man-zest.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "MUGLER ANGEL", "image": "mugler-angel.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "NASOMATTO B AFGHANO", "image": "Nasomatto Black Afghano.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "NASOMATTO BARAONDA", "image": "Nasomatto Baraonda.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
-  { "name": "NASOMATTO B AFGHANO", "image": "nasomatto-b-afghano.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "NASOMATTO BARAONDA", "image": "nasomatto-baraonda.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "NISHANE HACIVAT", "image": "Nishane Hacivat.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
-  { "name": "NISHANE HACIVAT", "image": "nishane-hacivat.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "OMBRE NOMADE", "image": "LV Ombre Nomade.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "OMBRE N STELLAR TIMES", "image": "LV-Stellar-times.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
-  { "name": "OMBRE NOMADE", "image": "ombre-nomade.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "OMBRE N LE SABLE ROSE", "image": "ombre-n-le-sable-rose.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "OMBRE N STELLAR TIMES", "image": "ombre-n-stellar-times.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "PACO RABANNE FAME", "image": "Paco Rabanne Fame.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "PACO RABANNE ULTRAV", "image": "Paco Rabanne Ultraviolet.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
-  { "name": "PACO RABANNE FAME", "image": "paco-rabanne-fame.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "PACO RABANNE ULTRAV", "image": "paco-rabanne-ultrav.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "PENHALIGONS LORD", "image": "Penhaligons Lord.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
-  { "name": "PENHALIGONS LORD", "image": "penhaligons-lord.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "PRADA A INTENSE", "image": "Prada amber intens.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "PRADA AMBER", "image": "Prada AMber.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "PRADA L HOMME", "image": "Prada L Homme.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "PRADA PARADOX", "image": "Prada Paradox.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
-  { "name": "PRADA A INTENSE", "image": "prada-a-intense.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "PRADA AMBER", "image": "prada-amber.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "PRADA L HOMME", "image": "prada-l-homme.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "PRADA PARADOX", "image": "prada-paradox.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "P DE MARLY HEROD", "image": "De Marly Herod.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "P DE MARLY PEGASUS", "image": "De Marly Pegasus.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "P DE MARY ALTAHIR", "image": "De Marly Altahir.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
-  { "name": "P DE MARLY HEROD", "image": "p-de-marly-herod.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "P DE MARLY PEGASUS", "image": "p-de-marly-pegasus.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "P DE MARY ALTAHIR", "image": "p-de-mary-altahir.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "RED AFRICAN", "image": "Red African.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
-  { "name": "RED AFRICAN", "image": "red-african.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "ROSENDO MATEU 5", "image": "Rosendo Mateu 5.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
-  { "name": "ROSENDO MATEU 5", "image": "rosendo-mateu-5.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "SILVER DUST", "image": "Silver Dust.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
-  { "name": "SILVER DUST", "image": "silver-dust.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "STEFANIE H MORTAL SKIN", "image": "Stefanie Humbert Mortal Skin.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
-  { "name": "STEFANIE H MORTAL SKIN", "image": "stefanie-h-mortal-skin.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "SULTAN N9", "image": "arabian oud madawi.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
-  { "name": "SULTAN N9", "image": "sultan-n9.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "SWEET PINK", "image": "Tahara Sweet pink.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
-  { "name": "SWEET PINK", "image": "sweet-pink.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "TIZIANA T ANDROMEDA", "image": "Tiziana Terenzi Andromed.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "TIZIANA T KIRKE", "image": "Tiziana Terenzi Kirke.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
-  { "name": "TIZIANA T ANDROMEDA", "image": "tiziana-t-andromeda.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "TIZIANA T ANDROMEDA", "image": "tiziana-t-andromeda.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "TIZIANA T KIRKE", "image": "tiziana-t-kirke.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "TIZIANA T KIRKE", "image": "tiziana-t-kirke.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "TOM F FABULOS", "image": "Tom Ford Fucking Fabulous.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "TOM F LOST CHERRY", "image": "Tom Ford Lost Cherry.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "TOM F OUD WOOD", "image": "Tom Ford Oud Wood.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "TOM F SMOKE CHERRY", "image": "Tom Ford Cherry Smoke.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "TOM F TABACCO VANILL", "image": "tom ford tobaco van.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
-  { "name": "TOM F FABULOS", "image": "tom-f-fabulos.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "TOM F LOST CHERRY", "image": "tom-f-lost-cherry.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "TOM F OUD WOOD", "image": "tom-f-oud-wood.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "TOM F SMOKE CHERRY", "image": "tom-f-smoke-cherry.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "TOM F TABACCO VANILL", "image": "tom-f-tabacco-vanill.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "TOM FORD EBENE FUMO", "image": "Tom Ford Ebene Fumo.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "TOM FORD E NOIR", "image": "Tom Ford Extream Noir.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
-  { "name": "TOM FORD EBENE FUMO", "image": "tom-ford-ebene-fumo.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "TOM FORD E NOIR", "image": "tom-ford-e-noir.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "TOM FORD SOLEI BLANC", "image": "tom-ford-solei-blanc.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "TOM FORD FUMO", "image": "tom-ford-fumo.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "TOM FORD SMOKE CHERRY", "image": "tom-ford-smoke-cherry.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "VALENTINO UOMO", "image": "Valentino Uomo.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
-  { "name": "VALENTINO DONNA ROMA", "image": "valentino-donna-roma.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "VALENTINO UOMO", "image": "valentino-uomo.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "VERSACE FRACHIE MAN", "image": "Versace Fraiche Man.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
-  { "name": "VERSACE CHRYSTAL NOIR", "image": "versace-chrystal-noir.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "VERSACE FRACHIE MAN", "image": "versace-frachie-man.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "WIDIAN LONDON", "image": "Widian London.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
-  { "name": "WIDIAN LONDON", "image": "widian-london.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "XERJOFF ACCENTO", "image": "Xerjoff Accento.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "XERJOFF ALEXANDRIA 2", "image": "Xerjoff Alexandria 2.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "XERJOFF AMBER STAR", "image": "Xerjoff Amber Star.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "XERJOFF APOLLONIA", "image": "Xerjoff Apollonia.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "XERJOFF CORO", "image": "xerjoff coro.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "XERJOFF ERBA PURA", "image": "Xerjoff Erba Pura.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "XERJOFF LA CAPITALE", "image": "Xerjoff La capitale.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "XERJOFF LIRA", "image": "Xerjoff Lira.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "XERJOFF NAXOS", "image": "Xerjoff Naxos.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "XERJOFF OUVERTURE", "image": "Xerjoff Overture.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "XERJOFF TORINO 21", "image": "Xerjoff Torino 21.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "XERJOFF TONY YOMMI", "image": "Xerjoff Tommy Jommy.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "XERJOFF UDEN", "image": "xerjoff uden.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
-  { "name": "XERJOFF ACCENTO", "image": "xerjoff-accento.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "XERJOFF ALEXANDRIA 2", "image": "xerjoff-alexandria-2.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "XERJOFF AMBER STAR", "image": "xerjoff-amber-star.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "XERJOFF APOLLONIA", "image": "xerjoff-apollonia.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "XERJOFF CORO", "image": "xerjoff-coro.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "XERJOFF DEEP OCEAN AMBER", "image": "xerjoff-deep-ocean-amber.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "XERJOFF ERBA PURA", "image": "xerjoff-erba-pura.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "XERJOFF LA CAPITALE", "image": "xerjoff-la-capitale.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "XERJOFF LIRA", "image": "xerjoff-lira.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "XERJOFF NAXOS", "image": "xerjoff-naxos.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "XERJOFF OUVERTURE", "image": "xerjoff-ouverture.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "XERJOFF TORINO 21", "image": "xerjoff-torino-21.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "XERJOFF TONY YOMMI", "image": "xerjoff-tony-yommi.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "XERJOFF UDEN", "image": "xerjoff-uden.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "YSL BLACK OPIUM", "image": "Ysl Black Opium.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "YSL LIBRE", "image": "YSL Libre.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
-  { "name": "YSL BLACK OPIUM", "image": "ysl-black-opium.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "YSL LIBRE", "image": "ysl-libre.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "YSL L HOMME", "image": "ysl-l-homme.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-
-  { "name": "ZADIG VOLTAGE THIS HER", "image": "zadig-voltage-this-her.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" }
+  { "name": "ZADIG VOLTAGE THIS HER", "image": "Zadig Voltag This Is Her.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" }
 ]
-
