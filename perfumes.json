@@ -34,13 +34,13 @@
   { "name": "DIOR SAUVAGE", "image": "dior-sauvage.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
   { "name": "DIOR SAUVAGE ELEXIR", "image": "Sauvage-elexir.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
-  { "name": "DOLCE GB THE ONE", "image": "Dolce Gabanna The One.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "DOLCE GB THE ONE", "image": "Dolce Gabanna The ONe.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
   { "name": "DUBAI BEACH", "image": "Dubai Beach.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
   { "name": "DUBAI COLLECTION", "image": "Dubai Collection.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
   { "name": "GISSADA AMBRASADOR", "image": "Gisada Ambrassador.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "GIVENCHY LINTERDIT ROUGE", "image": "Givenchy-Interdit.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "GIVENCHY LINTERDIT ROUGE", "image": "Givenchy-linterdit .jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
   { "name": "GOLDEN SAND", "image": "Golden Sand.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
@@ -49,8 +49,8 @@
   { "name": "HUGO BOSS BOTTELD", "image": "Hugo Boss Bottled.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
   { "name": "HUGO BOSS HUGO", "image": "Hugo Boss.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
-  { "name": "INITIO AFRODISAC", "image": "Initio-afrodisiac.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "INITIO OF GREATNESS", "image": "Initio Oud For Greatness.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "INITIO AFRODISAC", "image": "Initio afrodisac.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "INITIO OF GREATNESS", "image": "Inito Oud For Greatness.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
   { "name": "JAMES BOGARD SILVER SCENT", "image": "silver scent jamse.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
@@ -66,9 +66,9 @@
 
   { "name": "KILIAN ANGEL SHARE", "image": "Kilian Angel share.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
-  { "name": "KILIAN STRAIT T HAVEN", "image": "Kilian-Straight-to-Haven.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "KILIAN STRAIT T HAVEN", "image": "Kilian STraight to Haven.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
-  { "name": "LANCOME LA VIE SETE B", "image": "Lancome La vie este Belle.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "LANCOME LA VIE SETE B", "image": "Lancome LA vie este Belle.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
   { "name": "MANCERA FRENCH RIVIERA", "image": "Mancera French Riviera.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
   { "name": "MANCERA RED TOBACCO", "image": "Mancera Red Tobacco.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
@@ -97,7 +97,7 @@
 
   { "name": "PRADA A INTENSE", "image": "Prada amber intens.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
   { "name": "PRADA AMBER", "image": "Prada AMber.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "PRADA L HOMME", "image": "Prada L Homme.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "PRADA L HOMME", "image": "Prada l Homme.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
   { "name": "PRADA PARADOX", "image": "Prada Paradox.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
   { "name": "P DE MARLY HEROD", "image": "De Marly Herod.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
@@ -119,11 +119,11 @@
   { "name": "TIZIANA T ANDROMEDA", "image": "Tiziana Terenzi Andromed.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
   { "name": "TIZIANA T KIRKE", "image": "Tiziana Terenzi Kirke.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
-  { "name": "TOM F FABULOS", "image": "Tom Ford Fucking Fabulous.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "TOM F FABULOS", "image": "Tom Ford Fucking Fablous.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
   { "name": "TOM F LOST CHERRY", "image": "Tom Ford Lost Cherry.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
   { "name": "TOM F OUD WOOD", "image": "Tom Ford Oud Wood.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
   { "name": "TOM F SMOKE CHERRY", "image": "Tom Ford Cherry Smoke.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "TOM F TABACCO VANILL", "image": "tom ford tobaco van.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "TOM F TABACCO VANILL", "image": "tom ford tobaco van .jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
   { "name": "TOM FORD EBENE FUMO", "image": "Tom Ford Ebene Fumo.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
   { "name": "TOM FORD E NOIR", "image": "Tom Ford Extream Noir.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
@@ -146,7 +146,7 @@
   { "name": "XERJOFF OUVERTURE", "image": "Xerjoff Overture.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
   { "name": "XERJOFF TORINO 21", "image": "Xerjoff Torino 21.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
   { "name": "XERJOFF TONY YOMMI", "image": "Xerjoff Tommy Jommy.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "XERJOFF UDEN", "image": "xerjoff uden.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
+  { "name": "XERJOFF UDEN", "image": "xerjoff uden .jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
 
   { "name": "YSL BLACK OPIUM", "image": "Ysl Black Opium.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
   { "name": "YSL LIBRE", "image": "YSL Libre.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
