@@ -1,6 +1,6 @@
 [
   { "name": "ALIEN", "image": "Thierry Mugler Alien.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
-  { "name": "ANFAS ISHQ ", "image": "anfas ishq.jpg", "pyramid": "detailimage/Anfas-ishq.jpg", "category": "all" },
+  { "name": "ANFAS ISHQ ", "image": "anfas ishq.jpg", "pyramid": "Anfas-ishq.jpg", "category": "all" },
   { "name": "ARMANI MY WAY", "image": "armani-myway.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
   { "name": "ARMANI SI", "image": "Armani Si.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
   { "name": "AVENTUS COLOGNE", "image": "Aventus Creed Cologne.jpg", "pyramid": "detailimage/placeholder.jpg", "category": "all" },
