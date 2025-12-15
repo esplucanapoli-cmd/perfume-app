@@ -8,7 +8,7 @@
   {
     "name": "ANFAS ISHQ ARABIAN OUD",
     "image": "anfas ishq.jpg",
-    "pyramid": detailimage/Anfas-ishq.jpg,
+    "pyramid":"Anfas-ishq.jpg"
     "category": "all"
   },
   {
