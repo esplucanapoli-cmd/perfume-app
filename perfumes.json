@@ -20,7 +20,7 @@
   {
     "name": "ARMANI SI",
     "image": "Armani Si.jpg",
-    "pyramid": "My-Way-Giorgio-Armani.jpg",
+    "pyramid": "Si-Giorgio-Armani.jpg",
     "category": "all"
   },
   {
@@ -32,13 +32,13 @@
   {
     "name": "AVENTUS CREED",
     "image": "aventus creed.jpg",
-    "pyramid": "Aventus-Cologne.jpg",
+    "pyramid": "Aventus-creed.jpg",
     "category": "all"
   },
   {
     "name": "AVENTUS HER",
     "image": "Aventus her.jpg",
-    "pyramid": "Aventus-Cologne.jpg",
+    "pyramid": "Aventus-for-Her-Creed.jpg",
     "category": "all"
   },
   {
@@ -86,7 +86,7 @@
   {
     "name": "CAROLINA HERRERA GOOD GIRL",
     "image": "carolina-herrera-good-girl.jpg",
-    "pyramid": "212-Men-Carolina-Herrera.jpg",
+    "pyramid": "Good-Girl-Carolina-Herrera.jpg",
     "category": "all"
   },
   {
@@ -98,13 +98,13 @@
   {
     "name": "CHANEL COCO MADMO",
     "image": "Chanel Coco Madmoiselle.jpg",
-    "pyramid": "Bleu-de-Chanel.jpg",
+    "pyramid": "Chanel-Coco-Mademoiselle.jpg",
     "category": "all"
   },
   {
     "name": "CHLOE EAU DE PARFUME",
     "image": "Chloe Chloe.jpg",
-    "pyramid": "Chloe Chloe.jpg",
+    "pyramid": "Chlo-Eau-de-Parfum-Chlo.jpg",
     "category": "all"
   },
   {
@@ -116,7 +116,7 @@
   {
     "name": "CHLOE NOMADE",
     "image": "chloe nomade.jpg",
-    "pyramid": "chloe nomade.jpg",
+    "pyramid": "Nomade-Chloe.jpg",
     "category": "all"
   },
   {
@@ -128,13 +128,13 @@
   {
     "name": "DIOR AMBER NUIT",
     "image": "Dior Amber Nuit.jpg",
-    "pyramid": "Dior Amber Nuit.jpg",
+    "pyramid": "Ambre-Nuit-Dior.jpg",
     "category": "all"
   },
   {
     "name": "DIOR HYPNOTIC POISEN",
     "image": "Hypnotic Poison.jpg",
-    "pyramid": "Hypnotic Poison.jpg",
+    "pyramid": "Ambre-Nuit-Dior.jpg",
     "category": "all"
   },
   {
@@ -146,19 +146,19 @@
   {
     "name": "DIOR MISS CHERRIE",
     "image": "dior-miss-cherie.jpg",
-    "pyramid": "dior-miss-cherie.jpg",
+    "pyramid": "Miss-Dior-Cherie.jpg",
     "category": "all"
   },
   {
     "name": "DIOR SAUVAGE",
     "image": "dior-sauvage.jpg",
-    "pyramid": "dior-sauvage.jpg",
+    "pyramid": "Sauvage-Dior.jpg",
     "category": "all"
   },
   {
     "name": "DIOR SAUVAGE ELEXIR",
     "image": "Sauvage-elixir.jpg",
-    "pyramid": "Sauvage-elixir.jpg",
+    "pyramid": "Sauvage-Dior.jpg",
     "category": "all"
   },
   {
@@ -230,19 +230,19 @@
   {
     "name": "JAMES BOGARD SILVER SCENT",
     "image": "silver scent jamse.jpg",
-    "pyramid": "silver scent jamse.jpg",
+    "pyramid": "Silver-Scent-Jacques-Bogart.jpg",
     "category": "all"
   },
   {
     "name": "JIL SUNDER SUN MAN",
     "image": "jil sander man.jpg",
-    "pyramid": "jil sander man.jpg",
+    "pyramid": "Hugo-Man-Hugo-Boss.jpg",
     "category": "all"
   },
   {
     "name": "JOOP NIGHTLIFE",
     "image": "Joop Nightlife.jpg",
-    "pyramid": "Joop Nightlife.jpg",
+    "pyramid": "Joop-Thrill-Man.jpg",
     "category": "all"
   },
   {
@@ -254,13 +254,13 @@
   {
     "name": "JPG 2",
     "image": "JPG 2.jpg",
-    "pyramid": "JPG 2.jpg",
+    "pyramid": "Gaultier-2-Jean-Paul-Gaultier.jpg",
     "category": "all"
   },
   {
     "name": "JPG LE MALE",
     "image": "JPG Le Male.jpg",
-    "pyramid": "JPG Le Male.jpg",
+    "pyramid": "Le-Male-Jean-Paul-Gaultier.jpg",
     "category": "all"
   },
   {
@@ -296,7 +296,7 @@
   {
     "name": "MANCERA RED TOBACCO",
     "image": "Mancera Red Tobacco.jpg",
-    "pyramid": "French-Riviera-Mancera.jpg",
+    "pyramid": "Red-Tobacco-Mancera.jpg",
     "category": "all"
   },
   {
@@ -308,19 +308,19 @@
   {
     "name": "MONTE BLANC LEGEND",
     "image": "mont blanc Legend.jpg",
-    "pyramid": "mont blanc Legend.jpg",
+    "pyramid": "Legend-Montblanc.jpg",
     "category": "all"
   },
   {
     "name": "MONT B LEGEND NIGHT",
     "image": "Mont Blanc Legend Night.jpg",
-    "pyramid": "Legend-Montblanc.jpg",
+    "pyramid": "Legend-Night-Montblanc.jpg",
     "category": "all"
   },
   {
     "name": "MONT B STARWALKER",
     "image": "Monte Blanc Starwalker.jpg",
-    "pyramid": "Monte Blanc Starwalker.jpg",
+    "pyramid": "Starwalker-Montblanc.jpg",
     "category": "all"
   },
   {
@@ -332,7 +332,7 @@
   {
     "name": "MUGLER ANGEL",
     "image": "Mugler Angel.jpg",
-    "pyramid": "A-Men-Ultra-Zest-Mugler.jpg",
+    "pyramid": "Angel-Mugler.jpg",
     "category": "all"
   },
   {
@@ -362,19 +362,19 @@
   {
     "name": "OMBRE N STELLAR TIMES",
     "image": "LV-Stellar-times.jpg",
-    "pyramid": "Ombre-Nomade.jpg",
+    "pyramid": "Stellar-Times-Louis-Vuitton.jpg",
     "category": "all"
   },
   {
     "name": "PACO RABANNE FAME",
     "image": "Paco Rabanne Fame.jpg",
-    "pyramid": "Paco Rabanne Fame.jpg",
+    "pyramid": "Fame-Rabanne.jpg",
     "category": "all"
   },
   {
     "name": "PACO RABANNE ULTRAV",
     "image": "Paco Rabanne Ultraviolet.jpg",
-    "pyramid": "Paco Rabanne Ultraviolet.jpg",
+    "pyramid": "Fame-Rabanne.jpg",
     "category": "all"
   },
   {
@@ -398,7 +398,7 @@
   {
     "name": "PRADA L HOMME",
     "image": "Prada L Homme.jpg",
-    "pyramid": "Prada L Homme.jpg",
+    "pyramid": "La-Nuit-de-l-039-Homme-yves saint laurent.jpg",
     "category": "all"
   },
   {
@@ -410,19 +410,19 @@
   {
     "name": "P DE MARLY HEROD",
     "image": "De Marly Herod.jpg",
-    "pyramid": "De Marly Herod.jpg",
+    "pyramid": "Herod-Parfums-de-Marly.jpg",
     "category": "all"
   },
   {
     "name": "P DE MARLY PEGASUS",
     "image": "De Marly Pegasus.jpg",
-    "pyramid": "De Marly Pegasus.jpg",
+    "pyramid": "Pegasus-Parfums-de-Marly.jpg",
     "category": "all"
   },
   {
     "name": "P DE MARY ALTAHIR",
     "image": "De Marly Altahir.jpg",
-    "pyramid": "De Marly Altahir.jpg",
+    "pyramid": "Altha-r-Parfums-de-Marly.jpg",
     "category": "all"
   },
   {
@@ -446,7 +446,7 @@
   {
     "name": "STEFANIE H MORTAL SKIN",
     "image": "Stefanie Humbert Mortal Skin.jpg",
-    "pyramid": "Stefanie Humbert Mortal Skin.jpg",
+    "pyramid": "Mortal-Skin-St-phane-Humbert.jpg",
     "category": "all"
   },
   {
@@ -476,43 +476,43 @@
   {
     "name": "TOM F FABULOS",
     "image": "Tom Ford Fucking Fabulous.jpg",
-    "pyramid": "Tom Ford Fucking Fabulous.jpg",
+    "pyramid": "Cherry-Smoke-Tom-Ford.jpg",
     "category": "all"
   },
   {
     "name": "TOM F LOST CHERRY",
     "image": "Tom Ford Lost Cherry.jpg",
-    "pyramid": "Tom Ford Lost Cherry.jpg",
+    "pyramid": "Lost-Cherry-Tom-Ford.jpg",
     "category": "all"
   },
   {
     "name": "TOM F OUD WOOD",
     "image": "Tom Ford Oud Wood.jpg",
-    "pyramid": "Tom Ford Oud Wood.jpg",
+    "pyramid": "Oud-Wood-Tom-Ford.jpg",
     "category": "all"
   },
   {
     "name": "TOM F SMOKE CHERRY",
     "image": "Tom Ford Cherry Smoke.jpg",
-    "pyramid": "Tom Ford Cherry Smoke.jpg",
+    "pyramid": "Cherry-Smoke-Tom-Ford.jpg",
     "category": "all"
   },
   {
     "name": "TOM F TABACCO VANILL",
     "image": "tom ford tobaco van.jpg",
-    "pyramid": "tom ford tobaco van.jpg",
+    "pyramid": "Cherry-Smoke-Tom-Ford.jpg",
     "category": "all"
   },
   {
     "name": "TOM FORD EBENE FUMO",
     "image": "Tom Ford Ebene Fumo.jpg",
-    "pyramid": "Cherry-Smoke-Tom-Ford.jpg",
+    "pyramid": "Tom-Ford-ebene fumo.jpg",
     "category": "all"
   },
   {
     "name": "TOM FORD E NOIR",
     "image": "Tom Ford Extream Noir.jpg",
-    "pyramid": "Cherry-Smoke-Tom-Ford.jpg",
+    "pyramid": "Noir-Extreme-Tom-Ford.jpg",
     "category": "all"
   },
   {
@@ -524,7 +524,7 @@
   {
     "name": "VERSACE FRACHIE MAN",
     "image": "Versace Fraiche Man.jpg",
-    "pyramid": "Versace Fraiche Man.jpg",
+    "pyramid": "Hugo-Man-Hugo-Boss.jpg",
     "category": "all"
   },
   {
@@ -542,55 +542,55 @@
   {
     "name": "XERJOFF ALEXANDRIA 2",
     "image": "Xerjoff Alexandria 2.jpg",
-    "pyramid": "Accento-Xerjoff.jpg",
+    "pyramid": "Alexandria-II-Xerjoff.jpg",
     "category": "all"
   },
   {
     "name": "XERJOFF AMBER STAR",
     "image": "Xerjoff Amber Star.jpg",
-    "pyramid": "Accento-Xerjoff.jpg",
+    "pyramid": "Amber-Star-Xerjoff.jpg",
     "category": "all"
   },
   {
     "name": "XERJOFF APOLLONIA",
     "image": "Xerjoff Apollonia.jpg",
-    "pyramid": "Accento-Xerjoff.jpg",
+    "pyramid": "Apollonia-Xerjoff-.jpg",
     "category": "all"
   },
   {
     "name": "XERJOFF CORO",
     "image": "xerjoff coro.jpg",
-    "pyramid": "Accento-Xerjoff.jpg",
+    "pyramid": "Coro-Xerjoff.jpg",
     "category": "all"
   },
   {
     "name": "XERJOFF ERBA PURA",
     "image": "Xerjoff Erba Pura.jpg",
-    "pyramid": "Accento-Xerjoff.jpg",
+    "pyramid": "Xerjoff-erba pura.jpg",
     "category": "all"
   },
   {
     "name": "XERJOFF LA CAPITALE",
     "image": "Xerjoff La capitale.jpg",
-    "pyramid": "Accento-Xerjoff.jpg",
+    "pyramid": "La-Capitale-Xerjoff.jpg",
     "category": "all"
   },
   {
     "name": "XERJOFF LIRA",
     "image": "Xerjoff Lira.jpg",
-    "pyramid": "Accento-Xerjoff.jpg",
+    "pyramid": "Lira-Xerjoff.jpg",
     "category": "all"
   },
   {
     "name": "XERJOFF NAXOS",
     "image": "Xerjoff Naxos.jpg",
-    "pyramid": "Accento-Xerjoff.jpg",
+    "pyramid": "XJ-1861-Naxos-Xerjoff.jpg",
     "category": "all"
   },
   {
     "name": "XERJOFF OUVERTURE",
     "image": "Xerjoff Overture.jpg",
-    "pyramid": "Accento-Xerjoff.jpg",
+    "pyramid": "Ouverture-Xerjoff.jpg",
     "category": "all"
   },
   {
@@ -602,31 +602,31 @@
   {
     "name": "XERJOFF TONY YOMMI",
     "image": "Xerjoff Tommy Jommy.jpg",
-    "pyramid": "Accento-Xerjoff.jpg",
+    "pyramid": "Tony-Iommi-Monkey-Special-Xerjoff.jpg",
     "category": "all"
   },
   {
     "name": "XERJOFF UDEN",
     "image": "xerjoff uden.jpg",
-    "pyramid": "Accento-Xerjoff.jpg",
+    "pyramid": "Uden-Xerjoff.jpg",
     "category": "all"
   },
   {
     "name": "YSL BLACK OPIUM",
     "image": "Ysl Black Opium.jpg",
-    "pyramid": "Ysl Black Opium.jpg",
+    "pyramid": "Black-Opium-Yves-Saint-Laurent.jpg",
     "category": "all"
   },
   {
     "name": "YSL LIBRE",
     "image": "YSL Libre.jpg",
-    "pyramid": "YSL Libre.jpg",
+    "pyramid": "Libre-Yves-Saint-Laurent.jpg",
     "category": "all"
   },
   {
     "name": "ZADIG VOLTAGE THIS HER",
     "image": "Zadig Voltag This Is Her.jpg",
-    "pyramid": "Zadig Voltag This Is Her.jpg",
+    "pyramid": "This-is-Her-Zadig-amp-Voltaire.jpg",
     "category": "all"
   }
 ]
