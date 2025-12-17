@@ -43,6 +43,12 @@
     "category": "all"
   },
   {
+    "name": "ARABIAN OUD",
+    "image": "arabian oud madawi.jpg",
+    "pyramid": "Madawi-Arabian-Oud.jpg",
+    "category": "all"
+  },
+  {
     "name": "BACCARAT ROUGE",
     "image": "Baccarat Rouge.jpg",
     "pyramid": "Baccarat-Rouge-540.jpg",
@@ -307,13 +313,13 @@
     "category": "all"
   },
   {
-    "name": "MONT B LEGEND NIGHT",
+    "name": "MONTE BLANC LEGEND NIGHT",
     "image": "Mont Blanc Legend Night.jpg",
     "pyramid": "Legend-Night-Montblanc.jpg",
     "category": "all"
   },
   {
-    "name": "MONT B STARWALKER",
+    "name": "MONTE BLANC STARWALKER",
     "image": "Monte Blanc Starwalker.jpg",
     "pyramid": "Starwalker-Montblanc.jpg",
     "category": "all"
@@ -331,7 +337,7 @@
     "category": "all"
   },
   {
-    "name": "NASOMATTO B AFGHANO",
+    "name": "NASOMATTO BLACK AFGHANO",
     "image": "Nasomatto Black Afghano.jpg",
     "pyramid": "Baraonda-Nasomatto.jpg",
     "category": "all"
@@ -355,7 +361,7 @@
     "category": "all"
   },
   {
-    "name": "OMBRE N STELLAR TIMES",
+    "name": "OMBRE NOMADE STELLAR TIMES",
     "image": "LV-Stellar-times.jpg",
     "pyramid": "Stellar-Times-Louis-Vuitton.jpg",
     "category": "all"
@@ -392,8 +398,8 @@
   },
   {
     "name": "PRADA L HOMME",
-    "image": "Prada L Homme.jpg",
-    "pyramid": "La-Nuit-de-l-039-Homme-yves saint laurent.jpg",
+    "image": "Prada l Homme.jpg",
+    "pyramid": "Prada-L-039-Homme-Prada.jpg",
     "category": "all"
   },
   {
@@ -403,19 +409,19 @@
     "category": "all"
   },
   {
-    "name": "P DE MARLY HEROD",
+    "name": "PARFUMES DE MARLY HEROD",
     "image": "De Marly Herod.jpg",
     "pyramid": "Herod-Parfums-de-Marly.jpg",
     "category": "all"
   },
   {
-    "name": "P DE MARLY PEGASUS",
+    "name": "PARFUMES DE MARLY PEGASUS",
     "image": "De Marly Pegasus.jpg",
     "pyramid": "Pegasus-Parfums-de-Marly.jpg",
     "category": "all"
   },
   {
-    "name": "P DE MARY ALTAHIR",
+    "name": "PARFUMES DE MARY ALTAHIR",
     "image": "De Marly Altahir.jpg",
     "pyramid": "Altha-r-Parfums-de-Marly.jpg",
     "category": "all"
@@ -435,23 +441,18 @@
   {
     "name": "SILVER DUST",
     "image": "Silver Dust.jpg",
-    "pyramid": "Silver-Scent-Jacques-Bogart.jpg",
+    "pyramid": "Silver-Al-Rehab.jpg",
     "category": "all"
   },
   {
-    "name": "STEFANIE H MORTAL SKIN",
+    "name": "STEFANIE HUMBERT MORTAL SKIN",
     "image": "Stefanie Humbert Mortal Skin.jpg",
     "pyramid": "Mortal-Skin-St-phane-Humbert.jpg",
     "category": "all"
   },
+  
   {
-    "name": "SULTAN N9",
-    "image": "arabian oud madawi.jpg",
-    "pyramid": "arabian oud madawi.jpg",
-    "category": "all"
-  },
-  {
-    "name": "SWEET PINK",
+    "name": "SWEET PINK LADY",
     "image": "Tahara Sweet pink.jpg",
     "pyramid": "Tahara Sweet pink.jpg",
     "category": "all"
@@ -463,15 +464,15 @@
     "category": "all"
   },
   {
-    "name": "TIZIANA T ANDROMEDA",
+    "name": "TIZIANA TERENZI ANDROMEDA",
     "image": "Tiziana Terenzi Andromed.jpg",
     "pyramid": "Andromeda-Tiziana-Terenzi.jpg",
     "category": "all"
   },
   {
-    "name": "TIZIANA T KIRKE",
+    "name": "TIZIANA TERENZI KIRKE",
     "image": "Tiziana Terenzi Kirke.jpg",
-    "pyramid": "Andromeda-Tiziana-Terenzi.jpg",
+    "pyramid": "Kirk-Tiziana-Terenzi.jpg",
     "category": "all"
   },
   {
@@ -500,7 +501,7 @@
   },
   {
     "name": "TOM F TABACCO VANILL",
-    "image": "tom ford tobaco van.jpg",
+    "image": "tom ford tobaco van .jpg",
     "pyramid": "Cherry-Smoke-Tom-Ford.jpg",
     "category": "all"
   },
