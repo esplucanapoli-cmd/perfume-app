@@ -1,34 +1,21 @@
-/* ---------------------------------------------------- */
-/* GRUNDLAYOUT                                           */
-/* ---------------------------------------------------- */
+* {
+  box-sizing: border-box;
+}
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
 }
 
-/* HEADER */
-.header-bar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
+header {
     background-color: #1a1a1a;
     color: white;
+    text-align: center;
     padding: 25px 10px;
-}
-
-.logo {
-    height: 42px;
-    width: auto;
-}
-
-.header-title {
     font-size: 32px;
     font-weight: bold;
-    letter-spacing: 2px;
 }
 
 /* Untertitel */
@@ -39,17 +26,15 @@ body {
     font-size: 14px;
 }
 
-/* ---------------------------------------------------- */
-/* BUTTONS UND SUCHFELD                                 */
-/* ---------------------------------------------------- */
-
+/* BUTTONS zentriert */
 .filter-container {
     width: 100%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-start; /* Alle links lassen */
     margin-bottom: 20px;
     padding-left: 40px;
 }
+
 
 .filter-btn {
     padding: 7px 18px;
@@ -65,24 +50,31 @@ body {
     color: white;
 }
 
+/* SUCHFELD */
 .search-box {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.search-box {
+    display: flex;
+    flex-direction: column;   /* WICHTIG: Buttons oben, Suchfeld darunter */
+    align-items: center;      /* Zentriert alles */
+    gap: 15px;                /* Abstand zwischen Buttons und Suchfeld */
     margin-bottom: 30px;
 }
 
 .center-buttons {
     display: flex;
-    justify-content: center;
+    justify-content: center;  /* Buttons in der Mitte */
     gap: 15px;
 }
 
-/* ---------------------------------------------------- */
-/* GRID → PARFUM-KARTEN                                 */
-/* ---------------------------------------------------- */
 
+/* GRID → **5 Parfums pro Reihe** */
 .perfume-grid {
     width: 100%;
     display: grid;
@@ -92,6 +84,7 @@ body {
     box-sizing: border-box;
 }
 
+/* Parfum-Karten */
 .perfume-card {
     background: white;
     border-radius: 8px;
@@ -100,131 +93,37 @@ body {
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
+/* Bilder einheitlich */
 .perfume-card img {
     width: 100%;
     height: 240px;
     object-fit: contain;
     margin-bottom: 10px;
-    cursor: pointer;
 }
 
+/* Name */
 .perfume-name {
     font-weight: bold;
     font-size: 14px;
 }
 
-/* ---------------------------------------------------- */
-/* POPUP / MODAL (für beide: Pyramid + Detailbild)      */
-/* ---------------------------------------------------- */
 
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 9999;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.85);
-    padding-top: 60px;
+.center-buttons {
+    display: flex;
+    gap: 10px;
+}
+/* Buttons über der Suche zentrieren */
+.search-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* ZENTRIERT Herren / Unisex / Damen */
+    gap: 10px;
+    margin-bottom: 30px;
 }
 
-.modal-content {
-    display: block;
-    margin: auto;
-    max-width: 85%;
-    max-height: 85%;
-    border-radius: 12px;
-    box-shadow: 0 0 20px rgba(255,255,255,0.25);
-}
-
-.close,
-.modal-close {
-    position: absolute;
-    top: 20px;
-    right: 35px;
-    font-size: 40px;
-    color: #ffffff;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-/* ---------------------------------------------------- */
-/* MOBILE OPTIMIERUNG                                   */
-/* ---------------------------------------------------- */
-
-@media (max-width: 768px) {
-
-    .header-bar {
-        font-size: 38px;
-        padding: 18px 10px;
-    }
-
-    .subtitle {
-        font-size: 12px;
-        margin-top: 10px;
-        margin-bottom: 25px;
-        padding: 0 15px;
-    }
-
-    .filter-container {
-        justify-content: center;
-        padding-left: 0;
-        margin-bottom: 15px;
-    }
-
-    .center-buttons {
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-
-    .center-buttons .filter-btn {
-        min-width: 150px !important;
-        padding: 12px 20px !important;
-        font-size: 15px !important;
-    }
-
-    #searchInput {
-        width: 90% !important;
-        max-width: 400px;
-        padding: 12px 14px !important;
-        font-size: 16px !important;
-    }
-
-    .perfume-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 18px;
-        padding: 10px 15px;
-    }
-
-    .perfume-card {
-        padding: 10px;
-    }
-
-    .perfume-card img {
-        height: 180px;
-    }
-
-    .perfume-name {
-        font-size: 15px;
-    }
-}
-
-@media (max-width: 420px) {
-
-    .center-buttons .filter-btn {
-        min-width: 130px !important;
-    }
-
-    #searchInput {
-        width: 95% !important;
-    }
-
-    .perfume-grid {
-        gap: 12px;
-    }
-
-    .perfume-card img {
-        height: 160px;
-    }
+/* Container für die 3 rechten Buttons */
+.center-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
