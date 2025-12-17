@@ -1,10 +1,5 @@
 [
-  {
-    "name": "ALIEN",
-    "image": "Thierry Mugler Alien.jpg",
-    "pyramid": "Alien-Mugler.jpg",
-    "category": "all"
-  },
+  
   {
     "name": "ANFAS ISHQ ARABIAN OUD",
     "image": "anfas ishq.jpg",
@@ -459,6 +454,12 @@
     "name": "SWEET PINK",
     "image": "Tahara Sweet pink.jpg",
     "pyramid": "Tahara Sweet pink.jpg",
+    "category": "all"
+  },
+  {
+    "name": "THIERY MUGLER ALIEN",
+    "image": "Therry Mugler Alien.jpg",
+    "pyramid": "Alien-Mugler.jpg",
     "category": "all"
   },
   {
