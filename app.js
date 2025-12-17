@@ -20,8 +20,6 @@ function renderPerfumes(list) {
       <h3>${p.name}</h3>
     `;
 
-    card.onclick = () => alert(p.name);
-
     container.appendChild(card);
   });
 }
