@@ -16,7 +16,8 @@ function renderPerfumes(list) {
     card.className = "perfume-card";
 
     card.innerHTML = `
-      <img src="${p.image}" alt="${p.name}">
+      <img src="images/${p.image}" alt="${p.name}">
+
       <h3>${p.name}</h3>
     `;
 
@@ -31,3 +32,4 @@ function filterCategory(cat) {
     renderPerfumes(perfumes.filter(p => p.category === cat));
   }
 }
+
