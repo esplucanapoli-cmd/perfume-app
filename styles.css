@@ -1,21 +1,15 @@
-
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
   background-color: #f5f5f5;
 }
 
-/* HEADER */
 .main-header {
   background: linear-gradient(to right, #111, #222);
   padding: 25px 0;
   text-align: center;
-  width: 100%;
 }
 
 .main-header h1 {
@@ -25,23 +19,13 @@ body {
   letter-spacing: 3px;
 }
 
-/* TOP CONTENT */
 .top-content {
   max-width: 900px;
   margin: 30px auto;
-  padding: 0 15px;
   text-align: center;
 }
 
-.disclaimer {
-  margin-bottom: 15px;
-  font-size: 14px;
-  color: #333;
-}
-
-.filters {
-  margin-bottom: 10px;
-}
+.filters { margin-bottom: 10px; }
 
 .filter-btn {
   padding: 7px 18px;
@@ -49,7 +33,6 @@ body {
   background-color: #ddd;
   border: none;
   cursor: pointer;
-  font-size: 14px;
 }
 
 .filter-btn.active {
@@ -57,14 +40,9 @@ body {
   color: white;
 }
 
-#search {
-  padding: 6px 10px;
-  width: 200px;
-}
+#search { padding: 6px 10px; width: 200px; }
 
-/* GRID */
 .perfume-grid {
-  width: 100%;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 25px;
@@ -77,13 +55,13 @@ body {
   padding: 12px;
   text-align: center;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  cursor: pointer;
 }
 
 .perfume-card img {
   width: 100%;
   height: 240px;
   object-fit: contain;
-  margin-bottom: 10px;
 }
 
 .perfume-name {
