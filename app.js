@@ -1,47 +1,40 @@
-let perfumes = [];
-let currentFilter = 'all';
+const perfumes = [
+  { name: "ARMANI MY WAY", category: "damen", image: "images/myway.png" },
+  { name: "DIOR SAUVAGE", category: "herren", image: "images/sauvage.png" },
+  { name: "BACCARAT ROUGE", category: "unisex", image: "images/baccarat.png" }
+];
 
-fetch('perfumes.json')
-  .then(res => res.json())
-  .then(data => {
-    perfumes = data;
-    renderPerfumes(perfumes);
-  });
+const container = document.getElementById("perfumeContainer");
+const buttons = document.querySelectorAll(".filters button");
+const searchInput = document.getElementById("searchInput");
 
-function renderPerfumes(list) {
-  const grid = document.getElementById('perfumeGrid');
-  grid.innerHTML = '';
-
+function render(list) {
+  container.innerHTML = "";
   list.forEach(p => {
-    const card = document.createElement('div');
-    card.className = 'perfume-card';
-    card.onclick = () => alert(p.name);
-
+    const card = document.createElement("div");
+    card.className = "perfume-card";
     card.innerHTML = `
       <img src="${p.image}" alt="${p.name}">
-      <div class="perfume-name">${p.name}</div>
+      <h3>${p.name}</h3>
     `;
-    grid.appendChild(card);
+    card.onclick = () => alert(p.name);
+    container.appendChild(card);
   });
 }
 
-function filterPerfumes(type, btn) {
-  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-  currentFilter = type;
-  applyFilters();
-}
+buttons.forEach(btn => {
+  btn.onclick = () => {
+    buttons.forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    const filter = btn.dataset.filter;
+    if (filter === "alle") render(perfumes);
+    else render(perfumes.filter(p => p.category === filter));
+  };
+});
 
-function searchPerfumes() {
-  applyFilters();
-}
+searchInput.oninput = () => {
+  const val = searchInput.value.toLowerCase();
+  render(perfumes.filter(p => p.name.toLowerCase().includes(val)));
+};
 
-function applyFilters() {
-  const search = document.getElementById('search').value.toLowerCase();
-  const filtered = perfumes.filter(p => {
-    const matchType = currentFilter === 'all' || p.category === currentFilter;
-    const matchSearch = p.name.toLowerCase().includes(search);
-    return matchType && matchSearch;
-  });
-  renderPerfumes(filtered);
-}
+render(perfumes);
