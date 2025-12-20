@@ -45,12 +45,12 @@ body {
   width: 220px;
 }
 
-.perfume-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 20px;
-  padding: 20px;
+.perfume-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
 }
+
 
 .perfume-card {
   background: white;
