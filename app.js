@@ -12,14 +12,16 @@ function renderPerfumes(list) {
   container.innerHTML = "";
 
   list.forEach(p => {
-    const card = document.createElement("div");
+    const container = document.getElementById('perfumeContainer');
+
     card.className = "perfume-card";
 
     card.innerHTML = `
-      <img src="images/${p.image}" alt="${p.name}">
-
+      <img src="${p.image}" alt="${p.name}">
       <h3>${p.name}</h3>
     `;
+
+    card.onclick = () => alert(p.name);
 
     container.appendChild(card);
   });
@@ -32,5 +34,3 @@ function filterCategory(cat) {
     renderPerfumes(perfumes.filter(p => p.category === cat));
   }
 }
-
-
