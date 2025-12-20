@@ -12,22 +12,20 @@
 </header>
 
 <section class="top-content">
-  <p>Alle Parfüms auf dieser Liste sind inspiriert vom Original.</p>
+  <p>Alle Parfüms auf dieser Liste sind Inspiriert vom Original.</p>
 
   <div class="filters">
-   <button onclick="filterCategory('Alle')">Alle</button>
-<button onclick="filterCategory('Herren')">Herren</button>
-<button onclick="filterCategory('Damen')">Damen</button>
-<button onclick="filterCategory('Unisex')">Unisex</button>
-
-<main id="perfume-container" class="perfume-grid"></main>
-
-
+    <button data-filter="alle" class="active">Alle</button>
+    <button data-filter="herren">Herren</button>
+    <button data-filter="damen">Damen</button>
+    <button data-filter="unisex">Unisex</button>
+  </div>
 
   <input type="text" id="searchInput" placeholder="Suchen...">
 </section>
 
-<main id="perfumeContainer" class="perfume-grid"></main>
+<main class="perfume-container"></main>
+
 
 <script src="app.js"></script>
 </body>
