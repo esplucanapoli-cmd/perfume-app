@@ -30,13 +30,21 @@ function loadPerfumes() {
 
 // -----------------------------------------------------------------------------
 // KATEGORIE
-// -----------------------------------------------------------------------------
 function applyCategory() {
     if (currentCategory === "all") {
         displayPerfumes(allPerfumes);
     } else {
-        displayPerfumes(allPerfumes.filter(p => p.category === currentCategory));
+      displayPerfumes(
+    allPerfumes.filter(p =>
+        Array.isArray(p.category)
+            ? p.category.includes(currentCategory)
+            : p.category === currentCategory
+    )
+);
+
     }
+}
+
 }
 
 function filterPerfumes(category, btn) {
@@ -135,3 +143,4 @@ function openPyramid(imagePath) {
 function closePyramid() {
     document.getElementById("pyramidModal").style.display = "none";
 }
+
