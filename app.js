@@ -144,3 +144,4 @@ function closePyramid() {
     document.getElementById("pyramidModal").style.display = "none";
 }
 
+
