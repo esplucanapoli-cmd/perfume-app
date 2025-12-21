@@ -18,7 +18,8 @@ document.addEventListener("DOMContentLoaded", () => {
 // JSON LADEN
 // -----------------------------------------------------------------------------
 function loadPerfumes() {
-    fetch("perfumes.json")
+    fetch("./perfumes.json")
+
         .then(res => res.json())
         .then(data => {
             allPerfumes = data;
