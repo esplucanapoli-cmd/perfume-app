@@ -1,7 +1,7 @@
 [
   
   {
-    "name": "ANFAS ISHQ ARABIAN OUD",
+    "name": "ANFAS ISHQ ",
     "image": "anfas ishq.jpg",
     "pyramid": "Anfas-ishq.jpg",
     "category": ["herren", "unisex"]
@@ -47,13 +47,13 @@
     "name": "ARABIAN OUD",
     "image": "arabian oud madawi.jpg",
     "pyramid": "Madawi-Arabian-Oud.jpg",
-    "category": "all"
+    "category": ["herren", "unisex"]
   },
   {
     "name": "BACCARAT ROUGE",
     "image": "Baccarat Rouge.jpg",
     "pyramid": "Baccarat-Rouge-540.jpg",
-    "category": "all"
+    "category":  ["herren", "unisex"]
   },
   {
     "name": "BDK VELVET TONKA",
