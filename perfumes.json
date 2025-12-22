@@ -11,19 +11,19 @@
     "name": "ARMANI MY WAY",
     "image": "armani-myway.jpg",
     "pyramid": "My-Way-Giorgio-Armani.jpg",
-    "category": "all"
+    "category": ["damen"]
   },
   {
     "name": "ARMANI Si",
     "image": "Armani Si.jpg",
     "pyramid": "Si-Giorgio-Armani.jpg",
-    "category": "all"
+    "category": ["damen"]
   },
   {
     "name": "AVENTUS COLOGNE",
     "image": "Aventus Creed Cologne.jpg",
     "pyramid": "Aventus-Cologne.jpg",
-    "category": "all"
+    "category": ["herren"]
   },
   {
     "name": "AVENTUS CREED",
@@ -35,7 +35,7 @@
     "name": "AVENTUS HER",
     "image": "Aventus her.jpg",
     "pyramid": "Aventus-for-Her-Creed.jpg",
-    "category": "all"
+    "category": ["damen"]
   },
   {
     "name": "AZZARO POUR HOMME",
@@ -89,7 +89,7 @@
     "name": "CAROLINA HERRERA GOOD GIRL",
     "image": "carolina-herera-good-girl.jpg",
     "pyramid": "Good-Girl-Carolina-Herrera.jpg",
-    "category": "all"
+    "category": ["damen"]
   },
   {
     "name": "CHANEL BLEU",
@@ -101,31 +101,31 @@
     "name": "CHANEL COCO MADMO",
     "image": "Chanel Coco Madmoiselle.jpg",
     "pyramid": "Chanel-Coco-Mademoiselle.jpg",
-    "category": "all"
+    "category": ["damen"]
   },
   {
     "name": "CHLOE EAU DE PARFUME",
     "image": "Chloe Chloe.jpg",
     "pyramid": "Chlo-Eau-de-Parfum-Chlo.jpg",
-    "category": "all"
+    "category": ["damen"]
   },
   {
     "name": "CHLOE LOVE STORY",
     "image": "chloe-love-story.jpg",
     "pyramid": "Chloe-Love-Story.jpg",
-    "category": "all"
+    "category": ["damen"]
   },
   {
     "name": "CHLOE NOMADE",
     "image": "chloe nomade.jpg",
     "pyramid": "Nomade-Chloe.jpg",
-    "category": "all"
+    "category": ["damen"]
   },
   {
     "name": "DE MARLY DELYNA",
     "image": "De MArly Delina.jpg",
     "pyramid": "Delina-Parfums-de-Marly.jpg",
-    "category": "all"
+    "category": ["damen"]
   },
   {
     "name": "DIOR AMBER NUIT",
@@ -137,19 +137,19 @@
     "name": "DIOR HYPNOTIC POISEN",
     "image": "Hypnotic Poison.jpg",
     "pyramid": "Hypnotic-Poison-Dior.jpg",
-    "category": "all"
+    "category": ["damen"]
   },
   {
     "name": "DIOR JADORE",
     "image": "dior-jadore.jpg",
     "pyramid": "dior-jadore.jpg",
-    "category": "all"
+    "category": ["damen"]
   },
   {
     "name": "DIOR MISS CHERRIE",
     "image": "dior-miss-cherie.jpg",
     "pyramid": "Miss-Dior-Cherie-Dior.jpg",
-    "category": "all"
+    "category": ["damen"]
   },
   {
     "name": "DIOR SAUVAGE",
@@ -191,7 +191,7 @@
     "name": "GIVENCHY LINTERDIT ROUGE",
     "image": "Givenchy-linterdit .jpg",
     "pyramid": "givenchy-linterdit.jpg",
-    "category": "all"
+    "category": ["damen"]
   },
   {
     "name": "GOLDEN SAND",
@@ -269,7 +269,7 @@
     "name": "KATE MOSS",
     "image": "Kate Moss Kate.jpg",
     "pyramid": "Kate-Kate-Moss-.jpg",
-    "category": "all"
+    "category": ["damen"]
   },
   {
     "name": "KILIAN ANGEL SHARE",
@@ -287,7 +287,7 @@
     "name": "LANCOME LA VIE SETE BELLE",
     "image": "Lancome LA vie este Belle.jpg",
     "pyramid": "La-Vie-Est-Belle-Lancome.jpg",
-    "category": "all"
+    "category": ["damen"]
   },
   {
     "name": "MANCERA FRENCH RIVIERA",
@@ -335,7 +335,7 @@
     "name": "MUGLER ANGEL",
     "image": "Mugler Angel.jpg",
     "pyramid": "Angel-Mugler.jpg",
-    "category": "all"
+    "category": ["damen"]
   },
   {
     "name": "NASOMATTO BLACK AFGHANO",
@@ -365,13 +365,13 @@
     "name": "OMBRE NOMADE STELLAR TIMES",
     "image": "LV-Stellar-times.jpg",
     "pyramid": "Stellar-Times-Louis-Vuitton.jpg",
-    "category": "all"
+    "category": ["damen"]
   },
   {
     "name": "PACO RABANNE FAME",
     "image": "Paco Rabanne Fame.jpg",
     "pyramid": "Fame-Rabanne.jpg",
-    "category": "all"
+    "category": ["damen"]
   },
   {
     "name": "PACO RABANNE ULTRAV",
@@ -407,7 +407,7 @@
     "name": "PRADA PARADOX",
     "image": "Prada Paradox.jpg",
     "pyramid": "Prada-Paradox.jpg",
-    "category": "all"
+    "category": ["damen"]
   },
   {
     "name": "PARFUMES DE MARLY HEROD",
@@ -456,13 +456,13 @@
     "name": "SWEET PINK LADY",
     "image": "Tahara Sweet pink.jpg",
     "pyramid": "Sweet-pnk-lady.png",
-    "category": "all"
+    "category": ["damen"]
   },
   {
     "name": "THIERY MUGLER ALIEN",
     "image": "Therry Mugler Alien.jpg",
     "pyramid": "Alien-Mugler.jpg",
-    "category": "all"
+    "category": ["damen"]
   },
   {
     "name": "TIZIANA TERENZI ANDROMEDA",
@@ -582,7 +582,7 @@
     "name": "XERJOFF LIRA",
     "image": "Xerjoff Lira.jpg",
     "pyramid": "Lira-Xerjoff.jpg",
-    "category": "all"
+    "category": ["damen"]
   },
   {
     "name": "XERJOFF NAXOS",
@@ -624,7 +624,7 @@
     "name": "YSL LIBRE",
     "image": "YSL Libre.jpg",
     "pyramid": "Libre-Yves-Saint-Laurent.jpg",
-    "category": "all"
+    "category": ["damen"]
   },
   {
     "name": "ZADIG VOLTAGE THIS HER",
