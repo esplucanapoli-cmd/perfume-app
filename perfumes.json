@@ -41,7 +41,7 @@
     "name": "AZZARO POUR HOMME",
     "image": "Azzaro pour homme.jpg",
     "pyramid": "Azzaro-pour-Homme-Azzaro.jpg",
-    "category": "all"
+    "category": ["herren"]
   },
   {
     "name": "ARABIAN OUD",
@@ -77,13 +77,13 @@
     "name": "BURBERRY HERO",
     "image": "Burberry Hero.jpg",
     "pyramid": "Burberry-hero.jpg",
-    "category": "all"
+    "category": ["herren"]
   },
   {
     "name": "CAROLINA HERRERA 212",
     "image": "Carolina-Herera-212.jpg",
     "pyramid": "212-Men-Carolina-Herrera.jpg",
-    "category": "all"
+    "category": ["herren"]
   },
   {
     "name": "CAROLINA HERRERA GOOD GIRL",
@@ -95,7 +95,7 @@
     "name": "CHANEL BLEU",
     "image": "chanel-bleu.jpg",
     "pyramid": "Bleu-de-Chanel.jpg",
-    "category": "all"
+    "category": ["herren"]
   },
   {
     "name": "CHANEL COCO MADMO",
@@ -155,19 +155,19 @@
     "name": "DIOR SAUVAGE",
     "image": "dior-sauvage.jpg",
     "pyramid": "Sauvage-Dior.jpg",
-    "category": "all"
+    "category": ["herren"]
   },
   {
     "name": "DIOR SAUVAGE ELEXIR",
     "image": "Sauvage-elexir.jpg",
     "pyramid": "Sauvage-Elixir.jpg",
-    "category": "all"
+    "category": ["herren"]
   },
   {
     "name": "DOLCE GB THE ONE",
     "image": "Dolce Gabanna The ONe.jpg",
     "pyramid": "The-One-for-Men-Dolce.gabanna.jpg",
-    "category": "all"
+    "category": ["herren"]
   },
   {
     "name": "DUBAI BEACH",
@@ -185,7 +185,7 @@
     "name": "GISSADA AMBRASADOR",
     "image": "Gisada Ambrassador.jpg",
     "pyramid": "Ambassador-Men-Gisada.jpg",
-    "category": "all"
+    "category": ["herren"]
   },
   {
     "name": "GIVENCHY LINTERDIT ROUGE",
@@ -203,19 +203,19 @@
     "name": "GUCCI PUOR HOMME",
     "image": "Gucci Pour Homme 2.jpg",
     "pyramid": "Gucci-Pour-Homme-II.jpg",
-    "category": "all"
+    "category": ["herren"]
   },
   {
     "name": "HUGO BOSS BOTTELD",
     "image": "Hugo Boss Bottled.jpg",
     "pyramid": "Boss-Bottled-Hugo-Boss-Bottled.jpg",
-    "category": "all"
+    "category": ["herren"]
   },
   {
     "name": "HUGO BOSS HUGO",
     "image": "Hugo Boss.jpg",
     "pyramid": "Hugo-Man-Hugo-Boss.jpg",
-    "category": "all"
+    "category": ["herren"]
   },
   {
     "name": "INITIO AFRODISAC",
@@ -233,25 +233,25 @@
     "name": "JAMES BOGARD SILVER SCENT",
     "image": "silver scent jamse.jpg",
     "pyramid": "Silver-Scent-Jacques-Bogart.jpg",
-    "category": "all"
+    "category": ["herren"]
   },
   {
     "name": "JIL SANDER SUN MAN",
     "image": "jil sander man.jpg",
     "pyramid": "Sun-Men-Jil-Sander.jpg",
-    "category": "all"
+    "category": ["herren"]
   },
   {
     "name": "JOOP NIGHTLIFE",
     "image": "Joop Nightlife.jpg",
     "pyramid": "Nightflight-Joop.jpg",
-    "category": "all"
+    "category":["herren"]
   },
   {
     "name": "JOOP THRILL",
     "image": "Joop Thrill.jpg",
     "pyramid": "Joop-Thrill-Man.jpg",
-    "category": "all"
+    "category": ["herren"]
   },
   {
     "name": "JPG 2",
@@ -263,7 +263,7 @@
     "name": "JPG LE MALE",
     "image": "JPG Le Male.jpg",
     "pyramid": "Le-Male-Jean-Paul-Gaultier.jpg",
-    "category": "all"
+    "category":["herren"]
   },
   {
     "name": "KATE MOSS",
@@ -311,25 +311,25 @@
     "name": "MONTE BLANC LEGEND",
     "image": "mont blanc Legend.jpg",
     "pyramid": "Legend-Montblanc.jpg",
-    "category": "all"
+    "category": ["herren"]
   },
   {
     "name": "MONTE BLANC LEGEND NIGHT",
     "image": "Mont Blanc Legend Night.jpg",
     "pyramid": "Legend-Night-Montblanc.jpg",
-    "category": "all"
+    "category": ["herren"]
   },
   {
     "name": "MONTE BLANC STARWALKER",
     "image": "Monte Blanc Starwalker.jpg",
     "pyramid": "Starwalker-Montblanc.jpg",
-    "category": "all"
+    "category": ["herren"]
   },
   {
     "name": "MUGLER A MAN ZEST",
     "image": "mugler-a-men-zest.jpg",
     "pyramid": "A-Men-Ultra-Zest-Mugler.jpg",
-    "category": "all"
+    "category": ["herren"]
   },
   {
     "name": "MUGLER ANGEL",
@@ -353,7 +353,7 @@
     "name": "NISHANE HACIVAT",
     "image": "Nishane Hacivat.jpg",
     "pyramid": "Hacivat-Nishane-.jpg",
-    "category": "all"
+    "category": ["herren"]
   },
   {
     "name": "OMBRE NOMADE",
@@ -377,31 +377,31 @@
     "name": "PACO RABANNE ULTRAV",
     "image": "Paco Rabanne Ultraviolet.jpg",
     "pyramid": "Ultraviolet-Rabanne.jpg",
-    "category": "all"
+    "category": ["herren"]
   },
   {
     "name": "PENHALIGONS LORD",
     "image": "Penhaligons Lord.jpg",
     "pyramid": "The-Tragedy-of-Lord-George-Penhaligon.jpg",
-    "category": "all"
+    "category": ["herren"]
   },
   {
     "name": "PRADA AMBER INTENSE",
     "image": "Prada amber intens.jpg",
     "pyramid": "Prada-Amber-Pour-Homme-Intense.jpg",
-    "category": "all"
+    "category": ["herren"]
   },
   {
     "name": "PRADA AMBER",
     "image": "Prada AMber.jpg",
     "pyramid": "Prada-Amber-Pour-Homme.jpg",
-    "category": "all"
+    "category": ["herren"]
   },
   {
     "name": "PRADA L HOMME",
     "image": "Prada l Homme.jpg",
     "pyramid": "Prada-L-039-Homme-Prada.jpg",
-    "category": "all"
+    "category": ["herren"]
   },
   {
     "name": "PRADA PARADOX",
@@ -413,19 +413,19 @@
     "name": "PARFUMES DE MARLY HEROD",
     "image": "De Marly Herod.jpg",
     "pyramid": "Herod-Parfums-de-Marly.jpg",
-    "category": "all"
+    "category":["herren"]
   },
   {
     "name": "PARFUMES DE MARLY PEGASUS",
     "image": "De Marly Pegasus.jpg",
     "pyramid": "Pegasus-Parfums-de-Marly.jpg",
-    "category": "all"
+    "category": ["herren"]
   },
   {
     "name": "PARFUMES DE MARY ALTAHIR",
     "image": "De Marly Altahir.jpg",
     "pyramid": "Altha-r-Parfums-de-Marly.jpg",
-    "category": "all"
+    "category": ["herren"]
   },
   {
     "name": "RED AFRICAN",
@@ -516,19 +516,19 @@
     "name": "TOM FORD EXTREAM NOIR",
     "image": "Tom Ford Extream Noir.jpg",
     "pyramid": "Noir-Extreme-Tom-Ford.jpg",
-    "category": "all"
+    "category": ["herren"]
   },
   {
     "name": "VALENTINO UOMO",
     "image": "Valentino Uomo.jpg",
     "pyramid": "Valentino-Uomo-Valentino.jpg",
-    "category": "all"
+    "category": ["herren"]
   },
   {
     "name": "VERSACE FRACHIE MAN",
     "image": "Versace Fraiche Man.jpg",
     "pyramid": "Versace-Man-Eau-Fraiche-Versace.jpg",
-    "category": "all"
+    "category": ["herren"]
   },
   {
     "name": "WIDIAN LONDON",
@@ -552,7 +552,7 @@
     "name": "XERJOFF AMBER STAR",
     "image": "Xerjoff Amber Star.jpg",
     "pyramid": "Amber-Star-Xerjoff.jpg",
-    "category": "all"
+    "category":["herren", "unisex"]
   },
   {
     "name": "XERJOFF APOLLONIA",
@@ -612,7 +612,7 @@
     "name": "XERJOFF UDEN",
     "image": "xerjoff uden .jpg",
     "pyramid": "Uden-Xerjoff.jpg",
-    "category": "all"
+    "category": ["herren"]
   },
   {
     "name": "YSL BLACK OPIUM",
@@ -630,6 +630,6 @@
     "name": "ZADIG VOLTAGE THIS HER",
     "image": "Zadig Voltag This Is Her.jpg",
     "pyramid": "This-is-Her-Zadig-amp-Voltaire.jpg",
-    "category": "all"
+    "category": ["damen"]
   }
 ]
