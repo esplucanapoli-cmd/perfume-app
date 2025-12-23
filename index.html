@@ -33,5 +33,16 @@
 </div>
 
 <script src="app.js"></script>
+
+    <div id="cart-icon" onclick="document.getElementById('cart-overlay').classList.toggle('open')">
+        🛒 <span id="cart-count">0</span>
+    </div>
+
+    <div id="cart-overlay">
+        <h3>Warenkorb</h3>
+        <ul id="cart-items"></ul>
+        <button onclick="document.getElementById('cart-overlay').classList.remove('open')">Schließen</button>
+    </div>
 </body>
+
 </html>

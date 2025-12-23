@@ -82,16 +82,8 @@ function displayPerfumes(list) {
         name.classList.add("perfume-name");
         name.textContent = p.name;
 
-        const btn = document.createElement("button");
-        btn.classList.add("add-to-cart-btn");
-        btn.textContent = "In den Warenkorb";
-        btn.addEventListener("click", () => {
-            alert(p.name + " wurde dem Warenkorb hinzugefügt");
-        });
-
         card.appendChild(img);
         card.appendChild(name);
-        card.appendChild(btn);
         grid.appendChild(card);
     });
 }
@@ -125,3 +117,54 @@ function openPyramid(imagePath) {
 function closePyramid() {
     document.getElementById("pyramidModal").style.display = "none";
 }
+
+
+// Warenkorb (localStorage)
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+function saveCart(){
+    localStorage.setItem("cart", JSON.stringify(cart));
+    updateCartCount();
+}
+
+function updateCartCount(){
+    const countEl = document.getElementById("cart-count");
+    if(countEl){
+        countEl.textContent = cart.reduce((s,i)=>s+i.qty,0);
+    }
+}
+
+function addToCart(product){
+    const found = cart.find(i=>i.name===product.name);
+    if(found){
+        found.qty++;
+    }else{
+        cart.push({...product, qty:1});
+    }
+    saveCart();
+    renderCart();
+}
+
+function renderCart(){
+    const list=document.getElementById("cart-items");
+    if(!list) return;
+    list.innerHTML="";
+    cart.forEach((item,idx)=>{
+        const li=document.createElement("li");
+        li.innerHTML = `${item.name} (x${item.qty}) <button data-i="${idx}">✕</button>`;
+        list.appendChild(li);
+    });
+}
+
+document.addEventListener("click",e=>{
+    if(e.target.dataset.i){
+        cart.splice(e.target.dataset.i,1);
+        saveCart();
+        renderCart();
+    }
+});
+
+document.addEventListener("DOMContentLoaded",()=>{
+    updateCartCount();
+    renderCart();
+});
