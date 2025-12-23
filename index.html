@@ -1,52 +1,25 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <title>Perfume App</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<title>AMM PERFUMS</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="header-bar">
-    <span class="header-title">AMM PERFUMS</span>
-</header>
+<header>AMM PERFUMS</header>
 
-<p class="subtitle">Alle Parfüms auf dieser Liste sind inspiriert vom Original.</p>
+<div id="products"></div>
 
-<div class="search-box">
-   <div class="center-buttons">
-    <button class="filter-btn active" onclick="filterPerfumes('all', this)">Alle</button>
-    <button class="filter-btn" onclick="filterPerfumes('herren', this)">Herren</button>
-    <button class="filter-btn" onclick="filterPerfumes('damen', this)">Damen</button>
-    <button class="filter-btn" onclick="filterPerfumes('unisex', this)">Unisex</button>
-</div>
-    <input id="searchInput" type="text" placeholder="Suchen…" onkeyup="searchPerfumes()">
-</div>
-
-<div id="perfumeGrid" class="perfume-grid"></div>
-
-<!-- Detail Modal -->
-<div id="imageModal" class="modal">
-    <span class="modal-close" onclick="closeDetail()">&times;</span>
-    <img id="modalImg" class="modal-content">
+<div id="sizeModal" class="modal hidden">
+  <div class="modal-content">
+    <h3 id="modalTitle"></h3>
+    <div id="sizeOptions"></div>
+    <button id="confirmAdd">In den Warenkorb</button>
+    <button onclick="closeModal()">Abbrechen</button>
+  </div>
 </div>
 
 <script src="app.js"></script>
-
-    <div id="cart-icon" onclick="document.getElementById('cart-overlay').classList.toggle('open')">
-        🛒 <span id="cart-count">0</span>
-    </div>
-
-    <div id="cart-overlay">
-        <h3>Warenkorb</h3>
-        <ul id="cart-items"></ul>
-        <p><strong>Versand:</strong> <span id="shipping">5,90 €</span></p>
-        <p><strong>Gesamt:</strong> <span id="cart-total">0.00 €</span></p>
-        <button id="checkout-btn">Zur Kasse</button>
-        
-        <button onclick="document.getElementById('cart-overlay').classList.remove('open')">Schließen</button>
-    </div>
 </body>
-
 </html>
