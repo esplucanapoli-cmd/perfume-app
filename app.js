@@ -118,35 +118,43 @@ function closePyramid() {
     document.getElementById("pyramidModal").style.display = "none";
 }
 
+/* ================== CART + MODAL ================== */
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
-let currentProduct = null;
+let selectedProduct = null;
 
-const cartCount = document.getElementById("cart-count");
-const modal = document.getElementById("size-modal");
-const modalTitle = document.getElementById("modal-title");
-const sizeSelect = document.getElementById("size-select");
-
-function updateCartCount(){
-  cartCount.textContent = cart.length;
-}
-updateCartCount();
+const modal = document.createElement("div");
+modal.id = "cart-modal";
+modal.innerHTML = `
+  <div class="cart-modal-content">
+    <h3 id="cart-product-name"></h3>
+    <select id="cart-size">
+      <option value="3">3 ml</option>
+      <option value="30">30 ml</option>
+      <option value="50">50 ml</option>
+      <option value="100">100 ml</option>
+    </select>
+    <button id="cart-confirm">Hinzufügen</button>
+    <button id="cart-cancel">Abbrechen</button>
+  </div>
+`;
+document.body.appendChild(modal);
 
 document.addEventListener("click", e => {
-  if(e.target.classList.contains("add-to-cart-btn")){
-    currentProduct = e.target.dataset.name;
-    modalTitle.textContent = currentProduct;
-    modal.classList.remove("hidden");
+  if (e.target.classList.contains("add-to-cart-btn")) {
+    selectedProduct = e.target.dataset.name;
+    document.getElementById("cart-product-name").textContent = selectedProduct;
+    modal.classList.add("open");
   }
-  if(e.target.id === "close-modal"){
-    modal.classList.add("hidden");
+
+  if (e.target.id === "cart-cancel") {
+    modal.classList.remove("open");
   }
-  if(e.target.id === "confirm-add"){
-    cart.push({
-      name: currentProduct,
-      size: sizeSelect.value
-    });
+
+  if (e.target.id === "cart-confirm") {
+    const size = document.getElementById("cart-size").value;
+    cart.push({ name: selectedProduct, size });
     localStorage.setItem("cart", JSON.stringify(cart));
-    updateCartCount();
-    modal.classList.add("hidden");
+    modal.classList.remove("open");
+    alert(selectedProduct + " (" + size + "ml) hinzugefügt");
   }
 });
