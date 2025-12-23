@@ -82,13 +82,8 @@ function displayPerfumes(list) {
         name.classList.add("perfume-name");
         name.textContent = p.name;
 
-        const button = document.createElement("button");
-        button.classList.add("add-to-cart-btn");
-        button.textContent = "In den Warenkorb";
-
         card.appendChild(img);
         card.appendChild(name);
-        card.appendChild(button);
         grid.appendChild(card);
     });
 }
@@ -122,3 +117,36 @@ function openPyramid(imagePath) {
 function closePyramid() {
     document.getElementById("pyramidModal").style.display = "none";
 }
+
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+let currentProduct = null;
+
+const cartCount = document.getElementById("cart-count");
+const modal = document.getElementById("size-modal");
+const modalTitle = document.getElementById("modal-title");
+const sizeSelect = document.getElementById("size-select");
+
+function updateCartCount(){
+  cartCount.textContent = cart.length;
+}
+updateCartCount();
+
+document.addEventListener("click", e => {
+  if(e.target.classList.contains("add-to-cart-btn")){
+    currentProduct = e.target.dataset.name;
+    modalTitle.textContent = currentProduct;
+    modal.classList.remove("hidden");
+  }
+  if(e.target.id === "close-modal"){
+    modal.classList.add("hidden");
+  }
+  if(e.target.id === "confirm-add"){
+    cart.push({
+      name: currentProduct,
+      size: sizeSelect.value
+    });
+    localStorage.setItem("cart", JSON.stringify(cart));
+    updateCartCount();
+    modal.classList.add("hidden");
+  }
+});
