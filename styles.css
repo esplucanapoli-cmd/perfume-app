@@ -263,3 +263,8 @@ body {
  width:100%;
  padding:8px;
 }
+
+/* FIX: remove search overlay */
+#searchInput{display:none!important;}
+
+.product-card button{margin-top:10px;width:100%;padding:10px;}
