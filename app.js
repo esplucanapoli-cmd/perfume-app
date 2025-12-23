@@ -1,45 +1,124 @@
-const sizePrices = { "3ml":0.25,"30ml":0.6,"50ml":1,"100ml":1.8 };
 
-const products = [
- { name:"ARMANI Si", price:55 },
- { name:"AVENTUS COLOGNE", price:79 }
-];
+let allPerfumes = [];
+let currentCategory = "all";
 
-let selectedProduct=null;
-let selectedSize=null;
+document.addEventListener("DOMContentLoaded", () => {
+    loadPerfumes();
 
-const productsDiv=document.getElementById("products");
-
-products.forEach(p=>{
- const d=document.createElement("div");
- d.innerHTML=`<h3>${p.name}</h3><button>In den Warenkorb</button>`;
- d.querySelector("button").onclick=()=>openSizeModal(p);
- productsDiv.appendChild(d);
+    window.addEventListener("click", (e) => {
+        if (e.target.id === "imageModal") closeDetail();
+        if (e.target.id === "pyramidModal") closePyramid();
+    });
 });
 
-function openSizeModal(product){
- selectedProduct=product;
- selectedSize=null;
- document.getElementById("modalTitle").innerText=product.name;
- const c=document.getElementById("sizeOptions");
- c.innerHTML="";
- Object.keys(sizePrices).forEach(s=>{
-  const price=(product.price*sizePrices[s]).toFixed(2);
-  const l=document.createElement("label");
-  l.className="size-option";
-  l.innerHTML=`<input type="radio" name="size"> ${s} – ${price} €`;
-  l.querySelector("input").onchange=()=>selectedSize=s;
-  c.appendChild(l);
- });
- document.getElementById("sizeModal").classList.remove("hidden");
+function loadPerfumes() {
+    fetch("./perfumes.json")
+        .then(res => res.json())
+        .then(data => {
+            allPerfumes = data;
+            applyCategory();
+        })
+        .catch(err => console.error("Fehler beim Laden der JSON:", err));
 }
 
-document.getElementById("confirmAdd").onclick=()=>{
- if(!selectedSize){ alert("Bitte Größe auswählen"); return; }
- closeModal();
- alert(selectedProduct.name+" "+selectedSize+" hinzugefügt");
-};
+function applyCategory() {
+    if (currentCategory === "all") {
+        displayPerfumes(allPerfumes);
+    } else {
+        displayPerfumes(
+            allPerfumes.filter(p =>
+                Array.isArray(p.category)
+                    ? p.category.includes(currentCategory)
+                    : p.category === currentCategory
+            )
+        );
+    }
+}
 
-function closeModal(){
- document.getElementById("sizeModal").classList.add("hidden");
+function filterPerfumes(category, btn) {
+    currentCategory = category;
+
+    document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
+    if (btn) btn.classList.add("active");
+
+    const query = document.getElementById("searchInput").value.toLowerCase().trim();
+
+    if (query.length > 0) {
+        displayPerfumes(
+            allPerfumes.filter(p => p.name.toLowerCase().includes(query))
+        );
+    } else {
+        applyCategory();
+    }
+}
+
+function searchPerfumes() {
+    const query = document.getElementById("searchInput").value.toLowerCase().trim();
+    displayPerfumes(
+        allPerfumes.filter(p => p.name.toLowerCase().includes(query))
+    );
+}
+
+function displayPerfumes(list) {
+    const grid = document.getElementById("perfumeGrid");
+    grid.innerHTML = "";
+
+    if (!list || list.length === 0) {
+        grid.innerHTML =
+            "<div style='grid-column:1/-1;text-align:center;'>Keine Düfte gefunden.</div>";
+        return;
+    }
+
+    list.forEach(p => {
+        const card = document.createElement("div");
+        card.classList.add("perfume-card");
+
+        const img = document.createElement("img");
+        img.src = "images/" + p.image;
+        img.alt = p.name;
+        img.addEventListener("click", () => openDetailImage(p));
+
+        const name = document.createElement("p");
+        name.classList.add("perfume-name");
+        name.textContent = p.name;
+
+        const button = document.createElement("button");
+        button.classList.add("add-to-cart-btn");
+        button.textContent = "In den Warenkorb";
+
+        card.appendChild(img);
+        card.appendChild(name);
+        card.appendChild(button);
+        grid.appendChild(card);
+    });
+}
+
+function openDetailImage(p) {
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImg");
+
+    modalImg.src = p.pyramid
+        ? "detailimage/" + p.pyramid
+        : "detailimage/placeholder.jpg";
+
+    modal.style.display = "flex";
+}
+
+function closeDetail() {
+    document.getElementById("imageModal").style.display = "none";
+}
+
+function openPyramid(imagePath) {
+    const modal = document.getElementById("pyramidModal");
+    const img = document.getElementById("pyramidImage");
+
+    img.src = imagePath
+        ? "detailimage/" + imagePath
+        : "detailimage/placeholder.jpg";
+
+    modal.style.display = "flex";
+}
+
+function closePyramid() {
+    document.getElementById("pyramidModal").style.display = "none";
 }
