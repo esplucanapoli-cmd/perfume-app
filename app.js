@@ -82,8 +82,16 @@ function displayPerfumes(list) {
         name.classList.add("perfume-name");
         name.textContent = p.name;
 
+        const btn = document.createElement("button");
+        btn.classList.add("add-to-cart-btn");
+        btn.textContent = "In den Warenkorb";
+        btn.addEventListener("click", () => {
+            alert(p.name + " wurde dem Warenkorb hinzugefügt");
+        });
+
         card.appendChild(img);
         card.appendChild(name);
+        card.appendChild(btn);
         grid.appendChild(card);
     });
 }
