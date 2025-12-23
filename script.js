@@ -1,50 +1,29 @@
 const products = [
-  {
-    name: "ARMANI Si",
-    prices: { "3ml": 9.9, "30ml": 39.9, "50ml": 59.9, "100ml": 99.9 }
-  },
-  {
-    name: "AVENTUS COLOGNE",
-    prices: { "3ml": 12.9, "30ml": 49.9, "50ml": 79.9, "100ml": 129.9 }
-  }
+  { name: "ARMANI Si", price: 39.90 },
+  { name: "AVENTUS COLOGNE", price: 79.90 }
 ];
 
 const productsDiv = document.getElementById("products");
-let currentProduct = null;
-let selectedSize = null;
+const cart = document.getElementById("cart");
 
 products.forEach(p => {
   const div = document.createElement("div");
   div.className = "product";
-  div.innerHTML = `<strong>${p.name}</strong><br><button>In den Warenkorb</button>`;
-  div.querySelector("button").onclick = () => openModal(p);
+
+  const name = document.createElement("h3");
+  name.textContent = p.name;
+
+  const price = document.createElement("p");
+  price.textContent = p.price.toFixed(2) + " €";
+
+  const btn = document.createElement("button");
+  btn.textContent = "In den Warenkorb";
+  btn.onclick = () => {
+    const li = document.createElement("li");
+    li.textContent = p.name + " – " + p.price.toFixed(2) + " €";
+    cart.appendChild(li);
+  };
+
+  div.append(name, price, btn);
   productsDiv.appendChild(div);
 });
-
-function openModal(product) {
-  currentProduct = product;
-  selectedSize = null;
-  document.getElementById("modal-title").innerText = product.name;
-  const sizes = document.getElementById("size-options");
-  sizes.innerHTML = "";
-  for (const size in product.prices) {
-    const btn = document.createElement("button");
-    btn.innerText = `${size} – €${product.prices[size]}`;
-    btn.onclick = () => selectedSize = size;
-    sizes.appendChild(btn);
-  }
-  document.getElementById("modal").classList.remove("hidden");
-}
-
-function closeModal() {
-  document.getElementById("modal").classList.add("hidden");
-}
-
-document.getElementById("addToCart").onclick = () => {
-  if (!selectedSize) {
-    alert("Bitte Größe wählen");
-    return;
-  }
-  alert(currentProduct.name + " (" + selectedSize + ") hinzugefügt");
-  closeModal();
-};
