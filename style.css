@@ -1,0 +1,19 @@
+body { font-family: Arial, sans-serif; padding: 20px; }
+header { font-size: 24px; margin-bottom: 20px; }
+.product { margin-bottom: 15px; }
+button { margin-top: 5px; }
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hidden { display: none; }
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 6px;
+}

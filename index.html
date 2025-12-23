@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<title>AMM PERFUMS</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>AMM PERFUMS</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header>AMM PERFUMS</header>
 
-<header>AMM PERFUMS</header>
+  <div id="products"></div>
 
-<div id="products"></div>
-
-<div id="sizeModal" class="modal hidden">
-  <div class="modal-content">
-    <h3 id="modalTitle"></h3>
-    <div id="sizeOptions"></div>
-    <button id="confirmAdd">In den Warenkorb</button>
-    <button onclick="closeModal()">Abbrechen</button>
+  <!-- Modal -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <h3 id="modal-title"></h3>
+      <div id="size-options"></div>
+      <button id="addToCart">In den Warenkorb</button>
+      <button onclick="closeModal()">Abbrechen</button>
+    </div>
   </div>
-</div>
 
-<script src="app.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
