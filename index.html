@@ -27,7 +27,10 @@
 <div id="perfumeGrid" class="perfume-grid"></div>
 
 <!-- Detail Modal -->
-
+<div id="imageModal" class="modal">
+    <span class="modal-close" onclick="closeDetail()">&times;</span>
+    <img id="modalImg" class="modal-content">
+</div>
 
 <script src="app.js"></script>
 
@@ -35,8 +38,29 @@
 <div id="cart-btn">🛒 <span id="cart-count">0</span></div>
 
 <!-- Size Modal -->
-
+<div id="size-modal" class="modal hidden">
+  <div class="modal-content">
+    <h3 id="modal-title"></h3>
+    <select id="size-select">
+      <option value="3">3 ml</option>
+      <option value="30">30 ml</option>
+      <option value="50">50 ml</option>
+      <option value="100">100 ml</option>
+    </select>
+    <button id="confirm-add">Hinzufügen</button>
+    <button id="close-modal">Abbrechen</button>
+  </div>
 </div>
 
+
+<div id="cart-modal-new" class="cart-modal hidden">
+  <div class="cart-box">
+    <h3 id="cart-title"></h3>
+    <div id="cart-params"></div>
+    <div id="cart-sizes"></div>
+    <button id="add-to-cart-final">Zum Warenkorb hinzufügen</button>
+  </div>
+</div>
 </body>
+
 </html>
