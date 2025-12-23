@@ -1,39 +1,56 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <title>AMM PERFUMS</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <title>Perfume App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header>
-  <h1>AMM PERFUMS</h1>
+<header class="header-bar">
+    <span class="header-title">AMM PERFUMS</span>
 </header>
 
-<main>
-  <div id="perfume-list"></div>
-</main>
+<p class="subtitle">Alle Parfüms auf dieser Liste sind inspiriert vom Original.</p>
 
-<div id="cart">
-  <h3>Warenkorb</h3>
-  <ul id="cart-items"></ul>
+<div class="search-box">
+   <div class="center-buttons">
+    <button class="filter-btn active" onclick="filterPerfumes('all', this)">Alle</button>
+    <button class="filter-btn" onclick="filterPerfumes('herren', this)">Herren</button>
+    <button class="filter-btn" onclick="filterPerfumes('damen', this)">Damen</button>
+    <button class="filter-btn" onclick="filterPerfumes('unisex', this)">Unisex</button>
+</div>
+    <input id="searchInput" type="text" placeholder="Suchen…" onkeyup="searchPerfumes()">
 </div>
 
-<div id="cart-modal" class="modal hidden">
-  <div class="modal-content">
-    <span id="close-modal">&times;</span>
-    <h2 id="modal-title"></h2>
+<div id="perfumeGrid" class="perfume-grid"></div>
 
-    <label for="size-select">Größe wählen:</label>
-    <select id="size-select"></select>
-
-    <p id="modal-price"></p>
-
-    <button id="confirm-add">Zum Warenkorb hinzufügen</button>
-  </div>
+<!-- Detail Modal -->
+<div id="imageModal" class="modal">
+    <span class="modal-close" onclick="closeDetail()">&times;</span>
+    <img id="modalImg" class="modal-content">
 </div>
 
 <script src="app.js"></script>
+
+<!-- Cart Button -->
+<div id="cart-btn">🛒 <span id="cart-count">0</span></div>
+
+<!-- Size Modal -->
+<div id="size-modal" class="modal hidden">
+  <div class="modal-content">
+    <h3 id="modal-title"></h3>
+    <select id="size-select">
+      <option value="3">3 ml</option>
+      <option value="30">30 ml</option>
+      <option value="50">50 ml</option>
+      <option value="100">100 ml</option>
+    </select>
+    <button id="confirm-add">Hinzufügen</button>
+    <button id="close-modal">Abbrechen</button>
+  </div>
+</div>
+
 </body>
 </html>
