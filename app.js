@@ -1,4 +1,18 @@
 
+// Preise je Duft
+const prices = {
+  "ANFAS ISHQ": 89,
+  "ARMANI MY WAY": 59,
+  "ARMANI Si": 55,
+  "AVENTUS COLOGNE": 79,
+  "AVENTUS CREED": 85,
+  "AVENTUS HER": 75,
+  "AZZARO POUR HOMME": 49,
+  "ARABIAN OUD": 95,
+  "BACCARAT ROUGE": 99,
+  "BDK VELVET TONKA": 90
+};
+
 let allPerfumes = [];
 let currentCategory = "all";
 
@@ -130,7 +144,7 @@ let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 function saveCart(){
     localStorage.setItem("cart", JSON.stringify(cart));
-    updateCartCount();
+    updateCartCount(); renderSummary();
 }
 
 function updateCartCount(){
@@ -145,7 +159,7 @@ function addToCart(product){
     if(found){
         found.qty++;
     }else{
-        cart.push({...product, qty:1});
+        cart.push({...product, qty:1, price: prices[product.name] || 0});
     }
     saveCart();
     renderCart();
@@ -171,6 +185,31 @@ document.addEventListener("click",e=>{
 });
 
 document.addEventListener("DOMContentLoaded",()=>{
-    updateCartCount();
+    updateCartCount(); renderSummary();
     renderCart();
 });
+
+
+function getTotal(){
+    return cart.reduce((s,i)=>s + i.price * i.qty, 0);
+}
+
+function renderSummary(){
+    const totalEl=document.getElementById("cart-total");
+    const shipEl=document.getElementById("shipping");
+    const checkoutBtn=document.getElementById("checkout-btn");
+    if(!totalEl) return;
+
+    const total=getTotal();
+    totalEl.textContent = total.toFixed(2) + " €";
+
+    if(total >= 100){
+        shipEl.textContent = "Kostenlos";
+    }else{
+        shipEl.textContent = "5,90 €";
+    }
+
+    checkoutBtn.disabled = cart.length === 0;
+}
+
+document.addEventListener("DOMContentLoaded",renderSummary);
