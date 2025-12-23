@@ -118,7 +118,6 @@ function closePyramid() {
     document.getElementById("pyramidModal").style.display = "none";
 }
 
-/* ================== CART + MODAL ================== */
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 let selectedProduct = null;
 
@@ -155,6 +154,5 @@ document.addEventListener("click", e => {
     cart.push({ name: selectedProduct, size });
     localStorage.setItem("cart", JSON.stringify(cart));
     modal.classList.remove("open");
-    alert(selectedProduct + " (" + size + "ml) hinzugefügt");
   }
 });
