@@ -1,4 +1,12 @@
 
+// Größen & Preisfaktoren
+const sizePrices = {
+  "3ml": 0.25,
+  "30ml": 0.6,
+  "50ml": 1,
+  "100ml": 1.8
+};
+
 // Preise je Duft
 const prices = {
   "ANFAS ISHQ": 89,
@@ -96,10 +104,19 @@ function displayPerfumes(list) {
         name.classList.add("perfume-name");
         name.textContent = p.name;
 
+        const sizeSelect = document.createElement("select");
+        sizeSelect.classList.add("size-select");
+        ["3ml","30ml","50ml","100ml"].forEach(s=>{
+            const o=document.createElement("option");
+            o.value=s;
+            o.textContent=s;
+            sizeSelect.appendChild(o);
+        });
+
         const btn = document.createElement("button");
         btn.classList.add("add-to-cart-btn");
         btn.textContent = "In den Warenkorb";
-        btn.addEventListener("click", () => addToCart(p));
+        btn.addEventListener("click", () => addToCart(p, sizeSelect.value));
 
         card.appendChild(img);
         card.appendChild(name);
@@ -154,12 +171,12 @@ function updateCartCount(){
     }
 }
 
-function addToCart(product){
-    const found = cart.find(i=>i.name===product.name);
+function addToCart(product, size){
+    const found = cart.find(i=>i.name===product.name && i.size===size);
     if(found){
         found.qty++;
     }else{
-        cart.push({...product, qty:1, price: prices[product.name] || 0});
+        cart.push({...product, qty:1, size:size, price:(prices[product.name]||0)*(sizePrices[size]||1)});
     }
     saveCart();
     renderCart();
@@ -171,7 +188,7 @@ function renderCart(){
     list.innerHTML="";
     cart.forEach((item,idx)=>{
         const li=document.createElement("li");
-        li.innerHTML = `${item.name} (x${item.qty}) <button data-i="${idx}">✕</button>`;
+        li.innerHTML = `${item.name} ${item.size} (x${item.qty}) - ${(item.price*item.qty).toFixed(2)} € <button data-i="${idx}">✕</button>`;
         list.appendChild(li);
     });
 }

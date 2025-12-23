@@ -305,3 +305,10 @@ body {
   background:#999;
   cursor:not-allowed;
 }
+
+.size-select{
+  margin:6px auto;
+  padding:4px;
+  font-size:12px;
+  display:block;
+}
