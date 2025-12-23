@@ -1,17 +1,19 @@
-const perfumes = [
-  {
-    id: 1,
-    name: "Baccarat Rouge",
-    image: "images/baccarat.png",
-    prices: { "3ml": 5, "30ml": 29, "50ml": 45, "100ml": 79 }
-  }
-];
+let perfumes = [];
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 const list = document.getElementById("perfume-list");
 const cartItems = document.getElementById("cart-items");
 
 let selectedPerfume = null;
 let selectedSize = null;
+
+fetch("perfumes.json")
+  .then(res => res.json())
+  .then(data => {
+    perfumes = data;
+    renderPerfumes();
+    renderCart();
+  });
 
 function renderPerfumes() {
   list.innerHTML = "";
@@ -21,31 +23,35 @@ function renderPerfumes() {
     card.innerHTML = `
       <img src="${p.image}">
       <h4>${p.name}</h4>
-      <button onclick="openModal(${p.id})">In den Warenkorb</button>
+      <button class="add-to-cart-btn" data-id="${p.id}">In den Warenkorb</button>
     `;
     list.appendChild(card);
   });
 }
 
+document.addEventListener("click", e => {
+  if (e.target.classList.contains("add-to-cart-btn")) {
+    openModal(e.target.dataset.id);
+  }
+});
+
 function openModal(id) {
-  selectedPerfume = perfumes.find(p => p.id === id);
+  selectedPerfume = perfumes.find(p => p.id == id);
   const select = document.getElementById("size-select");
   select.innerHTML = "";
-  Object.entries(selectedPerfume.prices).forEach(([s, price]) => {
-    const o = document.createElement("option");
-    o.value = s;
-    o.textContent = `${s} - ${price} €`;
-    select.appendChild(o);
+
+  Object.entries(selectedPerfume.prices).forEach(([size, price]) => {
+    const opt = document.createElement("option");
+    opt.value = size;
+    opt.textContent = `${size} - ${price} €`;
+    select.appendChild(opt);
   });
+
   selectedSize = select.value;
   updatePrice();
+
   document.getElementById("modal-title").textContent = selectedPerfume.name;
   document.getElementById("cart-modal").classList.remove("hidden");
-}
-
-function updatePrice() {
-  document.getElementById("modal-price").textContent =
-    "Preis: " + selectedPerfume.prices[selectedSize] + " €";
 }
 
 document.getElementById("size-select").onchange = e => {
@@ -53,15 +59,31 @@ document.getElementById("size-select").onchange = e => {
   updatePrice();
 };
 
+function updatePrice() {
+  document.getElementById("modal-price").textContent =
+    "Preis: " + selectedPerfume.prices[selectedSize] + " €";
+}
+
 document.getElementById("close-modal").onclick = () => {
   document.getElementById("cart-modal").classList.add("hidden");
 };
 
 document.getElementById("confirm-add").onclick = () => {
-  const li = document.createElement("li");
-  li.textContent = `${selectedPerfume.name} (${selectedSize}) - ${selectedPerfume.prices[selectedSize]} €`;
-  cartItems.appendChild(li);
+  cart.push({
+    name: selectedPerfume.name,
+    size: selectedSize,
+    price: selectedPerfume.prices[selectedSize]
+  });
+  localStorage.setItem("cart", JSON.stringify(cart));
+  renderCart();
   document.getElementById("cart-modal").classList.add("hidden");
 };
 
-renderPerfumes();
+function renderCart() {
+  cartItems.innerHTML = "";
+  cart.forEach(item => {
+    const li = document.createElement("li");
+    li.textContent = `${item.name} (${item.size}) – ${item.price} €`;
+    cartItems.appendChild(li);
+  });
+}
